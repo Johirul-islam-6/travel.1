@@ -18,7 +18,7 @@ const handleClick = (e)=>{
   return (
     <div >
       
-      this is chat page with soket io <br />
+      this is chat page with soket   io <br />
 
       <input onChange={(e)=>setMessage(e.target.value) } type="text" name='message' placeholder='massage...' />
       <button onClick={handleClick}> Send </button>
