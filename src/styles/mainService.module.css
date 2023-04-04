@@ -1,0 +1,22 @@
+.feature_container{
+    padding: 20px 30px;
+    
+}
+.size{
+    font-size: 15px;
+}
+.categoryBtn{
+    background-color: aliceblue;
+    box-shadow: 1px -0px 1px 1px gray;
+    margin: 2px;
+    padding: 3px 7px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+.categoryBtn:active{
+    background-color: black;
+    color: white;
+}
+.color{
+    color: aqua;
+}

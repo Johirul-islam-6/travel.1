@@ -1,4 +1,5 @@
 import Hero from "../../components/Home/Hero";
+import FeatureService from "../../components/Home/Service/FeatureService/FeatureService";
 import Meta from "../../components/Meta";
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
         description="travel services"
       />
       <Hero />
+      <FeatureService></FeatureService>
 
     </>
   );
