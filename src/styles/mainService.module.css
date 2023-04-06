@@ -20,3 +20,142 @@
 .color{
     color: aqua;
 }
+
+
+/* register page css code start */
+ .registerContainer{
+    background-image: url("../../components/Images/register.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+
+ .registerArea{
+    padding: 20px 5px;
+    height: 500px;
+    width: 400px;
+    background-color: black;
+    margin: auto;
+    opacity: .6;
+    border-radius: 10px;
+    color: white;
+    
+ }
+ .divission{
+    padding: 80px 0px;
+ }
+.label{
+    width: 25%;
+    text-align: left;
+}
+.input{
+    width: 75%;
+
+}
+.field{
+    width: 80%;
+    margin-left: 10px;
+    border: none;
+    border-bottom: 2px solid wheat;
+    background-color: black;
+}
+.field:focus{
+    outline: none;
+}
+.SubmitBtn{
+    background-color: rgb(18, 67, 244);
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.divider{
+    height: 2px;
+    width: 80px;
+    background-color: white;
+}
+.IconF{
+    
+    margin: 0 10px;
+    font-size: 30px;
+    color: rgb(6, 6, 226);
+    background-color: white;
+    border-radius: 60%;
+}
+.IconG{
+     
+    margin: 0 10px;
+    font-size: 30px;
+    color: rgb(6, 6, 226);
+
+    background-color: white;
+    border-radius: 60%;
+}
+.IconT{
+    
+    margin: 0 10px;
+    font-size: 30px;
+    color: #0808ee;
+    background-color: white;
+    border-radius: 60%;
+}
+/* register page css code end */
+
+/* login page code start */
+.LoginArea{
+    padding: 20px 5px;
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    margin: auto;
+    opacity: .6;
+    border-radius: 10px;
+    color: white;
+    
+ }
+
+.userIcon{
+    font-size: 70px;
+   
+    height: 100px;
+    width: 100px;
+  text-align: center;
+  justify-content: center;
+  
+  background-color: #0808ee;
+    
+    border-radius: 50%;
+    margin-top: -50px;
+}
+.RealIcon{
+    margin-left: 17px;
+}
+.loginInput{
+    width: 100%;
+    border: none;
+    background-color: black;
+    border-bottom: 2px solid wheat; 
+    margin-bottom: 20px;
+}
+.loginInput:focus{
+    outline: none;
+}
+/* login page code end */
+
+/* forget password code start */
+.RecoveryArea{
+    padding: 20px 5px;
+    height: 200px;
+    width: 300px;
+    background-color: black;
+    margin: auto;
+    opacity: .6;
+    border-radius: 10px;
+    color: white;
+    border-left:2px solid blue;
+    border-right:2px solid blue;
+}
+.Rdivission{
+    padding: 100px;
+}
+/* forget password code end */
