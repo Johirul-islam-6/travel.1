@@ -1,5 +1,3 @@
-import styles from '../src/styles/footer.module.css';
-
 const Footer = () => {
   return (
     <>
