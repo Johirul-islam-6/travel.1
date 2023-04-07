@@ -20,14 +20,13 @@ const Hero = () => {
           className={`${styles.heroBg} flex justify-center items-center md:h-[95vh] h-[120vh]`}
         >
           <div className="container">
-            <h1 className="md:text-5xl text-4xl text-[#ede7e7] pt-10 md:pt-2 font-bold ">
+            <h1 className="text-xl md:text-3xl lg:text-5xl  text-[#ede7e7] pt-10 md:pt-2 font-bold uppercase ">
               Your World of Joy
             </h1>
-            <p className="text-xl text-slate-400 pt-3 px-[2px]">
-              Find what makes you happy anytime, anywhere. Find what makes you
-              happy anytime, anywhere
+            <p className="text-sm md:text-lg lg:text-xl text-slate-400 pt-3 px-[2px] w-9/12 mx-auto">
+              Find what makes you happy anytime, anywhere.
             </p>
-            <div className="card_container h-[auto] border-[0.5px] border-[#0293cc] py-6  bg-[#00000076] text-white mx-auto w-[80%] gap-y-2 mt-14 rounded-3xl grid grid-cols-1 md:grid-cols-5 justify-around items-center">
+            <div className="card_container h-[auto] shadow-2xl py-4  bg-[#fcfbfb76] text-base-500 mx-auto w-[75%] gap-y-2 mt-14 rounded-3xl grid grid-cols-1 md:grid-cols-5 justify-around items-center">
               {/* --------Home page middle part card inside design ---------------- */}
               <div className="dropdown dropdown-bottom cursor-pointer dropdown-end md:mx-5">
                 <div
@@ -37,8 +36,8 @@ const Hero = () => {
                   <div className="icons p-2 bg-[#d5d0d0] rounded-md">
                     <FaPeriscope className="text-black" />
                   </div>
-                  <div className="content ml-3">
-                    <h1 tabIndex={0} className="text-start font-bold">
+                  <div className="content">
+                    <h1 tabIndex={0} className="text-start text-sm font-bold">
                       Location
                     </h1>
                     <p tabIndex={0} className=" text-[12px]">
@@ -63,13 +62,13 @@ const Hero = () => {
                 <div class="hidden md:block before:flex before:w-[3px] before:h-[50px] before:mb-0 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-[#fafafacf] mr-3 "></div>
                 <div
                   tabIndex={0}
-                  className="inside flex justify-center items-center mr-11"
+                  className="inside flex justify-center items-center mr-8"
                 >
                   <div className="icons p-2 bg-[#d5d0d0] rounded-md">
                     <FaCalendarAlt className="text-black" />
                   </div>
-                  <div className="content ml-3">
-                    <h1 tabIndex={0} className="text-start font-bold">
+                  <div className="content pl-1">
+                    <h1 tabIndex={0} className="text-start font-bold text-sm">
                       Check In{" "}
                     </h1>
                     <p tabIndex={0} className=" text-[12px] text-start">
@@ -99,12 +98,12 @@ const Hero = () => {
                   <div className="icons p-2 bg-[#d5d0d0] rounded-md">
                     <FaCalendarAlt className="text-black" />
                   </div>
-                  <div className="content ml-3">
-                    <h1 tabIndex={0} className="text-start font-bold">
+                  <div className="content">
+                    <h1 tabIndex={0} className="text-start font-bold text-sm">
                       Check Out{" "}
                     </h1>
                     <p tabIndex={0} className="text-start text-[12px]">
-                      out Date
+                      Add Date
                     </p>
                   </div>
                 </div>
@@ -131,7 +130,7 @@ const Hero = () => {
                     <FaUserAlt className="text-black" />
                   </div>
                   <div className="content ml-3">
-                    <h1 tabIndex={0} className="text-start font-bold">
+                    <h1 tabIndex={0} className="text-start font-bold text-sm">
                       Guest{" "}
                     </h1>
                     <p tabIndex={0} className=" text-[14px] text-start">
@@ -176,8 +175,8 @@ const Hero = () => {
                     <input
                       type="search"
                       id="search"
-                      class="block w-full p-3 pl-10 text-sm border border-gray-300 rounded-lg bg-gray-5 dark:bg-[#00000029] dark:placeholder-gray-400 dark:text-white text-start"
-                      placeholder="Search enithing..."
+                      class=" block w-full p-3 pl-10 text-sm rounded-lg bg-gray-5 dark:bg-[#00000029] dark:placeholder-gray-400  text-start"
+                      placeholder="Search"
                       required
                     />
                   </div>
