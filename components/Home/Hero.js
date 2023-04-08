@@ -188,23 +188,30 @@ const Hero = () => {
       </section>
 
       {/* ------------- Card Section down home------------ */}
-      <section className="section01_card flex justify-center items-center w-[100%] py-10">
-        <div className="grid md:grid-cols-4 grid-cols-1 gap-4 justify-center w-[70%]">
-          <div
-            className={`${styles.section02} card w-full py-2 px-3 border-t-4  border-[#0475d8]`}
-          >
-            <div className="icon_box flex justify-center items-center py-3 px-3 w-[34%] mx-auto bg-[#0475d8] rounded-full">
-              <FaWalking className="text-[50px]" />
+      <section className="flex justify-center items-center w-[100%] py-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center w-[70%]">
+          <div className="border mx-auto">
+            <div className="">
+              <FaWalking className="w-full text-[]" />
             </div>
-            <div className="card-body text-black">
-              <h2 className="text-center text-[23px] font-semibold">3500+</h2>
-              <p className="font-bold text-[#000000b0] text-[16px]">
+            <div>
+              <h2 className="">3500+</h2>
+              <p className="">Happy Travelars</p>
+            </div>
+          </div>
+          {/* <div className="shadow-2xl">
+            <div className="flex justify-center items-center p-4  mx-auto bg-[#627FF4] rounded-full">
+              <FaWalking className="text-white text-4xl" />
+            </div>
+            <div className=" text-black">
+              <h2 className="text-center text-2xl font-semibold">3500+</h2>
+              <p className="font-bold text-[#000000b0] text-sm">
                 Happy Travelars
               </p>
             </div>
-          </div>
+          </div> */}
 
-          <div
+          {/* <div
             className={`${styles.section02} card w-full pt-3 px-3 md:border-b-4 border-t-4 border-[#0475d8]`}
           >
             <div className="icon_box flex justify-center items-center py-3 px-3 w-[34%] mx-auto bg-[#0475d8] rounded-full">
@@ -216,9 +223,9 @@ const Hero = () => {
                 Tours Success
               </p>
             </div>
-          </div>
+          </div> */}
 
-          <div
+          {/* <div
             className={`${styles.section02} card w-full pt-3 px-3 border-t-4 border-[#0475d8]`}
           >
             <div className="icon_box flex justify-center items-center py-3 px-3 w-[34%] mx-auto bg-[#0475d8] rounded-full">
@@ -244,7 +251,7 @@ const Hero = () => {
                 Award Wining
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
