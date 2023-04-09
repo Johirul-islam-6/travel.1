@@ -17,13 +17,13 @@ const Header = () => {
     <>
       <TopHeader />
       <header className="w-[100%] justify-center bg-base-300 flex mx-auto absolute">
-        <div class="navbar w-[100%] justify-center flex mx-auto bg-[#00000000]">
+        <div className="navbar w-[100%] justify-center flex mx-auto bg-[#00000000]">
           {/* <!-- -------- toggle left small size slider ------ --> */}
-          <div class="dropdown dropdown-start lg:hidden">
-            <label tabindex="1" class="btn btn-ghost btn-circle avatar">
+          <div className="dropdown dropdown-start lg:hidden">
+            <label tabindex="1" className="btn btn-ghost btn-circle avatar">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -39,93 +39,77 @@ const Header = () => {
 
             <ul
               tabindex="1"
-              class="menu menu-compact dropdown-content mt-3 bg-[#020202e7] rounded-box w-[60vw] h-[90vh]"
+              className="menu menu-compact dropdown-content mt-3 bg-[#020202e7] rounded-box w-[60vw] h-[90vh]"
             >
-              <div class="h-[100vh] p-0 mx-6  space-y-2 md:w-60 md:hidden block py-4">
-                <div class="flex justify-between w-[100%] mx-auto">
-                  <Link
-                    href="/"
-                    className="text-white uppercase text-[20px] font-bold text-center cursor-pointer"
-                  >
-                    Travel.<span className="text-[#627FF4] ">XONE</span>
+              travel
+              {/* Dropdown menu */}
+              <div className="h-[100vh] p-0 mx-6  space-y-2 md:w-60 lg:hidden block py-4">
+                <div className="flex justify-between w-[100%] mx-auto ">
+                  <Link href="/" className="cursor-pointer bg-base-100 rounded">
+                    <img src="https://i.ibb.co/Z2SgSq2/travel-xone.png" />
                   </Link>
-                  <p className=" text-[20px]">x</p>
                 </div>
-                <div class="pt-3 before:flex before:w-full before:h-[1px] before:mb-0 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-[#fafafa] mr-3"></div>
-                <div class="divide-gray-700 pt-6 relative z-50">
+                <div className="divide-gray-700 pt-6 relative z-50">
                   <ul>
-                    <li class="hover:bg-[#0458c6]">
+                    <li className="hover:bg-[#0458c6]">
                       <a
                         rel="noopener noreferrer"
-                        href="#"
-                        class={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
+                        href="/"
+                        className={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
                       >
                         <FaHome />
                         <span>Home</span>
                       </a>
                     </li>
-                    <li class="hover:bg-[#0458c6] mt-1">
+                    <li className="hover:bg-[#0458c6] mt-1">
                       <a
                         rel="noopener noreferrer"
-                        href="#"
-                        class={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
+                        href="/adventurestyles"
+                        className={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
                       >
                         <FaAirbnb />
                         <span>Adventure</span>
                       </a>
                     </li>
-                    <li class="hover:bg-[#0458c6] mt-1">
+                    <li className="hover:bg-[#0458c6] mt-1">
                       <a
                         rel="noopener noreferrer"
-                        href="#"
-                        class={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
+                        href="/destination"
+                        className={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
                       >
                         <FaDelicious />
                         <span>Destination</span>
                       </a>
                     </li>
-                    <li class="hover:bg-[#0458c6] mt-1">
+                    <li className="hover:bg-[#0458c6] mt-1">
                       <a
                         rel="noopener noreferrer"
-                        href="#"
-                        class={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
+                        href="/deals"
+                        className={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
                       >
                         <FaDochub />
                         <span>Deals</span>
                       </a>
                     </li>
-                    <li class="hover:bg-[#0458c6] mt-1">
+                    <li className="hover:bg-[#0458c6] mt-1">
                       <a
                         rel="noopener noreferrer"
-                        href="#"
-                        class={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
+                        href="/blogs"
+                        className={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
                       >
                         <FaBloggerB />
                         <span>Blogs</span>
                       </a>
                     </li>
-                    <li class="hover:bg-[#0458c6] mt-1">
+                    <li className="hover:bg-[#0458c6] mt-1">
                       <a
                         rel="noopener noreferrer"
-                        href="#"
-                        class={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
+                        href="/contact"
+                        className={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
                       >
                         <FaPhoneSquareAlt />
                         <span>Contact Us </span>
                       </a>
-                    </li>
-                    <li class="hover:bg-[#0458c6] mt-1">
-                      <Link
-                        href="/admin"
-                        rel="noopener noreferrer"
-                        class={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
-                      >
-                        <FaUserLock />
-
-                        <p className="ml-2 text-sm text-[#f7f7f7] font-bold text-[13px] bg-[#0b4bee] px-3 py-1">
-                          Admin{" "}
-                        </p>
-                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -134,38 +118,32 @@ const Header = () => {
           </div>
 
           {/* <!-- -----only small size navbar----- --> */}
-          <div class="flex-1 flex justify-start w-[100%] reletive lg:hidden navbar-center pl-2">
-            <Link
-              href="/"
-              className="text-slate-900 uppercase text-[25px] font-bold text-center cursor-pointer"
-            >
-              Travel.<span className="text-[#627FF4] font-bold">XONE</span>
+          <div className="flex-1 flex justify-start reletive lg:hidden navbar-center pl-2">
+            <Link href="/" className="cursor-pointer md:w-[60%]">
+              <img src="https://i.ibb.co/Z2SgSq2/travel-xone.png" />
             </Link>
           </div>
 
-          <div class="flex-1 flex justify-end w-full  reletive lg:hidden navbar-end">
+          <div className="flex-1 flex justify-end w-full  reletive lg:hidden navbar-end">
             <button className="h-[33px] text-[13px] px-4 text-[#dfdfdf] bg-[#0272f2] rounded-md hover:bg-[#2d89f1da]">
               <Link href="/register">Register</Link>
             </button>
 
-            <div class="search_btn bg-slate-100 w-10 h-8 rounded-md ml-2">
+            <div className="search_btn bg-slate-100 w-10 h-8 rounded-md ml-2">
               <FaUserAlt className="w-full h-full rounded text-blue-700 bg-base-100 p-2" />
             </div>
           </div>
           {/* -----------only small size navbar end----------- */}
 
-          {/* ===================================== only larze size show ======================= */}
+          {/* ======== only larze size show ============ */}
           <ul className="align-middle hidden lg:flex justify-center w-full">
-            <div class="navbar px-20 ">
-              <Link
-                href="/"
-                className="text-slate-900 uppercase text-[30px] font-bold cursor-pointer"
-              >
-                Travel.<span className="text-[#627FF4] font-bold">XONE</span>
+            <div className="navbar px-20 ">
+              <Link href="/" className="cursor-pointer">
+                <img src="https://i.ibb.co/Z2SgSq2/travel-xone.png" />
               </Link>
             </div>
 
-            <div class="navbar-cente flex justify-center">
+            <div className="navbar-cente flex justify-center">
               <ul className="menu menu-horizontal px-1">
                 <li className="">
                   <Link href="/" className={`${navbar.link_style}`}>
@@ -178,7 +156,10 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/adventure" className={`${navbar.link_style}`}>
+                  <Link
+                    href="/adventurestyles"
+                    className={`${navbar.link_style}`}
+                  >
                     Adventure
                   </Link>
                 </li>
