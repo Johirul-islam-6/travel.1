@@ -115,6 +115,15 @@ a {
   background-color: #627FF4;
 }
 
+/* swiper button */
+.swiper-button-prev {
+  display: none !important;
+}
+
+.swiper-button-next {
+  display: none !important;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
