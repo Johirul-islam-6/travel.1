@@ -42,7 +42,7 @@ const Footer = () => {
 
         {/* -----------2nd Layer----------- */}
         <div className="lg:flex justify-between px-10 lg:px-20 py-10 bg-black text-slate-500 text-left">
-          <div className="text-left lg:text-center w-full md:w-[45%] lg:w-[20%]">
+          <div className="text-left lg:text-center w-full md:w-[45git%] lg:w-[20%]">
             <Link href="/" className="cursor-pointer ">
               <img
                 src="https://i.ibb.co/nMFwjww/foorer-logo.png"

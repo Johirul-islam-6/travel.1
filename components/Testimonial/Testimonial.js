@@ -13,7 +13,7 @@ import user from '../../components/Images/adventure_image/tutor-8-3.jpg'
 
 const Testimonial = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 max-w-screen-xl m-auto py-20 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 max-w-screen-xl m-auto py-20 gap-8 sticky-top">
       <div>
         <Image className="w-full" src={img} alt="image" />
       </div>

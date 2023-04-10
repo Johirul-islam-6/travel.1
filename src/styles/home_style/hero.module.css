@@ -9,12 +9,11 @@ font-family: 'Poppins', sans-serif;
 font-family: 'PT Sans Narrow', sans-serif; */
 
 .heroBg {
-    background-image: url("../../../components/Images/Home/heroBg.png");
+    background-image: url("https://i.ibb.co/vdmYYQn/1.png");
     background-repeat: no-repeat;
     width: 100vw;
     background-size: cover;
     background-position: center center;
-    animation: color 60s infinite ease-out;
 }
 
 /* @keyframes color {

@@ -16,8 +16,8 @@ const Header = () => {
   return (
     <>
       <TopHeader />
-      <header className="w-[100%] justify-center bg-base-300 flex mx-auto absolute">
-        <div className="navbar w-[100%] justify-center flex mx-auto bg-[#00000000]">
+      <header className="w-[100%] justify-center bg-[#ffffffbb] flex mx-auto absolute ">
+        <div className="navbar w-[100%]">
           {/* <!-- -------- toggle left small size slider ------ --> */}
           <div className="dropdown dropdown-start lg:hidden">
             <label tabindex="1" className="btn btn-ghost btn-circle avatar">
@@ -39,12 +39,12 @@ const Header = () => {
 
             <ul
               tabindex="1"
-              className="menu menu-compact dropdown-content mt-3 bg-[#020202e7] rounded-box w-[60vw] h-[90vh]"
+              className="menu menu-compact dropdown-content mt-3 bg-[#020202e7] rounded-box w-[70vw] md:w-[50vw] h-[90vh]"
             >
               travel
               {/* Dropdown menu */}
-              <div className="h-[100vh] p-0 mx-6  space-y-2 md:w-60 lg:hidden block py-4">
-                <div className="flex justify-between w-[100%] mx-auto ">
+              <div className="h-[100vh] p-0 space-y-2  md:w-60 lg:hidden block py-4">
+                <div className="flex justify-between w-[60%]  ">
                   <Link href="/" className="cursor-pointer bg-base-100 rounded">
                     <img src="https://i.ibb.co/Z2SgSq2/travel-xone.png" />
                   </Link>
@@ -118,13 +118,13 @@ const Header = () => {
           </div>
 
           {/* <!-- -----only small size navbar----- --> */}
-          <div className="flex-1 flex justify-start reletive lg:hidden navbar-center pl-2">
+          <div className="flex-1 flex justify-start relative lg:hidden navbar-center pl-2">
             <Link href="/" className="cursor-pointer md:w-[60%]">
               <img src="https://i.ibb.co/Z2SgSq2/travel-xone.png" />
             </Link>
           </div>
 
-          <div className="flex-1 flex justify-end w-full  reletive lg:hidden navbar-end">
+          <div className="flex-1 flex justify-end w-full  relative lg:hidden navbar-end">
             <button className="h-[33px] text-[13px] px-4 text-[#dfdfdf] bg-[#0272f2] rounded-md hover:bg-[#2d89f1da]">
               <Link href="/register">Register</Link>
             </button>
@@ -137,25 +137,28 @@ const Header = () => {
 
           {/* ======== only larze size show ============ */}
           <ul className="align-middle hidden lg:flex justify-center w-full">
-            <div className="navbar px-20 ">
-              <Link href="/" className="cursor-pointer">
-                <img src="https://i.ibb.co/Z2SgSq2/travel-xone.png" />
+            <div className="navbar ">
+              <Link href="/" className="cursor-pointer ">
+                <img
+                  src="https://i.ibb.co/Z2SgSq2/travel-xone.png"
+                  alt="TRAVEL.XONE LOGO"
+                />
               </Link>
             </div>
 
-            <div className="navbar-cente flex justify-center">
+            <div className="navbar-cente flex justify-center text-slate-600 ">
               <ul className="menu menu-horizontal px-1">
-                <li className="">
+                <li className="hover:text-white hover:border rounded">
                   <Link href="/" className={`${navbar.link_style}`}>
                     Home
                   </Link>
                 </li>
-                <li>
+                <li className="hover:text-white hover:border rounded">
                   <Link href="/destination" className={`${navbar.link_style}`}>
                     Destination
                   </Link>
                 </li>
-                <li>
+                <li className="hover:text-white hover:border rounded">
                   <Link
                     href="/adventurestyles"
                     className={`${navbar.link_style}`}
@@ -163,22 +166,25 @@ const Header = () => {
                     Adventure
                   </Link>
                 </li>
-                <li>
+                <li className="hover:text-white hover:border rounded">
                   <Link href="/deals" className={`${navbar.link_style}`}>
                     Deals
                   </Link>
                 </li>
-                <li>
+                <li className="hover:text-white hover:border rounded">
                   <Link href="/blogs" className={`${navbar.link_style}`}>
                     Blogs
                   </Link>
                 </li>
-                <li>
+                <li className="hover:text-white hover:border rounded">
                   <Link href="/contact" className={`${navbar.link_style}`}>
                     Contact Us
                   </Link>
                 </li>
-                <li tabIndex={0}>
+                <li
+                  tabIndex={0}
+                  className="hover:text-white hover:border rounded"
+                >
                   <Link href="/register" className={`${navbar.link_style}`}>
                     Login | Register
                   </Link>
