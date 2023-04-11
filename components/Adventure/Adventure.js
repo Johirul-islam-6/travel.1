@@ -4,7 +4,7 @@ import { BiUser } from "react-icons/bi";
 const Adventure = ({ item }) => {
   return (
     <div>
-      <div className="card card-compact bg-slate-300 shadow-xl mr-3 ml-3 lg:ml-0">
+      <div className="card card-compact relative  bg-slate-100 shadow-xl pb-5 mx-10 lg:ml-0">
         <figure>
           {item.img ? (
             <Image
@@ -12,19 +12,17 @@ const Adventure = ({ item }) => {
               src={item.img}
               alt="adventure image"
               width={300}
-              className="h-[200px] w-full"
+              className="h-[200px] w-full scale-125 hover:scale-100 transition-transform duration-700 ease-in-out hover:brightness-50"
             />
           ) : (
-            <BiUser/>
+            <BiUser />
           )}
         </figure>
-        <div className="card-body">
-          <h2 className="text-2xl font-semibold text-slate-900 text-center">
-            {item.title}
-          </h2>
-          <p className="text-center text-slate-700 font-semibold text-sm">
+        <div className="card-body text-justify">
+          <h1 className="text-xl font-semibold  text-center">{item.title}</h1>
+          <h5 className="text-center text-lg text-slate-500">
             {item.description}
-          </p>
+          </h5>
         </div>
       </div>
     </div>
