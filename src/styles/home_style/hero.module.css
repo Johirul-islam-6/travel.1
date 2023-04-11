@@ -9,7 +9,9 @@ font-family: 'Poppins', sans-serif;
 font-family: 'PT Sans Narrow', sans-serif; */
 
 .heroBg {
+
     background-image: url("https://i.ibb.co/vdmYYQn/1.png");
+
     background-repeat: no-repeat;
     width: 100vw;
     background-size: cover;
