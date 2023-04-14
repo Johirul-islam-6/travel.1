@@ -76,6 +76,9 @@ const Header = () => {
               <Link href="/blogs">Blogs</Link>
             </li>
             <li>
+              <Link href="/about">About us</Link>
+            </li>
+            <li>
               <Link href="/contact">Contact Us</Link>
             </li>
             <li>

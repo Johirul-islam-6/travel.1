@@ -1,6 +1,7 @@
 import Hero from "../../components/Home/Hero";
 import FeatureService from "../../components/Home/Service/FeatureService/FeatureService";
 import Meta from "../../components/Meta";
+import Category from "./category";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       />
       <Hero />
       <FeatureService></FeatureService>
+      <Category></Category>
 
     </>
   );
