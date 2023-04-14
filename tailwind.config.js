@@ -12,4 +12,7 @@ module.exports = {
     extend: {},
   },
   plugins: [require("daisyui")],
+  variants: {
+    display: ["responsive", "group-hover", "group-focus"],
+  },
 };
