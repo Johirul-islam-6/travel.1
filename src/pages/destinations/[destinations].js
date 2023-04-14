@@ -3,6 +3,7 @@ import Adventures from "../../../components/Adventure/Adventures";
 import Slider from "../../../components/Destinations/Slider";
 import { useRouter } from "next/router";
 import DestinationProduct from "../../../components/Destinations/DestinationProduct";
+import FeatureService from "../../../components/Home/Service/FeatureService/FeatureService";
 
 const Destinations = () => {
   const router = useRouter();
