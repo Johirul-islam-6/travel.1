@@ -9,6 +9,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+
     container: {
       padding: {
         DEFAULT: '1rem',
@@ -18,7 +19,12 @@ module.exports = {
         '2xl': '6rem',
       },
     },
+
+
     extend: {},
   },
   plugins: [require("daisyui")],
+  variants: {
+    display: ["responsive", "group-hover", "group-focus"],
+  },
 };
