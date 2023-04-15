@@ -3,4 +3,9 @@ module.exports = {
     tailwindcss: {},
     autoprefixer: {},
   },
+  theme: {
+    fill: ({ theme }) => ({
+      gray: theme('colors.gray')
+    })
+  }
 }
