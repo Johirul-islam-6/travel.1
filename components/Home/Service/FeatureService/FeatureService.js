@@ -15,7 +15,7 @@ const FeatureService = () => {
       .then((data) => setData(data));
   }, []);
   useEffect(() => {
-    fetch("service.json")
+    fetch("location.json")
       .then((res) => res.json())
       .then((data) => setSdata(data));
   }, []);

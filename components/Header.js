@@ -9,6 +9,7 @@ import {
   FaUserAlt,
   FaUserLock,
 } from "react-icons/fa";
+import { BiMenu, IconName } from "react-icons/bi";
 import TopHeader from "./TopHeader";
 import navbar from "../src/styles/home_style/hero.module.css";
 
@@ -16,29 +17,18 @@ const Header = () => {
   return (
     <>
       <TopHeader />
-      <header className="w-[100%] justify-center bg-[#ffffffbb] flex mx-auto absolute ">
+      <header className="w-[100%] justify-center bg-[#ffffffe5] flex mx-auto absolute ">
         <div className="navbar w-[100%]">
           {/* <!-- -------- toggle left small size slider ------ --> */}
           <div className="dropdown dropdown-start lg:hidden">
-            <label tabindex="1" className="btn btn-ghost btn-circle avatar">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h7"
-                />
-              </svg>
+            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+              <div className="w-8 rounded-full">
+                <BiMenu className="w-8 h-8 text-[#000000] bg-base-300 p-2" />
+              </div>
             </label>
 
             <ul
-              tabindex="1"
+              tabIndex="1"
               className="menu menu-compact dropdown-content mt-3 bg-[#020202e7] rounded-box w-[70vw] md:w-[50vw] h-[90vh]"
             >
               travel
@@ -272,8 +262,11 @@ const Header = () => {
                   className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
                 >
                   <li>
-                    <a className="justify-between">Profile</a>
+                    <Link href="/userdashboard" className="justify-between">
+                      Profile
+                    </Link>
                   </li>
+
                   <li>
                     <a>Logout</a>
                   </li>
