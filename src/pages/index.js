@@ -3,8 +3,10 @@ import Contact from "../../components/Contact/Contact";
 import Hero from "../../components/Home/Hero";
 import Location from "../../components/Home/Location";
 import Opportunity from "../../components/Home/Opportunity";
-import FeatureService from "../../components/Home/Service/FeatureService/FeatureService";
 import Meta from "../../components/Meta";
+
+import Category from "./category";
+
 import Testimonial from "../../components/Testimonial/Testimonial";
 
 
@@ -17,11 +19,20 @@ const Home = () => {
         description="travel services"
       />
       <Hero />
+
+      <FeatureService></FeatureService>
+      <Category></Category>
+
+
       <Location />
       <Opportunity />
       <Adventures />
       <Testimonial />
       <Contact/>
+
+
+      <FeedbackForm/>
+
     </>
   );
 };

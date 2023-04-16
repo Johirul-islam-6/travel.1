@@ -159,3 +159,51 @@
     padding: 100px;
 }
 /* forget password code end */
+
+/* single page design code start */
+.MainImg{
+    height: 100%;
+}
+/* single page design code end */
+
+/* [plain] page code start */
+
+.transportBanner{
+    height: 420px;
+    width: 100%;
+}
+
+
+
+/* [plain] page code end */
+
+
+/* about page code start here */
+
+.aboutTopBanner{
+    background-image: url('../../components/Images/aboutblog.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.aboutMiddleBanner{
+    background-image: url('../../components/Images/aboutt\ \(1\).jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px; 
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* about page code start end */
+
+/* Blog description  pages code   */
+
+.BlogImg{
+    width: 100%;
+    padding: 100px 200px;
+    height: 100%;
+}
+/* Blog description  pages code   */
