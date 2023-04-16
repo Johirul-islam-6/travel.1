@@ -20,8 +20,8 @@ const Contact = () => {
   };
   return (
     <div className="py-20 bg-[#f8f8f8]">
-      <h2 className="text-6xl font-bold text-[#080250] mb-4">Contact Us</h2>
-      <h3 className="text-lg font-semibold text-[#0d0a2c]">
+      <h2 className="text-6xl font-bold text-[#080250] mb-4 text-center">Contact Us</h2>
+      <h3 className="text-lg font-semibold text-center text-[#0d0a2c]">
         Any Question or Remarks? Just write a message !
       </h3>
       <div className="grid grid-cols-1 lg:grid-cols-5 max-w-screen-xl m-auto bg-white shadow-2xl mt-20 rounded-xl">
