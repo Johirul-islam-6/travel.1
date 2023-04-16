@@ -49,7 +49,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/yn4dgNT/1.png"
+                        src="https://i.ibb.co/30dL9sc/paharpur.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
@@ -66,7 +66,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/HBbPgyf/New-Project-17.png"
+                        src="https://i.ibb.co/3ChF5Vs/mahasthangarh.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
@@ -83,7 +83,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/424Qvf4/New-Project-20.png"
+                        src="https://i.ibb.co/jVs1Lj7/Dinajpur.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
@@ -108,7 +108,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/wzyy0C1/New-Project-21.png"
+                        src="https://i.ibb.co/jLdXTLy/Dhaka-city.png"
                         alt="car"
                         className="w-full h-full rounded"
                       />
@@ -125,7 +125,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/HBbPgyf/New-Project-17.png"
+                        src="https://i.ibb.co/h833y0n/lalbagfort.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
@@ -142,7 +142,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/424Qvf4/New-Project-20.png"
+                        src="https://i.ibb.co/JvkZCjH/Ahsan-manjil.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
@@ -158,7 +158,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/424Qvf4/New-Project-20.png"
+                        src="https://i.ibb.co/X3bXrXS/panama-nagar.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
@@ -175,7 +175,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/424Qvf4/New-Project-20.png"
+                        src="https://i.ibb.co/jMWWFgV/sonarga.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
@@ -192,7 +192,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/424Qvf4/New-Project-20.png"
+                        src="https://i.ibb.co/jy0TxND/shalbon.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
@@ -217,7 +217,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/5WRYCZH/New-Project-9.png"
+                        src="https://i.ibb.co/Hdb3xJD/cox-bazar.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
@@ -234,7 +234,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/PNmSbrV/New-Project-25.png"
+                        src="https://i.ibb.co/t4GQwx8/teknaf.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
@@ -251,7 +251,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/424Qvf4/New-Project-20.png"
+                        src="https://i.ibb.co/YjQyzBF/Bandarban.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
@@ -268,7 +268,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/42KsrvH/New-Project-41.png"
+                        src="https://i.ibb.co/GnxNNRd/rangamati.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
@@ -293,7 +293,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/t2L5wKm/New-Project-37.png"
+                        src="https://i.ibb.co/hyVbmN9/tanguar-haor.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
@@ -310,7 +310,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/RT1w3qc/New-Project-34.png"
+                        src="https://i.ibb.co/bm7R1f8/shadapathor.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
@@ -327,7 +327,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/CwXPBNb/New-Project-31.png"
+                        src="https://i.ibb.co/C0C2DTn/zaflong.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
@@ -344,7 +344,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/j6cXw2Q/New-Project-28.png"
+                        src="https://i.ibb.co/516B2jq/sreemangal.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
@@ -369,7 +369,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/nmpN569/New-Project-2.png"
+                        src="https://i.ibb.co/rwHzHBp/shundarban.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
@@ -403,7 +403,7 @@ const Destination = () => {
                   <div>
                     <figure>
                       <img
-                        src="https://i.ibb.co/424Qvf4/New-Project-20.png"
+                        src="https://i.ibb.co/zZjKbf2/baberhat.png"
                         alt="car!"
                         className="w-full h-full rounded"
                       />
