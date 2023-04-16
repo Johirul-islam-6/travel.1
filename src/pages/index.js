@@ -1,6 +1,5 @@
 import Adventures from "../../components/Adventure/Adventures";
 import Contact from "../../components/Contact/Contact";
-import FeedbackForm from "../../components/FeedbackForm/FeedbackForm";
 import Hero from "../../components/Home/Hero";
 import Location from "../../components/Home/Location";
 import Opportunity from "../../components/Home/Opportunity";
@@ -30,6 +29,8 @@ const Home = () => {
       <Adventures />
       <Testimonial />
       <Contact/>
+
+
       <FeedbackForm/>
 
     </>
