@@ -1,0 +1,51 @@
+
+[
+    {   "id": 1,
+        "img":"https://i.ibb.co/TPkwKm2/first.jpg",
+        "title": "The Palace",
+        "description": "Come lose yourself in the largest resort in Bangladesh in the heart of breathtaking pristine nature. Indulge in a regal experience."
+
+    },
+    {   
+        "id": 2,
+        "img":"https://i.ibb.co/q7nW1j6/second.jpg",
+        "title": "Sajek Valley",
+        "description": "Sajek Valley is a popular tourist destination in Bangladesh known for its scenic beauty, trekking trails, and vibrant culture."
+
+    },
+    {   
+        "id": 3,
+        "img":"https://i.ibb.co/yYBkmVm/third.jpg",
+        "title": "Bandarban",
+        "description": "Bandarban is a picturesque hill district in Bangladesh, renowned for its lush green forests, majestic waterfalls communities."
+
+    },
+    {   
+        "id": 4,
+        "img":"https://i.ibb.co/tMk4972/fourth.jpg",
+        "title": "Nilachal Bandarban",
+        "description": "Nilachal in Bandarban is a beautiful place which views of the surrounding hills and valleys, and is a must-visit destination"
+
+    },
+    {   
+        "id": 5,
+        "img":"https://i.ibb.co/mHYnMWg/fifth.jpg",
+        "title": "Sundarban Place",
+        "description": "The exciting events in the Sundarbans tour are hiking in the deep forest, country boat cruising, bird watching, night safari"
+
+    },
+    {   
+        "id": 6,
+        "img":"https://i.ibb.co/FDSgFH1/sixth.jpg",
+        "title": "Cox's Bazar",
+        "description": "The top attractions to visit in Cox's Bazar are: Cox's Bazar Beach, Inani Beach, Marine Drive, Himchori"
+
+    },
+    {   
+        "id": 7,
+        "img":"https://i.ibb.co/1rWszPp/Ratargul-Swamp-Forest-Sylhet-Bangladesh.jpg",
+        "title": "Sylhet Swamp Forest",
+        "description": " Ratargul Swamp Forest is a little Pantanal in Bangladesh. It is also called as Amazon of Bangladesh or Deshi Amazon"
+
+    }
+]
