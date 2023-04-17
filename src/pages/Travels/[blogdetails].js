@@ -18,8 +18,8 @@ const Blogdetails = () => {
     },[id])
 
     return (
-        <div className="container mx-auto py-5">
-            <div>
+        <div className="container mx-auto py-12">
+            <div className="py-12 mt-6">
                 <h2 className="text-center text-xl font-bold">{single?.title}</h2>
                 <p className="text-left">{single?.description?.slice(0,100)}</p>
                 <img className={styles.BlogImg} src={single?.img}></img>
