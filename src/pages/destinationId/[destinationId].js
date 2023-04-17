@@ -339,7 +339,7 @@ const SingleDestination = () => {
                   </div>
                 </div>
               </div>
-              <Link href="/">
+              <Link href="/comment">
                 <div className="bg-[#3264FF] inline-block p-2 lg:p-3 text-white text-md lg:text-xl ">
                   <h1>Write a Review</h1>
                 </div>
