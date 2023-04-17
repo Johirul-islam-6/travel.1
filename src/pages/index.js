@@ -9,9 +9,9 @@ const Home = () => {
   return (
     <>
       <Meta
-        title="Travel Xone"
-        keywords="travel"
-        description="travel services"
+        title="Home"
+        keyword="tour, travel"
+        description="Travelxone home page"
       />
       <Hero />
       <Location />
