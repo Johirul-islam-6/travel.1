@@ -8,7 +8,7 @@ const [message,setMessage] = useState()
 { console.log( process.env.HOST )   }
 const handleClick = (e)=>{
   e.preventDefault();
-  console.log(socket )
+  // console.log(socket )
   // socket.emit('chat',{message})
   // socket.on('chat',(load)=>{
   //   console.log( load)
