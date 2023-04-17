@@ -31,14 +31,17 @@ const Adventures = () => {
     },
   };
   return (
-    <div className={styles.adventure}>
+    <div className={`${styles.adventure} py-20 `}>
       <div className=" m-auto max-w-screen-xl">
-        <h2 className="text-xl font-bold text-center text-sky-400">
-          What We are Offering
-        </h2>
-        <h1 className="text-2xl font-semibold mb-10 text-white text-center">
-          Feel real adventure and very close to nature
-        </h1>
+        {/*----- section header -----*/}
+        <div className="text-center pb-6 md:pb-10 lg:pb-10">
+          <h5 className="text-[#627FF4] font-bold">ADVENTURE OFFER</h5>
+          <div className="divider w-[30px] mx-auto my-1 bg-[#1751E4] h-1"></div>
+          <h1 className="font-bold text-white text-2xl md:text-4xl lg:text-4xl">
+            feel real adventure
+          </h1>
+        </div>
+        {/*----- section header -----*/}
         <Carousel responsive={responsive}>
           {jsonData.map((item) => (
             <Adventure key={item.id} item={item}></Adventure>

@@ -1,44 +1,247 @@
+import Link from "next/link";
+import styles from "../src/styles/#footer.module.css";
+import { BsFacebook } from "react-icons/bs";
+import { AiFillTwitterCircle, AiOutlineInstagram } from "react-icons/ai";
+import { FaPinterest } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <>
-      <footer className="footer p-10 bg-black-200 text-base-content">
-        <div>
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            fillRule="evenodd"
-            clipRule="evenodd"
-            className="fill-current"
-          >
-            <path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
-          </svg>
-          <p>
-            ACME Industries Ltd.
-            <br />
-            Providing reliable tech since 1992
+      <footer>
+        {/* -----------1st Layer----------- */}
+        <div className="lg:flex justify-between  bg-slate-900 text-white w-full px-10 lg:px-20 py-5 items-center">
+          <div>
+            <p className="text-left">Payment Methods</p>
+            <div className="flex w-[100%] gap-2">
+              <img src="https://i.ibb.co/ZNdCyFB/Rectangle-66.png" />
+              <img src="https://i.ibb.co/s5V1kc4/Rectangle-67.png" />
+              <img src="https://i.ibb.co/1bd2yx2/Rectangle-65.png" />
+              <img src="https://i.ibb.co/3r7KmxF/Rectangle-68.png" />
+            </div>
+          </div>
+          <div className="pt-5 md:pt-5 lg:pt-0">
+            <p className="text-left font-light">
+              Subscribe to get our latest update
+            </p>
+            <div className="flex justify-start lg:justify-end pt-1">
+              <input
+                type="text"
+                id="subscribe"
+                name="subscribe"
+                placeholder="Enter your email address"
+                className="px-2 py-2 text-slate-500 text-sm border"
+              />
+              <input
+                type="submit"
+                value="Subscribe"
+                className="bg-[#3264FF] text-sm p-2 border"
+              ></input>
+            </div>
+          </div>
+        </div>
+
+        {/* -----------2nd Layer----------- */}
+        <div className="lg:flex justify-between px-10 lg:px-20 py-10 bg-black text-slate-500 text-left">
+          <div className="text-left lg:text-center w-full md:w-[45git%] lg:w-[20%]">
+            <Link href="/" className="cursor-pointer ">
+              <img
+                src="https://i.ibb.co/nMFwjww/foorer-logo.png"
+                className="w-[100%] mx-auto"
+              />
+            </Link>
+            <p>
+              TRAVEL.XONE.COM
+              <br />
+              We provide reliable tourist services in Bangladesh
+            </p>
+          </div>
+          <div className="text-start justify-start pt-5 lg:pt-0">
+            <p className="footer-title">CONTACTS</p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                250 Main Street, Mirpur, Dhaka
+              </Link>
+            </p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                Phone: +880123456789
+              </Link>
+            </p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                travelxone@gmail.com
+              </Link>
+            </p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                Corporate contact
+              </Link>
+            </p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                Sustainability
+              </Link>
+            </p>
+          </div>
+          <div className="pt-5 lg:pt-0">
+            <p className="footer-title">SUPPORT</p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                Help Center
+              </Link>
+            </p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                Our COVID-19 Response
+              </Link>
+            </p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                Cancellation options
+              </Link>
+            </p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                Safety information
+              </Link>
+            </p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                Places of interest
+              </Link>
+            </p>
+          </div>
+          <div className="pt-5 lg:pt-0">
+            <p className="footer-title">MY ACCOUNT</p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                Login
+              </Link>
+            </p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                Order History
+              </Link>
+            </p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                My Wish list
+              </Link>
+            </p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                Track Order
+              </Link>
+            </p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                Be an affiliate partner
+              </Link>
+            </p>
+          </div>
+          <div className="pt-5 lg:pt-0">
+            <p className="footer-title">QUICK LINKS</p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                Support Policy Page
+              </Link>
+            </p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                Return Policy Page
+              </Link>
+            </p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                About Us
+              </Link>
+            </p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                Privacy Policy Page
+              </Link>
+            </p>
+            <p>
+              <Link
+                href="#"
+                className="hover:underline hover:text-indigo-200 text-sm font-light"
+              >
+                Term Conditions Page
+              </Link>
+            </p>
+          </div>
+        </div>
+
+        {/* -----------3rd Layer----------- */}
+        <div
+          className={`${styles.top_border} bg-black py-3 px-10 lg:px-20 block lg:flex items-center justify-between`}
+        >
+          <p className="text-xs text-slate-400">
+            © 2023 Copyrights by TRAVEL.XONE. All Rights Reserved
           </p>
-        </div>
-        <div>
-          <span className="footer-title">Services</span>
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
-        </div>
-        <div>
-          <span className="footer-title">Company</span>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
-        </div>
-        <div>
-          <span className="footer-title">Legal</span>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
+          <div className="flex gap-2 items-center text-md lg:text-2xl  pt-2 lg:pt-0">
+            <BsFacebook className="text-slate-400 cursor-pointer hover:text-[#026fc8]" />
+            <AiOutlineInstagram className="text-slate-400 cursor-pointer hover:text-[#026fc8]" />
+            <FaPinterest className="text-slate-400 cursor-pointer hover:text-[#026fc8]" />
+            <AiFillTwitterCircle className="text-slate-400 cursor-pointer hover:text-[#026fc8]" />
+          </div>
         </div>
       </footer>
     </>
