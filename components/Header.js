@@ -42,23 +42,23 @@ const Header = () => {
                 <div className="divide-gray-700 pt-6 relative z-50">
                   <ul>
                     <li className="hover:bg-[#0458c6]">
-                      <a
+                      <Link
                         rel="noopener noreferrer"
                         href="/"
                         className={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
                       >
                         <FaHome />
                         <span>Home</span>
-                      </a>
+                      </Link>
                     </li>
                     <li className="hover:bg-[#0458c6] mt-1">
                       <a
                         rel="noopener noreferrer"
-                        href="/adventurestyles"
+                        href="/restaurants"
                         className={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
                       >
                         <FaAirbnb />
-                        <span>Adventure</span>
+                        <span>Restaurants</span>
                       </a>
                     </li>
                     <li className="hover:bg-[#0458c6] mt-1">
@@ -74,11 +74,11 @@ const Header = () => {
                     <li className="hover:bg-[#0458c6] mt-1">
                       <a
                         rel="noopener noreferrer"
-                        href="/deals"
+                        href="/transport"
                         className={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
                       >
                         <FaDochub />
-                        <span>Deals</span>
+                        <span>Transport</span>
                       </a>
                     </li>
                     <li className="hover:bg-[#0458c6] mt-1">
@@ -106,39 +106,6 @@ const Header = () => {
               </div>
             </ul>
           </div>
-
-
-          {/* For Desktop view */}
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
-        </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/destination">Destination</Link>
-            </li>
-            <li>
-              <Link href="/adventurestyles">Adventure Styles</Link>
-            </li>
-            <li>
-              <Link href="/deals">Deals</Link>
-            </li>
-            <li>
-              <Link href="/blogs">Blogs</Link>
-            </li>
-            <li>
-              <Link href="/about">About us</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact Us</Link>
-            </li>
-            <li>
-              <Link href="/register">Log In / Register</Link>
-            </li>
-          </ul>
-        </div>
 
           {/* <!-- -----only small size navbar----- --> */}
           <div className="flex-1 flex justify-start relative lg:hidden navbar-center pl-2">
@@ -169,7 +136,6 @@ const Header = () => {
               </Link>
             </div>
 
-
             <div className="navbar-cente flex justify-center text-slate-600 ">
               <ul className="menu menu-horizontal px-1">
                 <li className="hover:text-white hover:border rounded">
@@ -183,16 +149,13 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="hover:text-white hover:border rounded">
-                  <Link
-                    href="/adventurestyles"
-                    className={`${navbar.link_style}`}
-                  >
-                    Adventure
+                  <Link href="/restaurants" className={`${navbar.link_style}`}>
+                    Restaurants
                   </Link>
                 </li>
                 <li className="hover:text-white hover:border rounded">
-                  <Link href="/deals" className={`${navbar.link_style}`}>
-                    Deals
+                  <Link href="/transport" className={`${navbar.link_style}`}>
+                    Transport
                   </Link>
                 </li>
                 <li className="hover:text-white hover:border rounded">

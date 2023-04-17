@@ -22,12 +22,12 @@ const Location = () => {
           <div className="block md:flex lg:flex px-10 lg:px-0">
             <div className="w-full md:w-[131%] lg:max-w-[33.3%] group relative">
               <img src="https://i.ibb.co/ByXW3K0/location10.png" />
-              <div class={`${overlayClass}`}>
+              <div className={`${overlayClass}`}>
                 <Link
                   href="/destinations/North_West_Region"
                   className="cursor-pointer"
                 >
-                  <h1 class="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
+                  <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
                     North West Region
                   </h1>
                 </Link>
@@ -38,25 +38,25 @@ const Location = () => {
               <div className="flex">
                 <div className="group relative">
                   <img src="https://i.ibb.co/JnXHGqk/Ahasan-manjill.png" />
-                  <div class={`${overlayClass}`}>
-                    <Link
-                      href="/destinations/Capital_and_Central_Region"
-                      className="cursor-pointer"
-                    >
-                      <h1 class="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
+                  <Link
+                    href="/destinations/Capital_and_Central_Region"
+                    className="cursor-pointer"
+                  >
+                    <div className={`${overlayClass}`}>
+                      <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
                         Central Region
                       </h1>
-                    </Link>
-                  </div>
+                    </div>
+                  </Link>
                 </div>
                 <div className="group relative">
                   <img src="https://i.ibb.co/yq1cb38/cox-bazer.png" />
-                  <div class={`${overlayClass}`}>
+                  <div className={`${overlayClass}`}>
                     <Link
                       href="/destinations/South_East_Region"
                       className="cursor-pointer"
                     >
-                      <h1 class="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
+                      <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
                         South East Region
                       </h1>
                     </Link>
@@ -66,12 +66,12 @@ const Location = () => {
               <div className="flex">
                 <div className="group relative">
                   <img src="https://i.ibb.co/DQz7210/jaflong.png" />
-                  <div class={`${overlayClass}`}>
+                  <div className={`${overlayClass}`}>
                     <Link
                       href="/destinations/North_East_Region"
                       className="cursor-pointer"
                     >
-                      <h1 class="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
+                      <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
                         North East Region
                       </h1>
                     </Link>
@@ -79,12 +79,12 @@ const Location = () => {
                 </div>
                 <div className="group relative">
                   <img src="https://i.ibb.co/zxmNYFc/Sundarban.png" />
-                  <div class={`${overlayClass}`}>
+                  <div className={`${overlayClass}`}>
                     <Link
                       href="/destinations/South_West_Region"
                       className="cursor-pointer"
                     >
-                      <h1 class="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
+                      <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
                         South West Region
                       </h1>
                     </Link>

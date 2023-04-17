@@ -1,20 +1,29 @@
 import classNames from "classnames";
 import Link from "next/link";
+import styles from "../styles/destination.module.css";
+import Meta from "../../components/Meta";
 
 const Destination = () => {
   const regionHeader = classNames(
-    "text-center text-2xl lg:text-2xl bg-[#899ff7] w-1/3 text-white rounded py-1 hover:bg-white hover:border hover:text-slate-900"
+    "text-center text-xl lg:text-2xl bg-[#1751E4] w-9/12 md:w-5/12 lg:w-1/3 text-white rounded py-1 hover:bg-white hover:border hover:text-slate-900"
   );
   return (
     <>
+      <Meta
+        title="Destination"
+        keyword="tour, travel"
+        description="Bangladesh Tour Locations"
+      />
       <section>
         <div className="bg-[url('https://i.ibb.co/nkNGLdF/banner.png')] bg-no-repeat bg-cover bg-left-bottom pt-32 lg:pt-40 pb-4">
           <h1 className="text-2xl lg:text-5xl  font-bold text-white pl-10 lg:pl-20">
             Destination
           </h1>
         </div>
-        <div className="block md:flex lg:flex gap-10 px-10 lg:px-20 mx-auto py-5 md:py-16 lg:py-16">
-          <div className="max-w-full md:max-w-[30%] lg:max-w-[25%] shadow-md px-6 py-5">
+        <div
+          className={`${styles.hover14} block lg:flex gap-10 px-10 lg:px-20 mx-auto py-5 md:py-16 lg:py-16`}
+        >
+          <div className="max-w-full lg:max-w-[25%] shadow-md px-6 py-2 lg:py-5">
             <h1 className="text-lg lg:text-2xl font-bold">
               Tourist Attractions of Bangladesh
             </h1>
@@ -37,18 +46,20 @@ const Destination = () => {
           </div>
           <div>
             {/* ------- Single Region -------- */}
-            <div className="pb-8 ">
+            <div className="pb-5 pt-5 lg:pt-0">
               <h2 className={`${regionHeader}`}>North West Region</h2>
               <div className="divider"></div>
-              <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-16">
+              <div>
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/YZYxGJ6/New-Project-13.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/30dL9sc/paharpur.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="/destinations/1">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -57,13 +68,15 @@ const Destination = () => {
                   </Link>
                 </div>
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/HBbPgyf/New-Project-17.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/3ChF5Vs/mahasthangarh.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -72,13 +85,15 @@ const Destination = () => {
                   </Link>
                 </div>
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/424Qvf4/New-Project-20.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/jVs1Lj7/Dinajpur.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -90,18 +105,20 @@ const Destination = () => {
             </div>
             {/* ------- Single Region -------- */}
             {/* ------- Single Region -------- */}
-            <div className="pb-8">
+            <div>
               <h2 className={`${regionHeader}`}>Capital and Central Region</h2>
               <div className="divider"></div>
-              <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-16">
+              <div className="pb-5">
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/wzyy0C1/New-Project-21.png"
-                      alt="car"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/jLdXTLy/Dhaka-city.png"
+                        alt="car"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -110,13 +127,15 @@ const Destination = () => {
                   </Link>
                 </div>
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/HBbPgyf/New-Project-17.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/h833y0n/lalbagfort.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -125,13 +144,15 @@ const Destination = () => {
                   </Link>
                 </div>
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/424Qvf4/New-Project-20.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/JvkZCjH/Ahsan-manjil.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -139,13 +160,15 @@ const Destination = () => {
                     </h1>
                   </Link>
                 </div>
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/424Qvf4/New-Project-20.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/X3bXrXS/panama-nagar.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -154,13 +177,15 @@ const Destination = () => {
                   </Link>
                 </div>
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/424Qvf4/New-Project-20.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/jMWWFgV/sonarga.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -169,13 +194,15 @@ const Destination = () => {
                   </Link>
                 </div>
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/424Qvf4/New-Project-20.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/jy0TxND/shalbon.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -187,18 +214,20 @@ const Destination = () => {
             </div>
             {/* ------- Single Region -------- */}
             {/* ------- Single Region -------- */}
-            <div className="pb-8">
+            <div className="pb-5">
               <h2 className={`${regionHeader}`}>South East Region</h2>
               <div className="divider"></div>
-              <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-16">
+              <div className="pb-5">
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/5WRYCZH/New-Project-9.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/Hdb3xJD/cox-bazar.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -207,13 +236,15 @@ const Destination = () => {
                   </Link>
                 </div>
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/PNmSbrV/New-Project-25.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/t4GQwx8/teknaf.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -222,13 +253,15 @@ const Destination = () => {
                   </Link>
                 </div>
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/424Qvf4/New-Project-20.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/YjQyzBF/Bandarban.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -237,13 +270,15 @@ const Destination = () => {
                   </Link>
                 </div>
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/42KsrvH/New-Project-41.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/GnxNNRd/rangamati.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -255,18 +290,20 @@ const Destination = () => {
             </div>
             {/* ------- Single Region -------- */}
             {/* ------- Single Region -------- */}
-            <div className="pb-8">
+            <div className="pb-5">
               <h2 className={`${regionHeader}`}>North East Region</h2>
               <div className="divider"></div>
-              <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-16">
+              <div className="pb-5">
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/t2L5wKm/New-Project-37.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/hyVbmN9/tanguar-haor.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -275,13 +312,15 @@ const Destination = () => {
                   </Link>
                 </div>
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/RT1w3qc/New-Project-34.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/bm7R1f8/shadapathor.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -290,13 +329,15 @@ const Destination = () => {
                   </Link>
                 </div>
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/CwXPBNb/New-Project-31.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/C0C2DTn/zaflong.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -305,13 +346,15 @@ const Destination = () => {
                   </Link>
                 </div>
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/j6cXw2Q/New-Project-28.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/516B2jq/sreemangal.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -323,18 +366,20 @@ const Destination = () => {
             </div>
             {/* ------- Single Region -------- */}
             {/* ------- Single Region -------- */}
-            <div className="pb-8">
+            <div className="pb-5">
               <h2 className={`${regionHeader}`}>South West Region</h2>
               <div className="divider"></div>
-              <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-16">
+              <div>
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/nmpN569/New-Project-2.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/rwHzHBp/shundarban.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -343,13 +388,15 @@ const Destination = () => {
                   </Link>
                 </div>
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/x3h8Fhf/New-Project-5.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/yn4dgNT/1.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">
@@ -358,13 +405,15 @@ const Destination = () => {
                   </Link>
                 </div>
                 {/* ------ All place cards----- */}
-                <div className=" border hover:shadow-lg hover:border-none p-3 rounded">
+                <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
-                    <img
-                      src="https://i.ibb.co/424Qvf4/New-Project-20.png"
-                      alt="car!"
-                      className="w-full h-full rounded"
-                    />
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/zZjKbf2/baberhat.png"
+                        alt="car!"
+                        className="w-full h-full rounded"
+                      />
+                    </figure>
                   </div>
                   <Link href="">
                     <h1 className="text-center text-lg hover:text-[#627FF4] pt-2">

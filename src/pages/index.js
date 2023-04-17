@@ -1,38 +1,23 @@
 import Adventures from "../../components/Adventure/Adventures";
-import Contact from "../../components/Contact/Contact";
 import Hero from "../../components/Home/Hero";
 import Location from "../../components/Home/Location";
 import Opportunity from "../../components/Home/Opportunity";
 import Meta from "../../components/Meta";
-
-import Category from "./category";
-
 import Testimonial from "../../components/Testimonial/Testimonial";
-
 
 const Home = () => {
   return (
     <>
       <Meta
-        title="Travel Xone"
-        keywords="travel"
-        description="travel services"
+        title="Home"
+        keyword="tour, travel"
+        description="Travelxone home page"
       />
       <Hero />
-
-      <FeatureService></FeatureService>
-      <Category></Category>
-
-
       <Location />
       <Opportunity />
       <Adventures />
       <Testimonial />
-      <Contact/>
-
-
-      <FeedbackForm/>
-
     </>
   );
 };
