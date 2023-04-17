@@ -82,8 +82,8 @@ const DestinationProduct = () => {
                       Hotel Stay Guarantee
                     </p>
                   </div>
-                </div>
-              </div>
+                </div >
+              </div >
               {/*------- features property ------- */}
               {/*------- Location Button Start ------- */}
               <div className="flex-wrap md:flex lg:flex gap-5 mt-2">
@@ -113,7 +113,7 @@ const DestinationProduct = () => {
                       <h1 className="text-slate-100">
                         TK <span className="text-lg">8000</span>
                       </h1>
-                      <Link href="/destinationId/1">
+                      <Link href={`/destinationId/1`}>
                         <button className={`${bookNowButton}`}>Book Now</button>
                       </Link>
                     </div>
@@ -158,9 +158,443 @@ const DestinationProduct = () => {
                             </p>
                           </div>
                         </div>
-                      </div>
+                      </div >
+                    </div >
+                  </div >
+                  {/*------- Single package End------- */}
+                  {/*------- Single package Start------- */}
+                  <div className="card bg-base-100 shadow-xl">
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/dQsMpD2/New-Project-2023-04-10-T004719-405.png"
+                        alt="Shoes"
+                        className="scale-100 hover:scale-125 transition-transform duration-700 ease-in-out"
+                      />
+                    </figure>
+                    <div className="w-full card-actions items-center justify-between bg-slate-950 pl-2">
+                      <h1 className="text-slate-100">
+                        TK <span className="text-lg">8000</span>
+                      </h1>
+                      <Link href="">
+                        <button className={`${bookNowButton}`}>Book Now</button>
+                      </Link>
                     </div>
-                  </div>
+                    <div className="px-4 pt-4 pb-7">
+                      <p className=" text-lg lg:text-xl font-semibold text-[#48484d]">
+                        Hotel Sarina Dhaka
+                      </p>
+                      <h2 className=" text-lg text-slate-600 py-1">
+                        Hotel Sarina Dhaka offers everything that a Business
+                      </h2>
+                      <div>
+                        <div className="flex justify-between">
+                          <div className="flex gap-2 items-center text-sm">
+                            <BiLocationPlus className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">Dhaka</p>
+                          </div>
+                          <div className="flex gap-2 items-center text-sm pr-4">
+                            <AiOutlineClockCircle className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">
+                              <span className="text-slate-950 font-bold">
+                                3{" "}
+                              </span>
+                              Days
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex justify-between">
+                          <div className="flex gap-0 items-center">
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                          </div>
+                          <div className="flex gap-2 items-center text-sm">
+                            <AiOutlineUser className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">
+                              <span className="text-slate-950 font-bold">
+                                2{" "}
+                              </span>
+                              Peoples
+                            </p>
+                          </div>
+                        </div>
+                      </div >
+                    </div >
+                  </div >
+                  {/*------- Single package End------- */}
+                  {/*------- Single package Start------- */}
+                  <div className="card bg-base-100 shadow-xl">
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/dQsMpD2/New-Project-2023-04-10-T004719-405.png"
+                        alt="Shoes"
+                        className="scale-100 hover:scale-125 transition-transform duration-700 ease-in-out"
+                      />
+                    </figure>
+                    <div className="w-full card-actions items-center justify-between bg-slate-950 pl-2">
+                      <h1 className="text-slate-100">
+                        TK <span className="text-lg">8000</span>
+                      </h1>
+                      <Link href="">
+                        <button className={`${bookNowButton}`}>Book Now</button>
+                      </Link>
+                    </div>
+                    <div className="px-4 pt-4 pb-7">
+                      <p className=" text-lg lg:text-xl font-semibold text-[#48484d]">
+                        Hotel Sarina Dhaka
+                      </p>
+                      <h2 className=" text-lg text-slate-600 py-1">
+                        Hotel Sarina Dhaka offers everything that a Business
+                      </h2>
+                      <div>
+                        <div className="flex justify-between">
+                          <div className="flex gap-2 items-center text-sm">
+                            <BiLocationPlus className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">Dhaka</p>
+                          </div>
+                          <div className="flex gap-2 items-center text-sm pr-4">
+                            <AiOutlineClockCircle className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">
+                              <span className="text-slate-950 font-bold">
+                                3{" "}
+                              </span>
+                              Days
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex justify-between">
+                          <div className="flex gap-0 items-center">
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                          </div>
+                          <div className="flex gap-2 items-center text-sm">
+                            <AiOutlineUser className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">
+                              <span className="text-slate-950 font-bold">
+                                2{" "}
+                              </span>
+                              Peoples
+                            </p>
+                          </div>
+                        </div>
+                      </div >
+                    </div >
+                  </div >
+                  {/*------- Single package End------- */}
+                  {/*------- Single package Start------- */}
+                  <div className="card bg-base-100 shadow-xl">
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/dQsMpD2/New-Project-2023-04-10-T004719-405.png"
+                        alt="Shoes"
+                        className="scale-100 hover:scale-125 transition-transform duration-700 ease-in-out"
+                      />
+                    </figure>
+                    <div className="w-full card-actions items-center justify-between bg-slate-950 pl-2">
+                      <h1 className="text-slate-100">
+                        TK <span className="text-lg">8000</span>
+                      </h1>
+                      <Link href="">
+                        <button className={`${bookNowButton}`}>Book Now</button>
+                      </Link>
+                    </div>
+                    <div className="px-4 pt-4 pb-7">
+                      <p className=" text-lg lg:text-xl font-semibold text-[#48484d]">
+                        Hotel Sarina Dhaka
+                      </p>
+                      <h2 className=" text-lg text-slate-600 py-1">
+                        Hotel Sarina Dhaka offers everything that a Business
+                      </h2>
+                      <div>
+                        <div className="flex justify-between">
+                          <div className="flex gap-2 items-center text-sm">
+                            <BiLocationPlus className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">Dhaka</p>
+                          </div>
+                          <div className="flex gap-2 items-center text-sm pr-4">
+                            <AiOutlineClockCircle className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">
+                              <span className="text-slate-950 font-bold">
+                                3{" "}
+                              </span>
+                              Days
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex justify-between">
+                          <div className="flex gap-0 items-center">
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                          </div>
+                          <div className="flex gap-2 items-center text-sm">
+                            <AiOutlineUser className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">
+                              <span className="text-slate-950 font-bold">
+                                2{" "}
+                              </span>
+                              Peoples
+                            </p>
+                          </div>
+                        </div>
+                      </div >
+                    </div >
+                  </div >
+                  {/*------- Single package End------- */}
+                  {/*------- Single package Start------- */}
+                  <div className="card bg-base-100 shadow-xl">
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/dQsMpD2/New-Project-2023-04-10-T004719-405.png"
+                        alt="Shoes"
+                        className="scale-100 hover:scale-125 transition-transform duration-700 ease-in-out"
+                      />
+                    </figure>
+                    <div className="w-full card-actions items-center justify-between bg-slate-950 pl-2">
+                      <h1 className="text-slate-100">
+                        TK <span className="text-lg">8000</span>
+                      </h1>
+                      <Link href="">
+                        <button className={`${bookNowButton}`}>Book Now</button>
+                      </Link>
+                    </div>
+                    <div className="px-4 pt-4 pb-7">
+                      <p className=" text-lg lg:text-xl font-semibold text-[#48484d]">
+                        Hotel Sarina Dhaka
+                      </p>
+                      <h2 className=" text-lg text-slate-600 py-1">
+                        Hotel Sarina Dhaka offers everything that a Business
+                      </h2>
+                      <div>
+                        <div className="flex justify-between">
+                          <div className="flex gap-2 items-center text-sm">
+                            <BiLocationPlus className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">Dhaka</p>
+                          </div>
+                          <div className="flex gap-2 items-center text-sm pr-4">
+                            <AiOutlineClockCircle className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">
+                              <span className="text-slate-950 font-bold">
+                                3{" "}
+                              </span>
+                              Days
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex justify-between">
+                          <div className="flex gap-0 items-center">
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                          </div>
+                          <div className="flex gap-2 items-center text-sm">
+                            <AiOutlineUser className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">
+                              <span className="text-slate-950 font-bold">
+                                2{" "}
+                              </span>
+                              Peoples
+                            </p>
+                          </div>
+                        </div>
+                      </div >
+                    </div >
+                  </div >
+                  {/*------- Single package End------- */}
+                  {/*------- Single package Start------- */}
+                  <div className="card bg-base-100 shadow-xl">
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/dQsMpD2/New-Project-2023-04-10-T004719-405.png"
+                        alt="Shoes"
+                        className="scale-100 hover:scale-125 transition-transform duration-700 ease-in-out"
+                      />
+                    </figure>
+                    <div className="w-full card-actions items-center justify-between bg-slate-950 pl-2">
+                      <h1 className="text-slate-100">
+                        TK <span className="text-lg">8000</span>
+                      </h1>
+                      <Link href="">
+                        <button className={`${bookNowButton}`}>Book Now</button>
+                      </Link>
+                    </div>
+                    <div className="px-4 pt-4 pb-7">
+                      <p className=" text-lg lg:text-xl font-semibold text-[#48484d]">
+                        Hotel Sarina Dhaka
+                      </p>
+                      <h2 className=" text-lg text-slate-600 py-1">
+                        Hotel Sarina Dhaka offers everything that a Business
+                      </h2>
+                      <div>
+                        <div className="flex justify-between">
+                          <div className="flex gap-2 items-center text-sm">
+                            <BiLocationPlus className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">Dhaka</p>
+                          </div>
+                          <div className="flex gap-2 items-center text-sm pr-4">
+                            <AiOutlineClockCircle className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">
+                              <span className="text-slate-950 font-bold">
+                                3{" "}
+                              </span>
+                              Days
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex justify-between">
+                          <div className="flex gap-0 items-center">
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                          </div>
+                          <div className="flex gap-2 items-center text-sm">
+                            <AiOutlineUser className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">
+                              <span className="text-slate-950 font-bold">
+                                2{" "}
+                              </span>
+                              Peoples
+                            </p>
+                          </div>
+                        </div>
+                      </div >
+                    </div >
+                  </div >
+                  {/*------- Single package End------- */}
+                  {/*------- Single package Start------- */}
+                  <div className="card bg-base-100 shadow-xl">
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/dQsMpD2/New-Project-2023-04-10-T004719-405.png"
+                        alt="Shoes"
+                        className="scale-100 hover:scale-125 transition-transform duration-700 ease-in-out"
+                      />
+                    </figure>
+                    <div className="w-full card-actions items-center justify-between bg-slate-950 pl-2">
+                      <h1 className="text-slate-100">
+                        TK <span className="text-lg">8000</span>
+                      </h1>
+                      <Link href="">
+                        <button className={`${bookNowButton}`}>Book Now</button>
+                      </Link>
+                    </div>
+                    <div className="px-4 pt-4 pb-7">
+                      <p className=" text-lg lg:text-xl font-semibold text-[#48484d]">
+                        Hotel Sarina Dhaka
+                      </p>
+                      <h2 className=" text-lg text-slate-600 py-1">
+                        Hotel Sarina Dhaka offers everything that a Business
+                      </h2>
+                      <div>
+                        <div className="flex justify-between">
+                          <div className="flex gap-2 items-center text-sm">
+                            <BiLocationPlus className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">Dhaka</p>
+                          </div>
+                          <div className="flex gap-2 items-center text-sm pr-4">
+                            <AiOutlineClockCircle className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">
+                              <span className="text-slate-950 font-bold">
+                                3{" "}
+                              </span>
+                              Days
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex justify-between">
+                          <div className="flex gap-0 items-center">
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                          </div>
+                          <div className="flex gap-2 items-center text-sm">
+                            <AiOutlineUser className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">
+                              <span className="text-slate-950 font-bold">
+                                2{" "}
+                              </span>
+                              Peoples
+                            </p>
+                          </div>
+                        </div>
+                      </div >
+                    </div >
+                  </div >
+                  {/*------- Single package End------- */}
+                  {/*------- Single package Start------- */}
+                  <div className="card bg-base-100 shadow-xl">
+                    <figure>
+                      <img
+                        src="https://i.ibb.co/dQsMpD2/New-Project-2023-04-10-T004719-405.png"
+                        alt="Shoes"
+                        className="scale-100 hover:scale-125 transition-transform duration-700 ease-in-out"
+                      />
+                    </figure>
+                    <div className="w-full card-actions items-center justify-between bg-slate-950 pl-2">
+                      <h1 className="text-slate-100">
+                        TK <span className="text-lg">8000</span>
+                      </h1>
+                      <Link href="">
+                        <button className={`${bookNowButton}`}>Book Now</button>
+                      </Link>
+                    </div>
+                    <div className="px-4 pt-4 pb-7">
+                      <p className=" text-lg lg:text-xl font-semibold text-[#48484d]">
+                        Hotel Sarina Dhaka
+                      </p>
+                      <h2 className=" text-lg text-slate-600 py-1">
+                        Hotel Sarina Dhaka offers everything that a Business
+                      </h2>
+                      <div>
+                        <div className="flex justify-between">
+                          <div className="flex gap-2 items-center text-sm">
+                            <BiLocationPlus className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">Dhaka</p>
+                          </div>
+                          <div className="flex gap-2 items-center text-sm pr-4">
+                            <AiOutlineClockCircle className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">
+                              <span className="text-slate-950 font-bold">
+                                3{" "}
+                              </span>
+                              Days
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex justify-between">
+                          <div className="flex gap-0 items-center">
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                            <AiFillStar className="text-[#e7b62f] text-md" />
+                          </div>
+                          <div className="flex gap-2 items-center text-sm">
+                            <AiOutlineUser className="hover:text-[#627FF4]" />
+                            <p className="text-slate-500">
+                              <span className="text-slate-950 font-bold">
+                                2{" "}
+                              </span>
+                              Peoples
+                            </p>
+                          </div>
+                        </div>
+                      </div >
+                    </div >
+                  </div >
                   {/*------- Single package End------- */}
                   {/*------- Single package Start------- */}
                   <div className="card bg-base-100 shadow-xl">
@@ -224,441 +658,7 @@ const DestinationProduct = () => {
                     </div>
                   </div>
                   {/*------- Single package End------- */}
-                  {/*------- Single package Start------- */}
-                  <div className="card bg-base-100 shadow-xl">
-                    <figure>
-                      <img
-                        src="https://i.ibb.co/dQsMpD2/New-Project-2023-04-10-T004719-405.png"
-                        alt="Shoes"
-                        className="scale-100 hover:scale-125 transition-transform duration-700 ease-in-out"
-                      />
-                    </figure>
-                    <div className="w-full card-actions items-center justify-between bg-slate-950 pl-2">
-                      <h1 className="text-slate-100">
-                        TK <span className="text-lg">8000</span>
-                      </h1>
-                      <Link href="">
-                        <button className={`${bookNowButton}`}>Book Now</button>
-                      </Link>
-                    </div>
-                    <div className="px-4 pt-4 pb-7">
-                      <p className=" text-lg lg:text-xl font-semibold text-[#48484d]">
-                        Hotel Sarina Dhaka
-                      </p>
-                      <h2 className=" text-lg text-slate-600 py-1">
-                        Hotel Sarina Dhaka offers everything that a Business
-                      </h2>
-                      <div>
-                        <div className="flex justify-between">
-                          <div className="flex gap-2 items-center text-sm">
-                            <BiLocationPlus className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">Dhaka</p>
-                          </div>
-                          <div className="flex gap-2 items-center text-sm pr-4">
-                            <AiOutlineClockCircle className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">
-                              <span className="text-slate-950 font-bold">
-                                3{" "}
-                              </span>
-                              Days
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex justify-between">
-                          <div className="flex gap-0 items-center">
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                          </div>
-                          <div className="flex gap-2 items-center text-sm">
-                            <AiOutlineUser className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">
-                              <span className="text-slate-950 font-bold">
-                                2{" "}
-                              </span>
-                              Peoples
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*------- Single package End------- */}
-                  {/*------- Single package Start------- */}
-                  <div className="card bg-base-100 shadow-xl">
-                    <figure>
-                      <img
-                        src="https://i.ibb.co/dQsMpD2/New-Project-2023-04-10-T004719-405.png"
-                        alt="Shoes"
-                        className="scale-100 hover:scale-125 transition-transform duration-700 ease-in-out"
-                      />
-                    </figure>
-                    <div className="w-full card-actions items-center justify-between bg-slate-950 pl-2">
-                      <h1 className="text-slate-100">
-                        TK <span className="text-lg">8000</span>
-                      </h1>
-                      <Link href="">
-                        <button className={`${bookNowButton}`}>Book Now</button>
-                      </Link>
-                    </div>
-                    <div className="px-4 pt-4 pb-7">
-                      <p className=" text-lg lg:text-xl font-semibold text-[#48484d]">
-                        Hotel Sarina Dhaka
-                      </p>
-                      <h2 className=" text-lg text-slate-600 py-1">
-                        Hotel Sarina Dhaka offers everything that a Business
-                      </h2>
-                      <div>
-                        <div className="flex justify-between">
-                          <div className="flex gap-2 items-center text-sm">
-                            <BiLocationPlus className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">Dhaka</p>
-                          </div>
-                          <div className="flex gap-2 items-center text-sm pr-4">
-                            <AiOutlineClockCircle className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">
-                              <span className="text-slate-950 font-bold">
-                                3{" "}
-                              </span>
-                              Days
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex justify-between">
-                          <div className="flex gap-0 items-center">
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                          </div>
-                          <div className="flex gap-2 items-center text-sm">
-                            <AiOutlineUser className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">
-                              <span className="text-slate-950 font-bold">
-                                2{" "}
-                              </span>
-                              Peoples
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*------- Single package End------- */}
-                  {/*------- Single package Start------- */}
-                  <div className="card bg-base-100 shadow-xl">
-                    <figure>
-                      <img
-                        src="https://i.ibb.co/dQsMpD2/New-Project-2023-04-10-T004719-405.png"
-                        alt="Shoes"
-                        className="scale-100 hover:scale-125 transition-transform duration-700 ease-in-out"
-                      />
-                    </figure>
-                    <div className="w-full card-actions items-center justify-between bg-slate-950 pl-2">
-                      <h1 className="text-slate-100">
-                        TK <span className="text-lg">8000</span>
-                      </h1>
-                      <Link href="">
-                        <button className={`${bookNowButton}`}>Book Now</button>
-                      </Link>
-                    </div>
-                    <div className="px-4 pt-4 pb-7">
-                      <p className=" text-lg lg:text-xl font-semibold text-[#48484d]">
-                        Hotel Sarina Dhaka
-                      </p>
-                      <h2 className=" text-lg text-slate-600 py-1">
-                        Hotel Sarina Dhaka offers everything that a Business
-                      </h2>
-                      <div>
-                        <div className="flex justify-between">
-                          <div className="flex gap-2 items-center text-sm">
-                            <BiLocationPlus className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">Dhaka</p>
-                          </div>
-                          <div className="flex gap-2 items-center text-sm pr-4">
-                            <AiOutlineClockCircle className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">
-                              <span className="text-slate-950 font-bold">
-                                3{" "}
-                              </span>
-                              Days
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex justify-between">
-                          <div className="flex gap-0 items-center">
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                          </div>
-                          <div className="flex gap-2 items-center text-sm">
-                            <AiOutlineUser className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">
-                              <span className="text-slate-950 font-bold">
-                                2{" "}
-                              </span>
-                              Peoples
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*------- Single package End------- */}
-                  {/*------- Single package Start------- */}
-                  <div className="card bg-base-100 shadow-xl">
-                    <figure>
-                      <img
-                        src="https://i.ibb.co/dQsMpD2/New-Project-2023-04-10-T004719-405.png"
-                        alt="Shoes"
-                        className="scale-100 hover:scale-125 transition-transform duration-700 ease-in-out"
-                      />
-                    </figure>
-                    <div className="w-full card-actions items-center justify-between bg-slate-950 pl-2">
-                      <h1 className="text-slate-100">
-                        TK <span className="text-lg">8000</span>
-                      </h1>
-                      <Link href="">
-                        <button className={`${bookNowButton}`}>Book Now</button>
-                      </Link>
-                    </div>
-                    <div className="px-4 pt-4 pb-7">
-                      <p className=" text-lg lg:text-xl font-semibold text-[#48484d]">
-                        Hotel Sarina Dhaka
-                      </p>
-                      <h2 className=" text-lg text-slate-600 py-1">
-                        Hotel Sarina Dhaka offers everything that a Business
-                      </h2>
-                      <div>
-                        <div className="flex justify-between">
-                          <div className="flex gap-2 items-center text-sm">
-                            <BiLocationPlus className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">Dhaka</p>
-                          </div>
-                          <div className="flex gap-2 items-center text-sm pr-4">
-                            <AiOutlineClockCircle className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">
-                              <span className="text-slate-950 font-bold">
-                                3{" "}
-                              </span>
-                              Days
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex justify-between">
-                          <div className="flex gap-0 items-center">
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                          </div>
-                          <div className="flex gap-2 items-center text-sm">
-                            <AiOutlineUser className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">
-                              <span className="text-slate-950 font-bold">
-                                2{" "}
-                              </span>
-                              Peoples
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*------- Single package End------- */}
-                  {/*------- Single package Start------- */}
-                  <div className="card bg-base-100 shadow-xl">
-                    <figure>
-                      <img
-                        src="https://i.ibb.co/dQsMpD2/New-Project-2023-04-10-T004719-405.png"
-                        alt="Shoes"
-                        className="scale-100 hover:scale-125 transition-transform duration-700 ease-in-out"
-                      />
-                    </figure>
-                    <div className="w-full card-actions items-center justify-between bg-slate-950 pl-2">
-                      <h1 className="text-slate-100">
-                        TK <span className="text-lg">8000</span>
-                      </h1>
-                      <Link href="">
-                        <button className={`${bookNowButton}`}>Book Now</button>
-                      </Link>
-                    </div>
-                    <div className="px-4 pt-4 pb-7">
-                      <p className=" text-lg lg:text-xl font-semibold text-[#48484d]">
-                        Hotel Sarina Dhaka
-                      </p>
-                      <h2 className=" text-lg text-slate-600 py-1">
-                        Hotel Sarina Dhaka offers everything that a Business
-                      </h2>
-                      <div>
-                        <div className="flex justify-between">
-                          <div className="flex gap-2 items-center text-sm">
-                            <BiLocationPlus className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">Dhaka</p>
-                          </div>
-                          <div className="flex gap-2 items-center text-sm pr-4">
-                            <AiOutlineClockCircle className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">
-                              <span className="text-slate-950 font-bold">
-                                3{" "}
-                              </span>
-                              Days
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex justify-between">
-                          <div className="flex gap-0 items-center">
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                          </div>
-                          <div className="flex gap-2 items-center text-sm">
-                            <AiOutlineUser className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">
-                              <span className="text-slate-950 font-bold">
-                                2{" "}
-                              </span>
-                              Peoples
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*------- Single package End------- */}
-                  {/*------- Single package Start------- */}
-                  <div className="card bg-base-100 shadow-xl">
-                    <figure>
-                      <img
-                        src="https://i.ibb.co/dQsMpD2/New-Project-2023-04-10-T004719-405.png"
-                        alt="Shoes"
-                        className="scale-100 hover:scale-125 transition-transform duration-700 ease-in-out"
-                      />
-                    </figure>
-                    <div className="w-full card-actions items-center justify-between bg-slate-950 pl-2">
-                      <h1 className="text-slate-100">
-                        TK <span className="text-lg">8000</span>
-                      </h1>
-                      <Link href="">
-                        <button className={`${bookNowButton}`}>Book Now</button>
-                      </Link>
-                    </div>
-                    <div className="px-4 pt-4 pb-7">
-                      <p className=" text-lg lg:text-xl font-semibold text-[#48484d]">
-                        Hotel Sarina Dhaka
-                      </p>
-                      <h2 className=" text-lg text-slate-600 py-1">
-                        Hotel Sarina Dhaka offers everything that a Business
-                      </h2>
-                      <div>
-                        <div className="flex justify-between">
-                          <div className="flex gap-2 items-center text-sm">
-                            <BiLocationPlus className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">Dhaka</p>
-                          </div>
-                          <div className="flex gap-2 items-center text-sm pr-4">
-                            <AiOutlineClockCircle className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">
-                              <span className="text-slate-950 font-bold">
-                                3{" "}
-                              </span>
-                              Days
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex justify-between">
-                          <div className="flex gap-0 items-center">
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                          </div>
-                          <div className="flex gap-2 items-center text-sm">
-                            <AiOutlineUser className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">
-                              <span className="text-slate-950 font-bold">
-                                2{" "}
-                              </span>
-                              Peoples
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*------- Single package End------- */}
-                  {/*------- Single package Start------- */}
-                  <div className="card bg-base-100 shadow-xl">
-                    <figure>
-                      <img
-                        src="https://i.ibb.co/dQsMpD2/New-Project-2023-04-10-T004719-405.png"
-                        alt="Shoes"
-                        className="scale-100 hover:scale-125 transition-transform duration-700 ease-in-out"
-                      />
-                    </figure>
-                    <div className="w-full card-actions items-center justify-between bg-slate-950 pl-2">
-                      <h1 className="text-slate-100">
-                        TK <span className="text-lg">8000</span>
-                      </h1>
-                      <Link href="">
-                        <button className={`${bookNowButton}`}>Book Now</button>
-                      </Link>
-                    </div>
-                    <div className="px-4 pt-4 pb-7">
-                      <p className=" text-lg lg:text-xl font-semibold text-[#48484d]">
-                        Hotel Sarina Dhaka
-                      </p>
-                      <h2 className=" text-lg text-slate-600 py-1">
-                        Hotel Sarina Dhaka offers everything that a Business
-                      </h2>
-                      <div>
-                        <div className="flex justify-between">
-                          <div className="flex gap-2 items-center text-sm">
-                            <BiLocationPlus className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">Dhaka</p>
-                          </div>
-                          <div className="flex gap-2 items-center text-sm pr-4">
-                            <AiOutlineClockCircle className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">
-                              <span className="text-slate-950 font-bold">
-                                3{" "}
-                              </span>
-                              Days
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex justify-between">
-                          <div className="flex gap-0 items-center">
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                            <AiFillStar className="text-[#e7b62f] text-md" />
-                          </div>
-                          <div className="flex gap-2 items-center text-sm">
-                            <AiOutlineUser className="hover:text-[#627FF4]" />
-                            <p className="text-slate-500">
-                              <span className="text-slate-950 font-bold">
-                                2{" "}
-                              </span>
-                              Peoples
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*------- Single package End------- */}
-                </div>
+                </div >
                 {/*------- Packages End------- */}
                 {/*------- Side Bar Start------- */}
                 <div className="w-full md:w-[30%] lg:w-1/4 mt-10 md:mt-0 lg:mt-0 ">
@@ -788,10 +788,10 @@ const DestinationProduct = () => {
                   />
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </div >
+          </div >
+        </div >
+      </section >
     </>
   );
 };

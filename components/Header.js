@@ -42,14 +42,14 @@ const Header = () => {
                 <div className="divide-gray-700 pt-6 relative z-50">
                   <ul>
                     <li className="hover:bg-[#0458c6]">
-                      <a
+                      <Link
                         rel="noopener noreferrer"
                         href="/"
                         className={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
                       >
                         <FaHome />
                         <span>Home</span>
-                      </a>
+                      </Link>
                     </li>
                     <li className="hover:bg-[#0458c6] mt-1">
                       <a
