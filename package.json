@@ -22,11 +22,7 @@
     "react-awesome-slider": "^4.1.0",
     "react-date-picker": "^10.0.2",
     "react-dom": "18.2.0",
-<<<<<<< HEAD
-    "react-hook-form": "^7.43.9",
-=======
     "react-grid-carousel": "^1.0.1",
->>>>>>> master
     "react-icons": "^4.8.0",
     "react-multi-carousel": "^2.8.3",
     "react-next-dates": "^1.0.0",
