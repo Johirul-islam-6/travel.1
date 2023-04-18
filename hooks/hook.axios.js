@@ -1,5 +1,6 @@
-import axios from "axios"
+// import axios from "axios"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -26,3 +27,12 @@ instance.interceptors.response.use(response => {
 
 export default instance
 
+=======
+// const instance = axios.create({
+//   baseURL: 'http://localhost:5000',
+//   timeout: 1000,
+//   withCredentials: true
+// });
+
+// export default instance
+>>>>>>> master

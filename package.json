@@ -12,6 +12,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@reduxjs/toolkit": "^1.9.4",
     "classnames": "^2.3.2",
     "daisyui": "^2.51.5",
     "date-fns": "^2.29.3",
@@ -21,10 +22,15 @@
     "react-awesome-slider": "^4.1.0",
     "react-date-picker": "^10.0.2",
     "react-dom": "18.2.0",
+<<<<<<< HEAD
     "react-hook-form": "^7.43.9",
+=======
+    "react-grid-carousel": "^1.0.1",
+>>>>>>> master
     "react-icons": "^4.8.0",
     "react-multi-carousel": "^2.8.3",
     "react-next-dates": "^1.0.0",
+    "react-redux": "^8.0.5",
     "socket.io-client": "^4.6.1",
     "swiper": "^9.2.0"
   },

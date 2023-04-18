@@ -16,7 +16,7 @@ const Destination = () => {
       />
       <section>
         <div className="bg-[url('https://i.ibb.co/nkNGLdF/banner.png')] bg-no-repeat bg-cover bg-left-bottom pt-32 lg:pt-40 pb-4">
-          <h1 className="text-2xl lg:text-5xl  font-bold text-white pl-10 lg:pl-20">
+          <h1 className="text-2xl lg:text-3xl  font-bold text-white pl-10 lg:pl-20">
             Destination
           </h1>
         </div>

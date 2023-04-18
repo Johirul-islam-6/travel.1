@@ -54,16 +54,6 @@ const Header = () => {
                     <li className="hover:bg-[#0458c6] mt-1">
                       <a
                         rel="noopener noreferrer"
-                        href="/restaurants"
-                        className={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
-                      >
-                        <FaAirbnb />
-                        <span>Restaurants</span>
-                      </a>
-                    </li>
-                    <li className="hover:bg-[#0458c6] mt-1">
-                      <a
-                        rel="noopener noreferrer"
                         href="/destination"
                         className={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
                       >
@@ -126,12 +116,13 @@ const Header = () => {
           {/* -----------only small size navbar end----------- */}
 
           {/* ======== only larze size show ============ */}
-          <ul className="align-middle hidden lg:flex justify-center w-full">
-            <div className="navbar ">
+          <ul className="align-middle hidden lg:flex justify-center w-full px-20">
+            <div className="navbar">
               <Link href="/" className="cursor-pointer ">
                 <img
                   src="https://i.ibb.co/Z2SgSq2/travel-xone.png"
                   alt="TRAVEL.XONE LOGO"
+                  className="w-[70%]"
                 />
               </Link>
             </div>
@@ -146,11 +137,6 @@ const Header = () => {
                 <li className="hover:text-white hover:border rounded">
                   <Link href="/destination" className={`${navbar.link_style}`}>
                     Destination
-                  </Link>
-                </li>
-                <li className="hover:text-white hover:border rounded">
-                  <Link href="/restaurants" className={`${navbar.link_style}`}>
-                    Restaurants
                   </Link>
                 </li>
                 <li className="hover:text-white hover:border rounded">
@@ -178,7 +164,7 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <div className="navbar-end flex items-center">
+            <div className="flex items-center">
               <div className="dropdown dropdown-end">
                 <label tabIndex={0} className="btn btn-ghost btn-circle">
                   <div className="indicator">
@@ -217,7 +203,7 @@ const Header = () => {
               <div className="dropdown dropdown-end">
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                   <div className="w-8 rounded-full">
-                    <FaUserAlt className="w-8 h-8 text-blue-700 bg-base-300 p-2" />
+                    <FaUserAlt className="w-8 h-8 text-blue-700 bg-white p-2" />
                   </div>
                 </label>
                 <ul
@@ -236,7 +222,6 @@ const Header = () => {
                 </ul>
               </div>
             </div>
-            <div className="navbar-end flex justify-center items-center"></div>
           </ul>
         </div>
       </header>

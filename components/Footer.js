@@ -42,7 +42,7 @@ const Footer = () => {
 
         {/* -----------2nd Layer----------- */}
         <div className="lg:flex justify-between px-10 lg:px-20 py-10 bg-black text-slate-500 text-left">
-          <div className="text-left lg:text-center w-full md:w-[45git%] lg:w-[20%]">
+          <div className="text-left lg:text-center w-full md:w-[45%] lg:w-[20%]">
             <Link href="/" className="cursor-pointer ">
               <img
                 src="https://i.ibb.co/nMFwjww/foorer-logo.png"
@@ -231,10 +231,10 @@ const Footer = () => {
 
         {/* -----------3rd Layer----------- */}
         <div
-          className={`${styles.top_border} bg-black py-3 px-10 lg:px-20 block lg:flex items-center justify-between`}
+          className={`${styles.top_border} bg-black py-3 px-10 lg:px-20 block md:flex lg:flex items-center justify-between`}
         >
           <p className="text-xs text-slate-400">
-            © 2023 Copyrights by TRAVEL.XONE. All Rights Reserved
+            © 2023 Copyrights by travel.xone. All Rights Reserved
           </p>
           <div className="flex gap-2 items-center text-md lg:text-2xl  pt-2 lg:pt-0">
             <BsFacebook className="text-slate-400 cursor-pointer hover:text-[#026fc8]" />
