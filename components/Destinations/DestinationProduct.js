@@ -10,7 +10,9 @@ import {
 } from "react-icons/ai";
 import Link from "next/link";
 
-const DestinationProduct = () => {
+const DestinationProduct = (props) => {
+  const singel_location = props?.value?.data
+  console.log(singel_location?.places)
   const buttonClass = classNames(
     "bg-slate-100 text-zinc-500 py-1 px-2 rounded hover:bg-[#627FF4] hover:text-white shadow text-sm my-2 md:my-0 lg:my-0"
   );
@@ -58,8 +60,8 @@ const DestinationProduct = () => {
           </div>
           <div className="bg-[#F7FAFC] bg-[url('https://i.ibb.co/VS7dF4B/bg-1.png')] bg-auto bg-no-repeat bg-right-top">
             <div className="p-5 md:p-10 lg:p-10">
-              <h1 className="text-left text-lg md:text-xl lg:text-2xl font-semibold text-[#1751E4] ">
-                Capital and Central Region
+              <h1 className="text-left text-lg md:text-xl lg:text-2xl font-semibold text-[#1751E4] py-2">
+                Area : {singel_location?.area}
               </h1>
               {/*------- features property ------- */}
               <div className="hidden md:block xl:block">
@@ -86,14 +88,11 @@ const DestinationProduct = () => {
               </div >
               {/*------- features property ------- */}
               {/*------- Location Button Start ------- */}
+
               <div className="flex-wrap md:flex lg:flex gap-5 mt-2">
-                <div className={`${buttonClass}`}>All</div>
-                <div className={`${buttonClass}`}>Dhaka city</div>
-                <div className={`${buttonClass}`}>Lalbagh Fort</div>
-                <div className={`${buttonClass}`}>Ahsan Manzil</div>
-                <div className={`${buttonClass}`}>Panamnagar</div>
-                <div className={`${buttonClass}`}>Sonargaon</div>
-                <div className={`${buttonClass}`}>Shalban Vihara</div>
+                {
+                  singel_location?.places?.map(place => <div className={`${buttonClass} cursor-pointer`}>{place?.name}</div>)
+                }
               </div>
               {/*------- Location Button End------- */}
               {/*------- package body Start------- */}
@@ -161,6 +160,12 @@ const DestinationProduct = () => {
                       </div >
                     </div >
                   </div >
+
+                  {
+
+                  }
+
+
                   {/*------- Single package End------- */}
                   {/*------- Single package Start------- */}
                   <div className="card bg-base-100 shadow-xl">
@@ -795,5 +800,6 @@ const DestinationProduct = () => {
     </>
   );
 };
+
 
 export default DestinationProduct;
