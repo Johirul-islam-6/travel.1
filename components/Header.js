@@ -54,16 +54,6 @@ const Header = () => {
                     <li className="hover:bg-[#0458c6] mt-1">
                       <a
                         rel="noopener noreferrer"
-                        href="/restaurants"
-                        className={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
-                      >
-                        <FaAirbnb />
-                        <span>Restaurants</span>
-                      </a>
-                    </li>
-                    <li className="hover:bg-[#0458c6] mt-1">
-                      <a
-                        rel="noopener noreferrer"
                         href="/destination"
                         className={`${navbar.link_style_sm} flex items-center p-2 space-x-3 rounded-md`}
                       >
@@ -146,11 +136,6 @@ const Header = () => {
                 <li className="hover:text-white hover:border rounded">
                   <Link href="/destination" className={`${navbar.link_style}`}>
                     Destination
-                  </Link>
-                </li>
-                <li className="hover:text-white hover:border rounded">
-                  <Link href="/restaurants" className={`${navbar.link_style}`}>
-                    Restaurants
                   </Link>
                 </li>
                 <li className="hover:text-white hover:border rounded">
