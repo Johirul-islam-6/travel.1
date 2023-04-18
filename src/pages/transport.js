@@ -23,11 +23,11 @@ const Transport = () => {
         </p>
       </div>
       {/* -----------header design end----------- */}
-      <div className="container mx-auto p-10">
+      <div className="container mx-auto py-10 ">
         <Carousel cols={3} rows={1} gap={10} loop className="py-10">
           {transport?.map((t) => (
             <Carousel.Item>
-              <div className="card sm:w-40 md:w-80 xl:w-[50%] bg-base-100 shadow-xl">
+              <div className="card sm:w-40 md:w-80 xl:w-[90%] bg-base-100 shadow-xl">
                 <figure>
                   <img src={t?.images[0]} alt="Shoes" />
                 </figure>
