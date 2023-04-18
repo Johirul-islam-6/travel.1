@@ -12,6 +12,7 @@ import { useAuthFetchQuery, useAuthLoginMutation } from "@/redux/api/auth.api";
 // import google from '../../components/Images/Google-Icon-PNG_rwscww-removebg-preview.png';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function login () {
 const dispatch = useDispatch()
 // const { data = [] , isError , isSuccess , isUninitialized} =  useAuthFetchQuery()
@@ -26,6 +27,8 @@ const onSubmit = data =>{
 
 
 =======
+=======
+>>>>>>> b1266b54056505c9356ef99835c662d1203b11cd
 const Login = () => {
   const dispatch = useDispatch()
 >>>>>>> b1266b54056505c9356ef99835c662d1203b11cd
@@ -33,6 +36,7 @@ const Login = () => {
     <> { console.log( result ) }
       <div className={styles.registerContainer}>
         <div className={styles.divission}>
+<<<<<<< HEAD
 <<<<<<< HEAD
            <div className={styles.LoginArea}>
            
@@ -54,6 +58,8 @@ const Login = () => {
         </div>
       </div>
 =======
+=======
+>>>>>>> b1266b54056505c9356ef99835c662d1203b11cd
           <div className={styles.LoginArea}>
 
             <button className={styles.userIcon}>   < CiUser className={styles.RealIcon} /></button>
@@ -74,6 +80,9 @@ const Login = () => {
 
         </div >
       </div >
+<<<<<<< HEAD
+>>>>>>> b1266b54056505c9356ef99835c662d1203b11cd
+=======
 >>>>>>> b1266b54056505c9356ef99835c662d1203b11cd
     </>
   );

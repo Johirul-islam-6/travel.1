@@ -1,8 +1,11 @@
 import axios from "axios"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 const errorArry = [401,403,406,500,400]
+=======
+>>>>>>> b1266b54056505c9356ef99835c662d1203b11cd
 =======
 >>>>>>> b1266b54056505c9356ef99835c662d1203b11cd
 const instance = axios.create({
