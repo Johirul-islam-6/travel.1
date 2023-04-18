@@ -1,12 +1,13 @@
 import React from "react";
 import formImg from '../../components/Images/form.png'
 import Image from "next/image";
-const FeedbackForm = () => {
+const Comment = () => {
   const handleReview = () => {};
   return (
     <div className="bg-white">
       <h1 className="text-5xl font-semibold text-slate-600 py-5">Add Your Review</h1>
     <div className="grid grid-cols-1 lg:grid-cols-2 max-w-screen-xl m-auto items-center">
+        {/* <h1>hello </h1> */}
       <div>
         <Image src={formImg}/>
       </div>
@@ -111,4 +112,4 @@ const FeedbackForm = () => {
   );
 };
 
-export default FeedbackForm;
+export default Comment;
