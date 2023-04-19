@@ -4,6 +4,7 @@ import Location from "../../components/Home/Location";
 import Opportunity from "../../components/Home/Opportunity";
 import Meta from "../../components/Meta";
 import Testimonial from "../../components/Testimonial/Testimonial";
+import Destinations from "./destinations";
 
 const Home = () => {
   return (
