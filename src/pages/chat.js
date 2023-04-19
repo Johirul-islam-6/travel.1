@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { io } from "socket.io-client";
 
 function chat(props) {
+  
 
   // const socket = io("http://localhost:5000/");
   const [message, setMessage] = useState()

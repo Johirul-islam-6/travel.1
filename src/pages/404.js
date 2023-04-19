@@ -35,6 +35,8 @@ const ErrorPage = () => {
         </Link>
       </div>
     </div>
+
+    
   );
 };
 
