@@ -496,31 +496,31 @@ const detailsHostel01 = ({ detailsHotel }) => {
 export default detailsHostel01;
 
 
-// export const getStaticProps = async (context) => {
-//     const id = context.params.id;
-//     const res = await fetch(`http://localhost:5000/api/v1/hotels?placeID=${id}`);
-//     const data = await res.json();
+export const getStaticProps = async (context) => {
+    const id = context.params.id;
+    const res = await fetch(`https://travel-xone-server.vercel.app/api/v1/hotels?_id=${id}`);
+    const data = await res.json();
 
-//     return {
-//         props: {
-//             detailsHotel: data,
-//         }
-//     }
-// }
+    return {
+        props: {
+            detailsHotel: data,
+        }
+    }
+}
 
-// export const getStaticPaths = async () => {
-//     const res = await fetch("http://localhost:5000/api/v1/hotels/");
-//     const data = await res.json();
-//     const paths = data?.data?.map((currentLocation) => {
-//         return {
-//             params: {
-//                 id: currentLocation?.placeID.toString()
-//             }
-//         }
-//     })
-//     return {
-//         paths,
-//         fallback: false
-//     }
-// }
+export const getStaticPaths = async () => {
+    const res = await fetch("https://travel-xone-server.vercel.app/api/v1/hotels/");
+    const data = await res.json();
+    const paths = data?.data?.map((currentLocation) => {
+        return {
+            params: {
+                id: currentLocation?._id.toString()
+            }
+        }
+    })
+    return {
+        paths,
+        fallback: false
+    }
+}
 
