@@ -42,7 +42,7 @@ const HotelCards = (props) => {
             {
                 hotelAll?.slice(0, 9).map(hotel => {
                     return <>
-                        <div key={hotel?.price} className="card bg-base-100 shadow-xl border-2 border-blue-800 " >
+                        <div key={hotel?.price} className="card bg-base-100 shadow-xl " >
                             <figure>
                                 <img loading='lazy'
                                     src={hotel?.pictures[0]}
