@@ -54,7 +54,7 @@ const HotelCards = (props) => {
                                 <h1 className="text-slate-100 text-[20px] font-bold">
                                     TK <span className="text-lg text-[#ce7c00]">{hotel?.price}</span>
                                 </h1>
-                                <Link href={`/destinationId/${hotel?.placeID}`}>
+                                <Link href={`/destinationId/${hotel?._id}`}>
                                     <button className={`text-slate-100 bg-[#1751E4] p-2 hover:bg-slate-100 hover:shadow hover:text-[#1751E4]`}>Book Now</button>
                                 </Link>
                             </div>
