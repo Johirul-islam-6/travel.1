@@ -12,6 +12,7 @@ import {
 import { BiMenu, IconName } from "react-icons/bi";
 import TopHeader from "./TopHeader";
 import navbar from "../src/styles/home_style/hero.module.css";
+import Meta from "./Meta";
 
 const Header = () => {
   return (

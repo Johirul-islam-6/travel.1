@@ -2,6 +2,7 @@ import classNames from "classnames";
 import Link from "next/link";
 import styles from "../styles/destination.module.css";
 import Meta from "../../components/Meta";
+import Head from "next/head";
 
 const Destination = () => {
   const regionHeader = classNames(
@@ -9,11 +10,9 @@ const Destination = () => {
   );
   return (
     <>
-      <Meta
-        title="Destination"
-        keyword="tour, travel"
-        description="Bangladesh Tour Locations"
-      />
+      <Head>
+        <title>Destination Page</title>
+      </Head>
       <section>
         <div className="bg-[url('https://i.ibb.co/nkNGLdF/banner.png')] bg-no-repeat bg-cover bg-left-bottom pt-32 lg:pt-40 pb-4">
           <h1 className="text-2xl lg:text-5xl  font-bold text-white pl-10 lg:pl-20">
