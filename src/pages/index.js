@@ -4,6 +4,7 @@ import Hero from "../../components/Home/Hero";
 import Location from "../../components/Home/Location";
 import Opportunity from "../../components/Home/Opportunity";
 import Testimonial from "../../components/Testimonial/Testimonial";
+import Destinations from "./destinations";
 
 const Home = () => {
   return (
