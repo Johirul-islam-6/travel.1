@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "../styles/destination.module.css";
 import Meta from "../../components/Meta";
 import Head from "next/head";
+import jsonData from "../../public/destination.json";
 
 const Destination = () => {
   const regionHeader = classNames(
@@ -159,6 +160,7 @@ const Destination = () => {
                     </h1>
                   </Link>
                 </div>
+                {/* ------ All place cards----- */}
                 <div className=" border hover:shadow-lg hover:border-none p-3 mb-6 rounded">
                   <div>
                     <figure>
@@ -431,3 +433,14 @@ const Destination = () => {
 };
 
 export default Destination;
+
+export const getStaticProps = async () => {
+  const res = await fetch("/api/destination");
+  const data = await res.json();
+  console.log(data);
+  return{
+    props: {
+      destination : data
+    }
+  }
+}

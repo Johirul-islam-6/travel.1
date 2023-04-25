@@ -1,5 +1,6 @@
 import { BsFillEnvelopeFill } from "react-icons/bs";
 import classNames from "classnames";
+import Head from "next/head";
 
 const recovery = () => {
   const backgroundClass = classNames(
@@ -13,6 +14,9 @@ const recovery = () => {
   );
   return (
     <>
+    <Head>
+      <title>Forget Password</title>
+    </Head>
       <div className={backgroundClass}>
         <div className="py-20">
           <div className={formClass}>

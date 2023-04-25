@@ -17,7 +17,7 @@ const Comment = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 max-w-screen-xl m-auto items-center ">
           {/* ----------------Image---------------  */}
           <div>
-            <img src="https://i.ibb.co/vx52jyB/form.png" />
+            <img src="https://i.ibb.co/vx52jyB/form.png" loading="lazy" />
           </div>
           {/* --------------------form------------------- */}
           <div className="py-10 mx-4 lg:mx-0">

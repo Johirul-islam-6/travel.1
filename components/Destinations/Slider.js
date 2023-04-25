@@ -5,6 +5,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import styles from "../../src/styles/Adventure.module.css";
+import Image from "next/image";
 
 const Slider = () => {
   return (
@@ -29,25 +30,37 @@ const Slider = () => {
               <div className="">
                 <SwiperSlide>
                   <div>
-                    <img
+                    <Image
                       src="https://i.ibb.co/qnw7Tf0/slider3.png"
-                      alt="slider"
+                      alt="TRAVEL.XONE LOGO"
+                      width={1000}
+                      height={450}
+                      loading="lazy"
+                      className="w-[100%]"
                     />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="">
-                    <img
+                    <Image
                       src="https://i.ibb.co/Fg7v0dC/slider2.png"
-                      alt="slider"
+                      alt="TRAVEL.XONE LOGO"
+                      width={1000}
+                      height={450}
+                      loading="lazy"
+                      className="w-[100%]"
                     />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="">
-                    <img
+                    <Image
                       src="https://i.ibb.co/4VN8XqF/slider1.png"
-                      alt="slider"
+                      alt="TRAVEL.XONE LOGO"
+                      width={1000}
+                      height={450}
+                      loading="lazy"
+                      className="w-[100%]"
                     />
                   </div>
                 </SwiperSlide>

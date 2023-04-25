@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import Image from "next/image";
 import Link from "next/link";
 
 const Location = () => {
@@ -21,7 +22,13 @@ const Location = () => {
           {/*----- Location Container -----*/}
           <div className="block md:flex lg:flex px-10 lg:px-0">
             <div className="w-full md:w-[131%] lg:max-w-[33.3%] group relative">
-              <img src="https://i.ibb.co/ByXW3K0/location10.png" />
+              <Image
+                src="https://i.ibb.co/ByXW3K0/location10.png"
+                alt="TRAVEL.XONE LOGO"
+                width={600}
+                height={450}
+                loading="lazy"
+              />
               <div className={`${overlayClass}`}>
                 <Link
                   href="/destinations/North_West_Region"
@@ -37,7 +44,14 @@ const Location = () => {
             <div>
               <div className="flex">
                 <div className="group relative">
-                  <img src="https://i.ibb.co/JnXHGqk/Ahasan-manjill.png" />
+                  <Image
+                    src="https://i.ibb.co/JnXHGqk/Ahasan-manjill.png"
+                    alt="TRAVEL.XONE LOGO"
+                    width={600}
+                    height={450}
+                    loading="lazy"
+                  />
+
                   <Link
                     href="/destinations/Capital_and_Central_Region"
                     className="cursor-pointer"
@@ -50,7 +64,14 @@ const Location = () => {
                   </Link>
                 </div>
                 <div className="group relative">
-                  <img src="https://i.ibb.co/yq1cb38/cox-bazer.png" />
+                  <Image
+                    src="https://i.ibb.co/yq1cb38/cox-bazer.png"
+                    alt="TRAVEL.XONE LOGO"
+                    width={600}
+                    height={450}
+                    loading="lazy"
+                  />
+
                   <div className={`${overlayClass}`}>
                     <Link
                       href="/destinations/South_East_Region"
@@ -65,7 +86,14 @@ const Location = () => {
               </div>
               <div className="flex">
                 <div className="group relative">
-                  <img src="https://i.ibb.co/DQz7210/jaflong.png" />
+                  <Image
+                    src="https://i.ibb.co/DQz7210/jaflong.png"
+                    alt="TRAVEL.XONE LOGO"
+                    width={600}
+                    height={450}
+                    loading="lazy"
+                  />
+
                   <div className={`${overlayClass}`}>
                     <Link
                       href="/destinations/North_East_Region"
@@ -78,7 +106,14 @@ const Location = () => {
                   </div>
                 </div>
                 <div className="group relative">
-                  <img src="https://i.ibb.co/zxmNYFc/Sundarban.png" />
+                  <Image
+                    src="https://i.ibb.co/zxmNYFc/Sundarban.png"
+                    alt="TRAVEL.XONE LOGO"
+                    width={600}
+                    height={450}
+                    loading="lazy"
+                  />
+
                   <div className={`${overlayClass}`}>
                     <Link
                       href="/destinations/South_West_Region"

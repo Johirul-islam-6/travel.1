@@ -43,6 +43,7 @@ const SingleDestination = () => {
                 >
                   <img
                     src="https://i.ibb.co/J3jnrYr/2.png"
+                    loading="lazy"
                     className="w-full"
                   />
                   <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -60,6 +61,7 @@ const SingleDestination = () => {
                 >
                   <img
                     src="https://i.ibb.co/vc6nJPw/3.png"
+                    loading="lazy"
                     className="w-full"
                   />
                   <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -77,6 +79,7 @@ const SingleDestination = () => {
                 >
                   <img
                     src="https://i.ibb.co/SQzBZfJ/1.png"
+                    loading="lazy"
                     className="w-full"
                   />
                   <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -204,7 +207,7 @@ const SingleDestination = () => {
                 <h1 className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-800 pb-2">
                   Location
                 </h1>
-                <img src="https://i.ibb.co/SxRXRHg/Rectangle-16.png" />
+                <img src="https://i.ibb.co/SxRXRHg/Rectangle-16.png" loading="lazy"/>
               </div>
               <div className="divider"></div>
               {/* ----------------Review----------------- */}
