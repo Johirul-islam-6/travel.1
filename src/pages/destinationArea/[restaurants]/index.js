@@ -1,9 +1,6 @@
-import { useEffect, useState } from "react";
-import Adventures from "../../../components/Adventure/Adventures";
-import Slider from "../../../components/Destinations/Slider";
-import { useRouter } from "next/router";
-import DestinationProduct from "../../../components/Destinations/DestinationProduct";
-import FeatureService from "../../../components/Home/Service/FeatureService/FeatureService";
+import Slider from "./Slider";
+import DestinationProduct from "./DestinationProduct";
+
 
 const Restaurants = ({ singelLocation }) => {
 
@@ -30,7 +27,7 @@ const Restaurants = ({ singelLocation }) => {
 export default Restaurants;
 
 export const getStaticProps = async (context) => {
-  const id = context.params.destinations;
+  const id = context.params.restaurants;
   const res = await fetch(`https://travel-xone-server.vercel.app/api/v1/location/${id}`);
   const data = await res.json();
 
@@ -47,7 +44,7 @@ export const getStaticPaths = async () => {
   const paths = data?.data?.map((currentLocation) => {
     return {
       params: {
-        destinations: currentLocation?._id.toString()
+        restaurants: currentLocation?._id.toString()
       }
     }
   })
