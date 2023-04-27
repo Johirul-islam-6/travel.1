@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Adventures from "../../components/Adventure/Adventures";
 import Hero from "../../components/Home/Hero";
-import Location from "../../components/Home/Location";
 import Opportunity from "../../components/Home/Opportunity";
 import Testimonial from "../../components/Testimonial/Testimonial";
-import Destinations from "./destinations";
+import Destination from "./destination";
+import DestinationArea from "./destinationArea";
+
 
 const Home = () => {
   return (
@@ -24,7 +25,7 @@ const Home = () => {
         />
       </Head>
       <Hero />
-      <Location />
+      <DestinationArea/>
       <Opportunity />
       <Adventures />
       <Testimonial />

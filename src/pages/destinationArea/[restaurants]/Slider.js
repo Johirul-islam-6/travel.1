@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
-import styles from "../../src/styles/Adventure.module.css";
+import styles from "../../../styles/Adventure.module.css";
 import Image from "next/image";
 
 const Slider = () => {

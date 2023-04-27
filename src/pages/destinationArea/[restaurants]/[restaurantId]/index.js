@@ -8,7 +8,7 @@ import {
 import { TbWorld } from "react-icons/tb";
 import { FaShoePrints, FaUserAlt, FaUsers } from "react-icons/fa";
 import Link from "next/link";
-const SingleDestination = () => {
+const RestaurantId = () => {
   return (
     <>
       <section>
@@ -492,4 +492,4 @@ const SingleDestination = () => {
   );
 };
 
-export default SingleDestination;
+export default RestaurantId;

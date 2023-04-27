@@ -1,33 +1,13 @@
-import React, { useState } from "react";
-import Location from "../../../components/Home/Location";
 import classNames from "classnames";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
-const Destinations = ({ location }) => {
-  const [locationid, setlocationId] = useState();
-  const id1 = "643c2ace24a8114c69217526";
-  const id2 = "643c2b61f7c5a823c7ca6272";
-  const id3 = "643c2bce11de3a4be5df416f";
-  const id4 = "643c2c61f97a9e7ae141b4a1";
-  const id5 = "643c3117e049fd5186b59ae1";
-
-  const ClickLocation = (id) => {
-    setlocationId(id);
-  };
-
+const DestinationArea = () => {
   const overlayClass = classNames(
     "absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-[#00000083] opacity-0 group-hover:h-full group-hover:opacity-100 duration-500"
   );
   return (
     <>
-      {/* {
-                location?.data?.map(Are => {
-                    return <>
-                        <h1 className='text-black'>are : {Are?._id}</h1>
-                    </>
-                })
-            } */}
       <section className="bg-[#F7FAFC] py-20">
         <div className="container mx-auto">
           {/*----- section header -----*/}
@@ -41,20 +21,17 @@ const Destinations = ({ location }) => {
           {/*----- section header -----*/}
           {/*----- Location Container -----*/}
           <div className="block md:flex lg:flex px-10 lg:px-0">
-            <div
-              onClick={() => ClickLocation(id1)}
-              className="w-full md:w-[131%] lg:max-w-[33.3%] group relative"
-            >
+            <div className="w-full md:w-[131%] lg:max-w-[33.3%] group relative">
               <Image
                 src="https://i.ibb.co/ByXW3K0/location10.png"
-                alt="Github"
+                alt="TRAVEL.XONE LOGO"
                 width={600}
                 height={450}
                 loading="lazy"
               />
               <div className={`${overlayClass}`}>
                 <Link
-                  href={`/destinations/643c2ace24a8114c69217526`}
+                  href="/destinations/North_West_Region"
                   className="cursor-pointer"
                 >
                   <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
@@ -66,20 +43,17 @@ const Destinations = ({ location }) => {
 
             <div>
               <div className="flex">
-                <div
-                  onClick={() => ClickLocation(id2)}
-                  className="group relative"
-                >
+                <div className="group relative">
                   <Image
                     src="https://i.ibb.co/JnXHGqk/Ahasan-manjill.png"
-                    alt="Github"
+                    alt="TRAVEL.XONE LOGO"
                     width={600}
                     height={450}
-                    layout="responsive"
                     loading="lazy"
                   />
+
                   <Link
-                    href={`/destinations/643c2b61f7c5a823c7ca6272`}
+                    href="/destinations/Capital_and_Central_Region"
                     className="cursor-pointer"
                   >
                     <div className={`${overlayClass}`}>
@@ -89,21 +63,18 @@ const Destinations = ({ location }) => {
                     </div>
                   </Link>
                 </div>
-                <div
-                  onClick={() => ClickLocation(id3)}
-                  className="group relative"
-                >
+                <div className="group relative">
                   <Image
                     src="https://i.ibb.co/yq1cb38/cox-bazer.png"
-                    alt="Github"
+                    alt="TRAVEL.XONE LOGO"
                     width={600}
                     height={450}
-                    layout="responsive"
                     loading="lazy"
                   />
+
                   <div className={`${overlayClass}`}>
                     <Link
-                      href={`/destinations/643c2bce11de3a4be5df416f`}
+                      href="/destinations/South_East_Region"
                       className="cursor-pointer"
                     >
                       <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
@@ -113,23 +84,19 @@ const Destinations = ({ location }) => {
                   </div>
                 </div>
               </div>
-
               <div className="flex">
-                <div
-                  onClick={() => ClickLocation(id4)}
-                  className="group relative"
-                >
+                <div className="group relative">
                   <Image
                     src="https://i.ibb.co/DQz7210/jaflong.png"
-                    alt="Github"
+                    alt="TRAVEL.XONE LOGO"
                     width={600}
                     height={450}
-                    layout="responsive"
                     loading="lazy"
                   />
+
                   <div className={`${overlayClass}`}>
                     <Link
-                      href={`/destinations/643c2c61f97a9e7ae141b4a1`}
+                      href="/destinations/North_East_Region"
                       className="cursor-pointer"
                     >
                       <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
@@ -138,21 +105,18 @@ const Destinations = ({ location }) => {
                     </Link>
                   </div>
                 </div>
-                <div
-                  onClick={() => ClickLocation(id5)}
-                  className="group relative"
-                >
+                <div className="group relative">
                   <Image
                     src="https://i.ibb.co/zxmNYFc/Sundarban.png"
-                    alt="Github"
+                    alt="TRAVEL.XONE LOGO"
                     width={600}
                     height={450}
-                    layout="responsive"
                     loading="lazy"
                   />
+
                   <div className={`${overlayClass}`}>
                     <Link
-                      href={`/destinations/643c3117e049fd5186b59ae1`}
+                      href="/destinations/South_West_Region"
                       className="cursor-pointer"
                     >
                       <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
@@ -171,17 +135,4 @@ const Destinations = ({ location }) => {
   );
 };
 
-export default Destinations;
-
-export const getServerSideProps = async () => {
-  const res = await fetch(
-    "https://travel-xone-server.vercel.app/api/v1/locations/"
-  );
-  const data = await res.json();
-
-  return {
-    props: {
-      location: data,
-    },
-  };
-};
+export default DestinationArea;
