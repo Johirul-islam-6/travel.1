@@ -37,34 +37,34 @@ const HotelCards = (props) => {
 
     return (
 
-        <  >
+        <>
             {
                 hotelAll?.slice(0, 9).map(hotel => {
                     return <>
-                        <div key={hotel?.price} className="card bg-base-100 shadow-xl border-2 border-blue-800">
+                        <div key={hotel?.price} className="card bg-base-100 shadow-2xl">
                             <figure>
                                 <img loading='lazy'
                                     src={hotel?.pictures[0]}
                                     alt="Shoes"
-                                    className="scale-100 hover:scale-125 object-fill transition-transform duration-700 ease-in-out h-[35vh] w-[100%]"
+                                    className="scale-100 hover:scale-125 object-fill transition-transform duration-700 ease-in-out h-[25vh] w-[100%]"
                                 />
                             </figure>
                             <div className="w-full card-actions items-center justify-between bg-slate-950 pl-2">
                                 <h1 className="text-slate-100 text-[20px] font-bold">
                                     TK <span className="text-lg text-[#ce7c00]">{hotel?.price}</span>
                                 </h1>
-                                <Link href={`/destinationId/${hotel?.placeID}`}>
+                                <Link href={`/destinationArea/${hotel?.placeID}`}>
                                     <button className={`text-slate-100 bg-[#1751E4] p-2 hover:bg-slate-100 hover:shadow hover:text-[#1751E4]`}>Book Now</button>
                                 </Link>
                             </div>
                             <div className="px-4 pt-4 pb-7">
                                 <p className=" text-lg lg:text-xl font-semibold text-[#48484d]">
-                                    {hotel?.title}
+                                    {hotel?.title.slice(0, 19)}
                                 </p>
                                 <h2 className=" text-lg text-slate-600 py-1">
-                                    {hotel?.descriptions.slice(0, 100)}
+                                    {hotel?.descriptions.slice(0, 40)}
                                 </h2>
-                                <div>
+                                <div className="pt-3">
                                     <div className="flex justify-between">
                                         <div className="flex gap-2 items-center text-sm">
                                             <BiLocationPlus className="hover:text-[#627FF4]" />

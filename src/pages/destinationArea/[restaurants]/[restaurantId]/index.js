@@ -497,7 +497,7 @@ export default RestaurantId;
 
 
 export const getStaticProps = async (context) => {
-    const id = context.params.id;
+    const id = context.params.restaurantId;
     const res = await fetch(`https://travel-xone-server.vercel.app/api/v1/hotels?_id=${id}`);
     const data = await res.json();
 
@@ -514,7 +514,7 @@ export const getStaticPaths = async () => {
     const paths = data?.data?.map((currentLocation) => {
         return {
             params: {
-                id: currentLocation?._id.toString()
+                restaurantId: currentLocation?._id.toString()
             }
         }
     })
