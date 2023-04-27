@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-
 import Slider from "./Slider";
-
 import DestinationProduct from "./DestinationProduct";
 
 const Restaurants = () => {
