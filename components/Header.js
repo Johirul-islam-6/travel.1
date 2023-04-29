@@ -17,10 +17,10 @@ const Header = () => {
   return (
     <>
       <TopHeader />
-      <header className="w-[100%] justify-center bg-[#ffffffe5] flex mx-auto absolute ">
+      <header className="w-[100%] justify-center bg-[#ffffffe5] flex mx-auto absolute h-[110px]">
         <div className="navbar w-[100%]">
           {/* <!-- -------- toggle left small size slider ------ --> */}
-          <div className="dropdown dropdown-start lg:hidden">
+          <div className="dropdown dropdown-start lg:hidden z-50">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-8 rounded-full">
                 <BiMenu className="w-8 h-8 text-[#000000] bg-base-300 p-2" />
