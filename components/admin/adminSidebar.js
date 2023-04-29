@@ -5,8 +5,8 @@ const AdminSidebar = () => {
         <>
             <div className="w-[20%] bg-black h-screen pt-[20%] text-white">
             <ul className="block">
-                <Link href="/admin/user">Dashboard</Link> <br/>
-                <Link href="/admin/order">My Order</Link>
+                <Link href="/admin/user">user</Link> <br/>
+                <Link href="/admin/booking">Booking</Link>
             </ul>
 
             </div>
