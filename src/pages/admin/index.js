@@ -1,14 +1,25 @@
-import AdminDashboardLayout from "./adminLayout";
+import AdminSidebar from "../../../components/admin/adminSidebar";
 
-export default function AdminDashboard () {
+const admin = () => {
     return ( 
-    <>
-        <AdminDashboardLayout/>
-    </> 
-    );
+        <>
+            <div className="w-[100%] h-screen flex justify-center">
+            <AdminSidebar/>
+            <div className="w-[80%] bg-slate-400 pt-[9%] px-1">
+            {/* -------------body content------------------ */}
+            <h1>This is body content</h1>
+            </div>
+        </div>
+        </>
+     );
 }
+ 
+export default admin;
 
-
-AdminDashboard.getLayout = function PageLayout(page) {
-    return <>{page}</>;
-  };
+admin.getLayout = function PageLayout(page) {
+    return (
+        <>
+        {page}
+        </>
+    )
+  }
