@@ -11,7 +11,8 @@ import Link from "next/link";
 
 
 const detailsHostel01 = ({ detailsHotel }) => {
-    console.log("details hotels", detailsHotel)
+    const singelsHotels = detailsHotel?.data[0];
+    console.log("details hotels", detailsHotel.data)
 
     return (
         <>
@@ -20,17 +21,17 @@ const detailsHostel01 = ({ detailsHotel }) => {
                 <div className="bg-[url('https://i.ibb.co/nkNGLdF/banner.png')] bg-no-repeat bg-cover bg-left-bottom pt-28 md:pt-32 lg:pt-48 pb-4">
                     <div className="pl-10 lg:pl-20">
                         <h1 className="text-xl md:text-2xl lg:text-3xl  font-bold text-white">
-                            Hotel Sarina Dhaka
+                            Hotel {singelsHotels?.placeName} Dhaka
                         </h1>
                         <div className="text-slate-300 flex items-center ">
                             <HiLocationMarker />
                             <h2 className="pl-1 w-10/12">
-                                17 Plot #27 Road Banani C/A, Dhaka City 1213 Bangladesh
+                                {singelsHotels?.district}
                             </h2>
                         </div>
                         <div className="text-slate-300 flex items-center ">
                             <AiFillStar className="text-[#e2a04a]" />
-                            <h2 className="pl-1 w-10/12">5 (3 reviews)</h2>
+                            <h2 className="pl-1 w-10/12">5 ({singelsHotels?.reviews} reviews)</h2>
                         </div>
                     </div>
                 </div>
@@ -42,12 +43,29 @@ const detailsHostel01 = ({ detailsHotel }) => {
                         <div className="w-full md:w-[70%] lg:w-[3/4]">
                             <div className="carousel w-full ">
                                 <div
+                                    id="slide1"
+                                    className="carousel-item relative w-full h-full md:h-[30%] lg:h-[50%]"
+                                >
+                                    <img
+                                        loading="lazy" src={singelsHotels?.pictures[2]}
+                                        className="w-full h-[40vh] md:h-[65vh]"
+                                    />
+                                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                        <a href="#slide4" className="btn btn-circle">
+                                            ❮
+                                        </a>
+                                        <a href="#slide2" className="btn btn-circle">
+                                            ❯
+                                        </a>
+                                    </div>
+                                </div>
+                                <div
                                     id="slide2"
                                     className="carousel-item relative w-full h-full md:h-[30%] lg:h-[50%]"
                                 >
                                     <img
-                                        src="https://i.ibb.co/J3jnrYr/2.png"
-                                        className="w-full"
+                                        loading="lazy" src={singelsHotels?.pictures[0]}
+                                        className="w-full h-[40vh] md:h-[65vh]"
                                     />
                                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                         <a href="#slide1" className="btn btn-circle">
@@ -63,8 +81,8 @@ const detailsHostel01 = ({ detailsHotel }) => {
                                     className="carousel-item relative w-full h-full md:h-[30%] lg:h-[50%]"
                                 >
                                     <img
-                                        src="https://i.ibb.co/vc6nJPw/3.png"
-                                        className="w-full"
+                                        loading="lazy" src={singelsHotels?.pictures[1]}
+                                        className="w-full h-[40vh] md:h-[65vh]"
                                     />
                                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                         <a href="#slide2" className="btn btn-circle">
@@ -75,23 +93,7 @@ const detailsHostel01 = ({ detailsHotel }) => {
                                         </a>
                                     </div>
                                 </div>
-                                <div
-                                    id="slide1"
-                                    className="carousel-item relative w-full h-full md:h-[30%] lg:h-[50%]"
-                                >
-                                    <img
-                                        src="https://i.ibb.co/SQzBZfJ/1.png"
-                                        className="w-full"
-                                    />
-                                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                        <a href="#slide4" className="btn btn-circle">
-                                            ❮
-                                        </a>
-                                        <a href="#slide2" className="btn btn-circle">
-                                            ❯
-                                        </a>
-                                    </div>
-                                </div>
+
                             </div>
                             {/* ------------properties--------------- */}
                             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center pt-4 ">
@@ -103,7 +105,7 @@ const detailsHostel01 = ({ detailsHotel }) => {
                                     <div className="pl-3">
                                         <h1 className="text-sm lg:text-md">Duration</h1>
                                         <h2 className="text-md lg:text-lg font-light text-slate-500">
-                                            <span className="text-[#627FF4]">3</span> days
+                                            <span className="text-[#627FF4]">{singelsHotels?.duration}</span> days
                                         </h2>
                                     </div>
                                 </div>
@@ -115,7 +117,7 @@ const detailsHostel01 = ({ detailsHotel }) => {
                                     <div className="pl-3">
                                         <h1 className="text-sm lg:text-md">Tour Type</h1>
                                         <h2 className="text-md lg:text-lg font-light text-slate-500">
-                                            Wild Life
+                                            {singelsHotels?.tourType}
                                         </h2>
                                     </div>
                                 </div>
@@ -139,7 +141,7 @@ const detailsHostel01 = ({ detailsHotel }) => {
                                     <div className="pl-3">
                                         <h1 className="text-sm lg:text-md">Languages</h1>
                                         <h2 className="text-md lg:text-lg font-light text-slate-500">
-                                            English | Bangla
+                                            {singelsHotels?.language}
                                         </h2>
                                     </div>
                                 </div>
@@ -148,27 +150,17 @@ const detailsHostel01 = ({ detailsHotel }) => {
                             {/* ----------------Tour Details----------------- */}
                             <div>
                                 <h1 className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-800 pb-2">
-                                    Explore Tours
+                                    {singelsHotels?.tourType}
                                 </h1>
                                 <h5 className="text-lg text-slate-500">
-                                    Eum eu sumo albucius perfecto, commodo torquatos consequuntur
-                                    pro ut, id posse splendide ius. Cu nisl putent omittantur usu,
-                                    mutat atomorum ex pro, ius nibh nonumy id. Nam at eius
-                                    dissentias disputando, molestie mnesarchum complectitur per
-                                    te. In commune pericula mediocritatem per. Cu audiam dolorum
-                                    appareat per, id habeo suavitate argumentum vel. Te is eros
-                                    ludus tibique.Iriure evertitur vix cu, ad has dictas mandamus
-                                    explicari, ne vocibus consectetuer cum. Ea prima perfecto sed.
-                                    Summo impedit mentitum cum ut. Verear prompta recteque ex vix.
-                                    No cum quidam antiopam, numquam equidem eam ea. Eos eu hinc
-                                    doctus interpretaris, quis mucius et ius
+                                    {singelsHotels?.descriptions}
                                 </h5>
                             </div>
                             {/* ----------------Tour Amenities----------------- */}
                             <div className="pt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                                 <div>
                                     <h1 className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-800 pb-2">
-                                        Tour Amenities
+                                        {singelsHotels?.title}
                                     </h1>
                                     <h5 className="text-lg text-slate-500">
                                         <li>Accepts Credit Cards</li>
@@ -208,7 +200,7 @@ const detailsHostel01 = ({ detailsHotel }) => {
                                 <h1 className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-800 pb-2">
                                     Location
                                 </h1>
-                                <img src="https://i.ibb.co/SxRXRHg/Rectangle-16.png" />
+                                <img loading="lazy" src="https://i.ibb.co/SxRXRHg/Rectangle-16.png" />
                             </div>
                             <div className="divider"></div>
                             {/* ----------------Review----------------- */}
@@ -220,19 +212,20 @@ const detailsHostel01 = ({ detailsHotel }) => {
                                 <div className="border p-5 my-7">
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center justify-between">
-                                            <FaUserAlt className="rounded-full bg-[#3D3D3D] text-6xl p-2 text-white " />
+                                            {/* <FaUserAlt className=" " /> */}
+                                            <img loading="lazy" className="rounded-full bg-[#3D3D3D] text-6xl p-2 text-white w-20 h-20" src="https://media.licdn.com/dms/image/D5603AQFAv-ZfyGJC6A/profile-displayphoto-shrink_400_400/0/1680587786974?e=1687996800&v=beta&t=Q7DRuXsOW-EXKMx1-eOOP3dE-vOuWz8gBkh_jba7lhE" alt="" />
                                             <div className="pl-5">
-                                                <p className="text-md md:text-lg lg:text-xl">
-                                                    Rakib Hasan
+                                                <p className="text-md md:text-md lg:text-xl text-black">
+                                                    Rasel Khan
                                                 </p>
                                                 <h1 className="text-sm text-slate-500">
-                                                    Founder & CEO
+                                                    Founder of travel.xone.com
                                                 </h1>
                                             </div>
                                         </div>
-                                        <div className="flex gap-2 items-center justify-between ">
+                                        <div className="flex gap-2 items-center justify-between cursor-pointer">
                                             <AiOutlineLike className="text-[#627FF4] " />
-                                            <p>1</p>
+                                            <p className="text-[#627FF4] ">10.5k</p>
                                         </div>
                                     </div>
                                     <div className="text-[#e2a04a] flex text-lg pt-4">
@@ -262,19 +255,20 @@ const detailsHostel01 = ({ detailsHotel }) => {
                                 <div className="border p-5 my-7">
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center justify-between">
-                                            <FaUserAlt className="rounded-full bg-[#3D3D3D] text-6xl p-2 text-white " />
+                                            {/* <FaUserAlt className=" " /> */}
+                                            <img loading="lazy" className="rounded-full bg-[#3D3D3D] text-6xl p-2 text-white w-20 h-20" src="https://media.licdn.com/dms/image/D5603AQHwrKq2JfCBhg/profile-displayphoto-shrink_400_400/0/1673467931951?e=1687996800&v=beta&t=oDo5LJ6gncC2mjRAks8TNbsIVcZEIIjg_pKL0Kd5lts" alt="" />
                                             <div className="pl-5">
-                                                <p className="text-md md:text-lg lg:text-xl">
-                                                    Rakib Hasan
+                                                <p className="text-md md:text-md lg:text-xl text-black">
+                                                    Jorna katun
                                                 </p>
                                                 <h1 className="text-sm text-slate-500">
-                                                    Founder & CEO
+                                                    Founder of travel.xone.com
                                                 </h1>
                                             </div>
                                         </div>
-                                        <div className="flex gap-2 items-center justify-between ">
+                                        <div className="flex gap-2 items-center justify-between cursor-pointer">
                                             <AiOutlineLike className="text-[#627FF4] " />
-                                            <p>1</p>
+                                            <p className="text-[#627FF4]" >1k</p>
                                         </div>
                                     </div>
                                     <div className="text-[#e2a04a] flex text-lg pt-4">
@@ -304,19 +298,20 @@ const detailsHostel01 = ({ detailsHotel }) => {
                                 <div className="border p-5 my-7">
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center justify-between">
-                                            <FaUserAlt className="rounded-full bg-[#3D3D3D] text-6xl p-2 text-white " />
+                                            {/* <FaUserAlt className=" " /> */}
+                                            <img loading="lazy" className="rounded-full bg-[#3D3D3D] text-6xl p-2 text-white w-20 h-20" src="https://media.licdn.com/dms/image/D5603AQGbtEaPt9PVKg/profile-displayphoto-shrink_400_400/0/1673089173008?e=1687996800&v=beta&t=4CkeUsiUmqjqkM5-KkPpGTG3EtUCiLqmJPlo7_3BVrI" alt="" />
                                             <div className="pl-5">
-                                                <p className="text-md md:text-lg lg:text-xl">
-                                                    Rakib Hasan
+                                                <p className="text-md md:text-md lg:text-xl text-black">
+                                                    Rakib hasan
                                                 </p>
                                                 <h1 className="text-sm text-slate-500">
-                                                    Founder & CEO
+                                                    Founder of travel.xone.com
                                                 </h1>
                                             </div>
                                         </div>
-                                        <div className="flex gap-2 items-center justify-between ">
+                                        <div className="flex gap-2 items-center justify-between cursor-pointer">
                                             <AiOutlineLike className="text-[#627FF4] " />
-                                            <p>1</p>
+                                            <p className="text-[#627FF4] ">1.5k</p>
                                         </div>
                                     </div>
                                     <div className="text-[#e2a04a] flex text-lg pt-4">
@@ -436,7 +431,7 @@ const detailsHostel01 = ({ detailsHotel }) => {
                                 </div>
                                 <button
                                     type="submit"
-                                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
+                                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
                                 >
                                     Book Now
                                 </button>
@@ -475,7 +470,7 @@ const detailsHostel01 = ({ detailsHotel }) => {
                                 <div className="bg-base-100 pt-3">
                                     <figure>
                                         <img
-                                            src="https://i.ibb.co/x3h8Fhf/New-Project-5.png"
+                                            loading="lazy" src="https://i.ibb.co/x3h8Fhf/New-Project-5.png"
                                             alt="Shoes"
                                         />
                                     </figure>

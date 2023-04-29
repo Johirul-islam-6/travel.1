@@ -27,8 +27,8 @@ const HotelCards = (props) => {
     if (loding) {
         return <>
             <div className="w-[100%] h-[100vh] justify-center flex items-center">
-                <div class="fixed top-0 right-0 h-screen w-screen z-50 flex justify-center items-center bg-[#0000004d]">
-                    <div class="animate-spin rounded-full h-32 w-32 border-t-2 border-b-4 border-blue-700"></div>
+                <div className="fixed top-0 right-0 h-screen w-screen z-50 flex justify-center items-center bg-[#0000004d]">
+                    <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-4 border-blue-700"></div>
                 </div>
             </div>
         </>

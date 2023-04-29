@@ -88,6 +88,26 @@ const Hero = () => {
     }
     console.log(bookingMember)
 
+    fetch('http://localhost:5000/', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(bookingMember)
+    })
+      .then(result => result.json())
+      .then(data => {
+        console.log(data)
+        if (data?.acknowledged) {
+          console.log('Your Booking successfuly ')
+          targetValue.reset()
+          // bookItem(null);
+        } else {
+          console.log(data?.messsage)
+        }
+
+      })
+
 
   }
 
@@ -113,7 +133,7 @@ const Hero = () => {
             </h5> */}
 
             <div className="flex justify-center items-center">
-              <div className="grid grid-cols-3 top_div w-[60%] md:w-[30%] px-2 text-[#000000c9] font-semibold rounded-t-full bg-[#fefefe]  absolute mx-auto z-10 top-[27%] md:top-[44.6%] ">
+              <div className="grid grid-cols-3 top_div w-[60%] md:w-[30%] px-2 text-[#000000c9] font-semibold rounded-t-full bg-[#ffffffe5] absolute mx-auto z-10 top-[27%] md:top-[45.5%] ">
                 <div className="top_text grid justify-center items-center py-6 border-b-4 hover:border-amber-600 cursor-pointer">
                   <h1 onClick={(event) => HomeServecesClick("Toure")} className="font-sans text-[16px] font-bold">Toure</h1>
                 </div>
@@ -126,11 +146,11 @@ const Hero = () => {
               </div>
 
               {/* ----submin---- */}
-              <from className="hidden md:grid  top_div w-[60%] md:w-[30%] px-2 text-[#010101] font-semibold rounded-b-full bg-[#ffffff]  absolute mx-auto z-10 top-[27%] md:top-[80.0%] ">
+              <from className="hidden md:grid  top_div w-[60%] md:w-[30%] px-2 text-[#010101] font-semibold rounded-b-full bg-[#ffffffe5]  absolute mx-auto z-10 top-[27%] md:top-[80.0%] ">
                 <div className="top_text grid justify-center items-center py-6 cursor-pointer w-[100%] ">
                   {/* <button htmlFor="my-modal-6" className='btn text-black hover:bg-white bg-white w-full cursor-pointer' >open modal</button> */}
                   <button
-                    className=" text-black hover:bg-white bg-white w-full cursor-pointer px-20 border-none"
+                    className=" text-black hover:bg-[#ffffff00] bg-[#ffffffe5]w-full cursor-pointer px-20 border-none"
                     type="button"
                     onClick={SubmitTourestData}
                   >
@@ -141,7 +161,7 @@ const Hero = () => {
                   {
                     showModal ? <>
                       <div
-                        className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+                        className="justify-center items-center hidden md:flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
                       >
                         <div className="relative w-auto my-6 mx-auto max-w-3xl">
                           {/*content*/}
@@ -149,7 +169,7 @@ const Hero = () => {
                             <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                               {/*header*/}
                               <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-                                <h3 className="text-3xl font-semibold text-center">
+                                <h3 className="text-3xl font-semibold text-black">
                                   Travel<span className="text-blue-600">.Xone</span>
                                 </h3>
                                 <button
@@ -168,7 +188,7 @@ const Hero = () => {
                                   Travel takes us out of our comfort zones and inspires us to see,  try new things.
                                 </p>
 
-                                <div className="grid md:grid-cols-2 gap-2">
+                                <div className="grid grid-cols-2 gap-2">
                                   <div className="form-control w-full max-w-xs">
                                     <label className="label">
                                       <span className="label-text">your name Is :</span>
@@ -182,7 +202,7 @@ const Hero = () => {
                                     <input name="email" type="text" defaultValue={bookingData?.email} className="input input-bordered w-full max-w-xs bg-blue-400 text-white" />
                                   </div>
                                 </div>
-                                <div className="grid md:grid-cols-2 gap-2">
+                                <div className="grid grid-cols-2 gap-2">
                                   <div className="form-control w-full max-w-xs">
                                     <label className="label">
                                       <span className="label-text">your From :</span>
@@ -197,7 +217,7 @@ const Hero = () => {
                                   </div>
                                 </div>
 
-                                <div className="grid md:grid-cols-2 gap-2">
+                                <div className="grid grid-cols-2 gap-2">
                                   <div className="form-control w-full max-w-xs">
                                     <label className="label">
                                       <span className="label-text">Journey Date is :</span>
@@ -212,7 +232,7 @@ const Hero = () => {
                                   </div>
                                 </div>
 
-                                <div className="grid md:grid-cols-2 gap-2">
+                                <div className="grid grid-cols-2 gap-2">
                                   <div className="form-control w-full max-w-xs">
                                     <label className="label">
                                       <span className="label-text">your Phone is :</span>
@@ -299,11 +319,13 @@ const Hero = () => {
                         <option disabled selected>
                           Select Place
                         </option>
-                        <option>Homer</option>
-                        <option>Marge</option>
-                        <option>Bart</option>
-                        <option>Lisa</option>
-                        <option>Maggie</option>
+                        <option>Dhaka</option>
+                        <option>cox's bazar</option>
+                        <option>Borisal</option>
+                        <option>Rongpur</option>
+                        <option>Cummila</option>
+                        <option>Sylet</option>
+                        <option>More..</option>
                       </select>
                     </div>
                     {/* -------------date-------------- */}
@@ -357,6 +379,129 @@ const Hero = () => {
                   </div>
                   <div className="flex justify-center mt-5 md:hidden">
                     <button onClick={SubmitTourestData} className="btn btn-primary px-14 bg-[#ffffff] text-black">submit</button>
+
+
+                    {
+                      showModal ? <>
+                        <div
+                          className="justify-center items-center flex md:hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+                        >
+                          <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                            {/*content*/}
+                            <form onSubmit={confirmBooking}>
+                              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                {/*header*/}
+                                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                                  <h3 className="text-3xl font-semibold text-center text-black">
+                                    Travel<span className="text-blue-600">.Xone</span>
+                                  </h3>
+                                  <button
+                                    className="p-1 ml-auto border-0 text-black opacity-1 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                    onClick={() => setShowModal(false)}
+                                  >
+                                    <span className=" text-red-800  h-7 w-8 text-[32px] block outline-none focus:outline-none">
+                                      ×
+                                    </span>
+                                  </button>
+                                </div>
+                                {/* start modal  body*/}
+
+                                <div className="relative p-6 flex-auto">
+                                  <p className="my-4 text-slate-500 text-lg leading-relaxed">
+                                    Travel takes us out of our comfort zones and inspires us to see.
+                                  </p>
+
+                                  <div className="grid grid-cols-2 gap-2">
+                                    <div className="form-control w-full max-w-xs">
+                                      <label className="label">
+                                        <span className="label-text">your name Is :</span>
+                                      </label>
+                                      <input name="name" type="text" defaultValue={bookingData?.name} className="input input-bordered w-full max-w-xs bg-blue-400 text-white" />
+                                    </div>
+                                    <div className="form-control w-full max-w-xs">
+                                      <label className="label">
+                                        <span className="label-text">your Email Is :</span>
+                                      </label>
+                                      <input name="email" type="text" defaultValue={bookingData?.email} className="input input-bordered w-full max-w-xs bg-blue-400 text-white" />
+                                    </div>
+                                  </div>
+                                  <div className="grid grid-cols-2 gap-2">
+                                    <div className="form-control w-full max-w-xs">
+                                      <label className="label">
+                                        <span className="label-text">your From :</span>
+                                      </label>
+                                      <input name="fLocation" type="text" defaultValue={bookingData?.FromLocation} className="input input-bordered w-full max-w-xs bg-blue-400 text-white" />
+                                    </div>
+                                    <div className="form-control w-full max-w-xs">
+                                      <label className="label">
+                                        <span className="label-text">your From To :</span>
+                                      </label>
+                                      <input name="tLocation" type="text" defaultValue={bookingData?.ToLocation} className="input input-bordered w-full max-w-xs bg-blue-400 text-white" />
+                                    </div>
+                                  </div>
+
+                                  <div className="grid grid-cols-2 gap-2">
+                                    <div className="form-control w-full max-w-xs">
+                                      <label className="label">
+                                        <span className="label-text">Journey Date is :</span>
+                                      </label>
+                                      <input name="jdate" type="text" defaultValue={bookingData?.JarnyDate} className="input input-bordered w-full max-w-xs bg-blue-400 text-white" />
+                                    </div>
+                                    <div className="form-control w-full max-w-xs">
+                                      <label className="label">
+                                        <span className="label-text">Return Date is:</span>
+                                      </label>
+                                      <input name="rdate" type="text" defaultValue={bookingData?.ReturnDate} className="input input-bordered w-full max-w-xs bg-blue-400 text-white" />
+                                    </div>
+                                  </div>
+
+                                  <div className="grid grid-cols-2 gap-2">
+                                    <div className="form-control w-full max-w-xs">
+                                      <label className="label">
+                                        <span className="label-text">your Phone is :</span>
+                                      </label>
+                                      <input name="phone" type="text" defaultValue={bookingData?.phone} className="input input-bordered w-full max-w-xs bg-blue-400 text-white" />
+                                    </div>
+                                    <div className="form-control w-full max-w-xs">
+                                      <label className="label">
+                                        <span className="label-text">your Members is:</span>
+                                      </label>
+                                      <input name="member" type="text" defaultValue={bookingData?.Member} className="input input-bordered w-full max-w-xs bg-blue-400 text-white" />
+                                    </div>
+                                  </div>
+
+                                </div>
+                                {/*footer*/}
+                                <div className="flex items-center justify-between p-6 border-t border-solid border-slate-200 rounded-b">
+
+                                  <button
+                                    className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                    type="button"
+                                    onClick={() => setShowModal(false)}
+                                  >
+                                    Skip
+                                  </button>
+                                  <button
+                                    className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                    type="submit" value="Submit"
+                                    onClick={() => confirmBooking}
+                                  >
+                                    Confirm Booking
+                                  </button>
+
+                                </div>
+                              </div>
+
+                            </form>
+
+                          </div>
+                        </div>
+                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                      </>
+                        : null
+                    }
+
+
                   </div>
 
                 </div>
@@ -475,7 +620,7 @@ const Hero = () => {
 
       {/* ------------- Card Section down home------------ */}
       <section className="flex justify-center items-center w-[100%] py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center w-[70%]">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center w-[70%]">
           {/* -----single card---- */}
           <div className="text-center border mx-auto px-3 py-5 rounded hover:shadow-2xl">
             <div className="pb-2">
