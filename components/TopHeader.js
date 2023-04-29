@@ -35,6 +35,11 @@ const TopHeader = () => {
                   About us
                 </p>
               </Link>
+              <Link href="/admin">
+                <p className="ml-2 text-sm text-slate-200 hover:text-white">
+                  admin
+                </p>
+              </Link>
             </div>
             <div className="flex gap-x-6 gap-y-2 items-center primary-color p-[10px] mr-10">
               <BsFacebook className="text-white cursor-pointer hover:text-[#000000]" />
