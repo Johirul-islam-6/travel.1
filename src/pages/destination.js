@@ -434,13 +434,3 @@ const Destination = () => {
 
 export default Destination;
 
-export const getStaticProps = async () => {
-  const res = await fetch("/api/destination");
-  const data = await res.json();
-  console.log(data);
-  return{
-    props: {
-      destination : data
-    }
-  }
-}

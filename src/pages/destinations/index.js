@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import Location from '../../../components/Home/Location';
 import classNames from "classnames";
 import Link from 'next/link';
 
-const DestinationsArea = ({ location }) => {
-    console.log(location)
+const Destinations = ({ location }) => {
+
     const [locationid, setlocationId] = useState()
     const id1 = "643c2ace24a8114c69217526"
     const id2 = "643c2b61f7c5a823c7ca6272"
@@ -45,7 +46,7 @@ const DestinationsArea = ({ location }) => {
                             <img src="https://i.ibb.co/ByXW3K0/location10.png" />
                             <div className={`${overlayClass}`}>
                                 <Link
-                                    href={`/destinationArea/${id1}`}
+                                    href={`/destinations/643c2ace24a8114c69217526`}
                                     className="cursor-pointer"
                                 >
                                     <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
@@ -60,7 +61,7 @@ const DestinationsArea = ({ location }) => {
                                 <div onClick={() => ClickLocation(id2)} className="group relative">
                                     <img src="https://i.ibb.co/JnXHGqk/Ahasan-manjill.png" />
                                     <Link
-                                        href={`/destinationArea/${id2}`}
+                                        href={`/destinations/643c2b61f7c5a823c7ca6272`}
                                         className="cursor-pointer"
                                     >
                                         <div className={`${overlayClass}`}>
@@ -74,7 +75,7 @@ const DestinationsArea = ({ location }) => {
                                     <img src="https://i.ibb.co/yq1cb38/cox-bazer.png" />
                                     <div className={`${overlayClass}`}>
                                         <Link
-                                            href={`/destinationArea/${id3}`}
+                                            href={`/destinations/643c2bce11de3a4be5df416f`}
                                             className="cursor-pointer"
                                         >
                                             <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
@@ -90,7 +91,7 @@ const DestinationsArea = ({ location }) => {
                                     <img src="https://i.ibb.co/DQz7210/jaflong.png" />
                                     <div className={`${overlayClass}`}>
                                         <Link
-                                            href={`/destinationArea/${id4}`}
+                                            href={`/destinations/643c2c61f97a9e7ae141b4a1`}
                                             className="cursor-pointer"
                                         >
                                             <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
@@ -103,7 +104,7 @@ const DestinationsArea = ({ location }) => {
                                     <img src="https://i.ibb.co/zxmNYFc/Sundarban.png" />
                                     <div className={`${overlayClass}`}>
                                         <Link
-                                            href={`/destinationArea/${id5}`}
+                                            href={`/destinations/643c3117e049fd5186b59ae1`}
                                             className="cursor-pointer"
                                         >
                                             <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
@@ -123,7 +124,7 @@ const DestinationsArea = ({ location }) => {
     );
 };
 
-export default DestinationsArea;
+export default Destinations;
 
 export const getServerSideProps = async () => {
     const res = await fetch("https://travel-xone-server.vercel.app/api/v1/locations/");

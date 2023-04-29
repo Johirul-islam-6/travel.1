@@ -3,8 +3,8 @@ import Adventures from "../../components/Adventure/Adventures";
 import Hero from "../../components/Home/Hero";
 import Opportunity from "../../components/Home/Opportunity";
 import Testimonial from "../../components/Testimonial/Testimonial";
-import Destination from "./destination";
-import DestinationArea from "./destinationArea";
+
+
 
 
 const Home = () => {
@@ -25,7 +25,7 @@ const Home = () => {
         />
       </Head>
       <Hero />
-      <DestinationArea/>
+      
       <Opportunity />
       <Adventures />
       <Testimonial />
