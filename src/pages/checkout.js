@@ -24,7 +24,7 @@ const Checkout = () => {
               <div class="mx-auto w-full max-w-lg">
                 <h1 class="relative text-2xl font-medium text-gray-700 sm:text-3xl">
                   Payment Details
-                  <span class="mt-2 block h-1 w-10 bg-teal-600 sm:w-20"></span>
+                  <span class="mt-2 block h-1 w-10 bg-blue-600 sm:w-20"></span>
                 </h1>
                 {/* -------------------Payment form-----------  */}
                 <form action="" class="mt-10 flex flex-col space-y-4">
@@ -102,7 +102,7 @@ const Checkout = () => {
                       id="email"
                       name="email"
                       placeholder="john.capler@fang.com"
-                      class="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                      class="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-blue-500"
                     />
                   </div>
                   <div class="relative">
@@ -117,7 +117,7 @@ const Checkout = () => {
                       id="card-number"
                       name="card-number"
                       placeholder="1234-5678-XXXX-XXXX"
-                      class="block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 pr-10 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                      class="block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 pr-10 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-blue-500"
                     />
                     <img
                       src="/images/uQUFIfCYVYcLK0qVJF5Yw.png"
@@ -139,7 +139,7 @@ const Checkout = () => {
                           id="security-code"
                           name="security-code"
                           placeholder="Month"
-                          class="block w-36 rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                          class="block w-36 rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-blue-500"
                         />
                       </div>
                       <div class="my-1 ml-3 mr-3">
@@ -151,7 +151,7 @@ const Checkout = () => {
                           id="security-code"
                           name="security-code"
                           placeholder="Year"
-                          class="block w-36 rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                          class="block w-36 rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-blue-500"
                         />
                       </div>
                       <div class="relative my-1">
@@ -163,7 +163,7 @@ const Checkout = () => {
                           id="security-code"
                           name="security-code"
                           placeholder="Security code"
-                          class="block w-36 rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                          class="block w-36 rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-blue-500"
                         />
                       </div>
                     </div>
@@ -177,7 +177,7 @@ const Checkout = () => {
                       id="card-name"
                       name="card-name"
                       placeholder="Name on the card"
-                      class="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                      class="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-blue-500"
                     />
                   </div>
                 </form>
@@ -187,14 +187,14 @@ const Checkout = () => {
                   By placing this order you agree to the{" "}
                   <a
                     href="#"
-                    class="whitespace-nowrap text-teal-400 underline hover:text-teal-600"
+                    class="whitespace-nowrap text-blue-400 underline hover:text-blue-600"
                   >
                     Terms and Conditions
                   </a>
                 </p>
                 <button
                   type="submit"
-                  class="mt-4 inline-flex w-full items-center justify-center rounded bg-teal-600 py-2.5 px-4 text-base font-semibold tracking-wide text-white text-opacity-80 outline-none ring-offset-2 transition hover:text-opacity-100 focus:ring-2 focus:ring-teal-500 sm:text-lg"
+                  class="mt-4 inline-flex w-full items-center justify-center rounded bg-blue-600 py-2.5 px-4 text-base font-semibold tracking-wide text-white text-opacity-80 outline-none ring-offset-2 transition hover:text-opacity-100 focus:ring-2 focus:ring-blue-500 sm:text-lg"
                 >
                   Place Order
                 </button>
@@ -208,7 +208,7 @@ const Checkout = () => {
                   alt=""
                   class="absolute inset-0 h-full w-full object-cover"
                 />
-                <div class="absolute inset-0 h-full w-full bg-gradient-to-t from-teal-800 to-teal-400 opacity-95"></div>
+                <div class="absolute inset-0 h-full w-full bg-gradient-to-t from-blue-800 to-blue-400 opacity-95"></div>
               </div>
               <div class="relative">
                 <ul class="space-y-5">
