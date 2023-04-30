@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const AdminSidebar = () => {
@@ -10,10 +11,18 @@ const AdminSidebar = () => {
         </ul> */}
 
         {/* code */}
-        <div class=" w-[20%] min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-gray-50 text-gray-800">
+        <div class=" w-[20%] min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased text-gray-800">
           <div class="fixed flex flex-col top-0 left-0 w-64 bg-white h-full border-r">
             <div class="flex items-center justify-center h-14 border-b">
-              <div>Sidebar Navigation By iAmine</div>
+            <Link href="/" className="cursor-pointer p-4">
+              <Image
+                src="https://i.ibb.co/Z2SgSq2/travel-xone.png"
+                alt="TRAVEL.XONE LOGO"
+                width={600}
+                height={450}
+                loading="lazy"
+              />
+            </Link>
             </div>
             <div class="overflow-y-auto overflow-x-hidden flex-grow">
               <ul class="flex flex-col py-4 space-y-1">
