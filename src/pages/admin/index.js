@@ -9,7 +9,7 @@ const admin = () => {
             </Head>
             <div className="w-[100%] h-screen flex justify-center">
             <AdminSidebar/>
-            <div className="w-[80%] bg-slate-100 pt-[9%] px-1">
+            <div className="w-[90%] lg:w-[80%] bg-slate-100 pt-[9%] px-1">
             {/* -------------body content------------------ */}
             
             </div>
