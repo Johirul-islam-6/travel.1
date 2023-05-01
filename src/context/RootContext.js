@@ -23,7 +23,7 @@ useEffect(()=>{
                   setStatus({...status,loading:false})
 
       }
-      return ()=>  unSubscribe()
+      // return ()=>  unSubscribe()
 },[])
 
   const  RootContextValue = {status,setStatus,LOGIN,REGISTER,user,setUser}

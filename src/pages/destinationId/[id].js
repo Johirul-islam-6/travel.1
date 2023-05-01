@@ -429,12 +429,14 @@ const detailsHostel01 = ({ detailsHotel }) => {
                                         placeholder="Notes"
                                     ></textarea>
                                 </div>
+                                <Link href="/checkout">
                                 <button
                                     type="submit"
                                     className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
                                 >
                                     Book Now
                                 </button>
+                                </Link>
                             </div>
                             <div className="w-11/12 p-5 border">
                                 <h1 className="text-2xl ">Tour Information</h1>
