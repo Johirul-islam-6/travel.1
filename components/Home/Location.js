@@ -49,7 +49,7 @@ const Location = () => {
               />
               <div className={`${overlayClass}`}>
                 <Link
-                  href={`/destinations/643c2ace24a8114c69217526`}
+                  href={`/destinations/${id1}`}
                   className="cursor-pointer"
                 >
                   <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
@@ -157,35 +157,35 @@ const Location = () => {
 
 
 // -------------- Server site API -------------
-// export const getStaticProps = async (context) => {
-//   const { params } = context;
-//   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params?.postId}`);
-//   const data = await res.json();
+export const getStaticProps = async (context) => {
+  const { params } = context;
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params?.postId}`);
+  const data = await res.json();
 
-//   return {
-//     props: {
-//       post: data
-//     }
-//   }
-// }
+  return {
+    props: {
+      post: data
+    }
+  }
+}
 
-// export const getStaticPaths = async () => {
+export const getStaticPaths = async () => {
 
-//   const res = await fetch("https://travel-xone-server.vercel.app/api/v1/location/643c2ace24a8114c69217526");
-//   const data = await res.json();
-//   console.log("hello", data);
-//   const paths = data?.map(post => {
-//     return {
-//       params: {
-//         postId: `${post?.id}`
-//       }
-//     }
-//   })
-//   return {
-//     paths,
-//     fallback: false
-//   }
-// }
+  const res = await fetch("https://travel-xone-server.vercel.app/api/v1/location/643c2ace24a8114c69217526");
+  const data = await res.json();
+  console.log("hello", data);
+  const paths = data?.map(post => {
+    return {
+      params: {
+        postId: `${post?.id}`
+      }
+    }
+  })
+  return {
+    paths,
+    fallback: false
+  }
+}
 
 
 export default Location;

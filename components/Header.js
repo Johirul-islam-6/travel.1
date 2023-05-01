@@ -19,21 +19,21 @@ const Header = () => {
   return (
     <>
       <TopHeader />
-      <header className="w-[100%] justify-center bg-[#ffffffe5] flex mx-auto absolute ">
+      <header className="w-[100%] justify-center bg-[#ffffffe5] flex mx-auto absolute h-[110px]">
         <div className="navbar w-[100%]">
           {/* <!-- -------- toggle left small size slider ------ --> */}
-          <div className="dropdown dropdown-start lg:hidden">
+          <div className="dropdown dropdown-start lg:hidden z-50">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-              <div className="w-8 rounded-full">
-                <BiMenu className="w-8 h-8 text-[#000000] bg-base-300 p-2" />
+              <div className="w-10 rounded-full">
+                <BiMenu className="w-10 h-10 text-[#ffffff] bg-base-300 p-2" />
               </div>
             </label>
 
             <ul
               tabIndex="1"
-              className="menu menu-compact dropdown-content mt-3 bg-[#020202e7] rounded-box w-[70vw] md:w-[50vw] h-[90vh]"
+              className="menu menu-compact dropdown-content mt-3 bg-[#020202e7] rounded-box w-[70vw] md:w-[50vw] h-[90vh] pl-5"
             >
-              travel
+
               {/* Dropdown menu */}
               <div className="h-[100vh] p-0 space-y-2  md:w-60 lg:hidden block py-4">
                 <div className="flex justify-between w-[60%]  ">
@@ -49,7 +49,7 @@ const Header = () => {
                 </div>
                 <div className="divide-gray-700 pt-6 relative z-50">
                   <ul>
-                    <li className="hover:bg-[#0458c6]">
+                    <li className="w-32 hover:bg-blue-500">
                       <Link
                         rel="noopener noreferrer"
                         href="/"
@@ -59,7 +59,7 @@ const Header = () => {
                         <span>Home</span>
                       </Link>
                     </li>
-                    <li className="hover:bg-[#0458c6] mt-1">
+                    <li className="w-32 hover:bg-blue-500 mt-1">
                       <a
                         rel="noopener noreferrer"
                         href="/destination"
@@ -69,7 +69,7 @@ const Header = () => {
                         <span>Destination</span>
                       </a>
                     </li>
-                    <li className="hover:bg-[#0458c6] mt-1">
+                    <li className="w-32 hover:bg-blue-500 mt-1">
                       <a
                         rel="noopener noreferrer"
                         href="/transport"
@@ -79,7 +79,7 @@ const Header = () => {
                         <span>Transport</span>
                       </a>
                     </li>
-                    <li className="hover:bg-[#0458c6] mt-1">
+                    <li className="w-32 hover:bg-blue-500 mt-1">
                       <a
                         rel="noopener noreferrer"
                         href="/blogs"
@@ -89,7 +89,7 @@ const Header = () => {
                         <span>Blogs</span>
                       </a>
                     </li>
-                    <li className="hover:bg-[#0458c6] mt-1">
+                    <li className="w-32 hover:bg-blue-500 mt-1">
                       <a
                         rel="noopener noreferrer"
                         href="/contact"
