@@ -295,27 +295,28 @@ const Hero = () => {
 
                   <div className="flex w-[100%] justify-start gap-x-3">
                     <div className="flex pb-3">
-                      <input type="checkbox" name="" className="mx-1" id="" />
+                      <input type="checkbox" name="" className="mx-1 bg-[#3a3939] " id="" />
                       <h1>Day</h1>
                     </div>
                     <div className="flex  pb-3">
-                      <input type="checkbox" name="" className="mx-1" id="" />
+                      <input type="checkbox" name="" className="mx-1 bg-[#3a3939] " id="" />
                       <h1>Week</h1>
                     </div>
                     <div className="flex  pb-3">
-                      <input type="checkbox" name="" className="mx-1" id="" />
+                      <input type="checkbox" name="" className="mx-1 bg-[#3a3939] " id="" />
                       <h1>Month</h1>
                     </div>
                   </div>
                   <div className="card grid grid-cols-2 justify-center items-center md:grid-cols-5 gap-2 ">
                     <div className="border-2 border-[#c7c6c6] py-3 px-5 rounded-lg">
                       <p className="text-[16px] text-[#dcdada] text-start pl-2 pb-1 font-mono font-bold">FROM</p>
-                      <input onChange={(e) => handelLocation(e)} name="locatin" placeholder="Dhaka" type="text" className="w-[100%] mx-auto py-2 rounded-md pl-5" required />
+
+                      <input onChange={(e) => handelLocation(e)} name="locatin" placeholder="Dhaka" type="text" className="w-[100%] mx-auto py-2 rounded-md pl-5  bg-[#3a3939] " required />
                     </div>
 
-                    <div select className="border-2 border-[#c7c6c6] py-3 px-5 rounded-lg">
+                    <div select className="border-2 border-[#c7c6c6] py-3 px-5 rounded-lg bg-">
                       <p className="text-[16px] text-[#dcdada] text-start pl-2 pb-1 font-mono font-bold">TO</p>
-                      <select onChange={(e) => handelTO(e)} className="focus:outline-none text-md font-normal w-[100%] px-5 py-2 rounded-md mx-auto">
+                      <select onChange={(e) => handelTO(e)} className="focus:outline-none text-md font-normal w-[100%] px-5 py-2 rounded-md mx-auto bg-[#3a3939] ">
                         <option disabled selected>
                           Select Place
                         </option>
@@ -334,7 +335,7 @@ const Hero = () => {
 
                       <input onChange={(e) => handelJDate(e)}
                         type="date"
-                        className="text-sm font-normal focus:outline-nonew-[90%] px-5 py-2 w-[100%] rounded-md mx-auto cursor-pointer"
+                        className="text-sm bg-[#3a3939]  font-normal focus:outline-nonew-[90%] px-5 py-2 w-[100%] rounded-md mx-auto cursor-pointer"
                         required />
                     </div>
                     <div select className="border-2 border-[#c7c6c6] py-3 px-5 rounded-lg">
@@ -342,14 +343,14 @@ const Hero = () => {
 
                       <input onChange={(e) => handelRDate(e)}
                         type="date"
-                        className="text-sm font-normal focus:outline-nonew-[90%] px-5 py-2 w-[100%] rounded-md mx-auto cursor-pointer"
+                        className="text-sm bg-[#3a3939]  font-normal focus:outline-nonew-[90%] px-5 py-2 w-[100%] rounded-md mx-auto cursor-pointer"
                       />
                     </div>
 
                     {/* -----------gUest-------- */}
                     <div select className="border-2 border-[#c7c6c6] py-3 px-5 rounded-lg">
                       <p className="text-[16px] text-[#dcdada] text-start pl-2 pb-1 font-mono font-bold">GUEST</p>
-                      <select onChange={(e) => handelMember(e)} className="focus:outline-none text-md font-normal w-[100%] px-5 py-2 rounded-md mx-auto" required>
+                      <select onChange={(e) => handelMember(e)} className="focus:outline-none bg-[#3a3939]  text-md font-normal w-[100%] px-5 py-2 rounded-md mx-auto" required>
                         <option disabled selected>
                           Members
                         </option>
@@ -365,7 +366,7 @@ const Hero = () => {
                     <div select className="border-2 border-[#c7c6c6] py-3 px-5 rounded-lg md:hidden">
                       <p className="text-[16px] text-[#dcdada] text-start pl-2 pb-1 font-mono font-bold">GENDER</p>
 
-                      <select className="focus:outline-none text-md font-normal w-[100%] px-5 py-2 rounded-md mx-auto">
+                      <select className="focus:outline-none text-md bg-[#3a3939]  font-normal w-[100%] px-5 py-2 rounded-md mx-auto">
                         <option disabled selected>
                           select gender
                         </option>
@@ -512,11 +513,11 @@ const Hero = () => {
                   <div className="block bg-[#00000041] md:w-[70%] py-7 mx-auto mt-3 rounded-xl absolute md:top-[53%] top-[35%] px-5 pb-8">
                     <div className="flex w-[100%] justify-start gap-x-3">
                       <div className="flex pb-3">
-                        <input type="checkbox" name="" className="mx-1" id="" />
+                        <input type="checkbox" name="" className="mx-1 bg-[#3a3939] " id="" />
                         <h1>Day</h1>
                       </div>
                       <div className="flex  pb-3">
-                        <input type="checkbox" name="" className="mx-1" id="" />
+                        <input type="checkbox" name="" className="mx-1 bg-[#3a3939] " id="" />
                         <h1>Night</h1>
                       </div>
 
@@ -526,7 +527,7 @@ const Hero = () => {
 
                       <div select className="border-2 border-[#c7c6c6] py-3 px-5 rounded-lg">
                         <p className="text-[16px] text-[#dcdada] text-start pl-2 pb-1 font-mono font-bold">Airports Lisht</p>
-                        <select className="focus:outline-none text-md font-normal w-[100%] px-5 py-2 rounded-md mx-auto">
+                        <select className="focus:outline-none bg-[#3a3939]  text-md font-normal w-[100%] px-5 py-2 rounded-md mx-auto">
                           <option disabled selected>
                             Select Flight
                           </option>
@@ -543,7 +544,7 @@ const Hero = () => {
 
                         <input
                           type="date"
-                          className="text-sm font-normal focus:outline-nonew-[90%] px-5 py-2 w-[100%] rounded-md mx-auto cursor-pointer"
+                          className="text-sm font-normal bg-[#3a3939]  focus:outline-nonew-[90%] px-5 py-2 w-[100%] rounded-md mx-auto cursor-pointer"
                         />
                       </div>
                     </div>
@@ -560,15 +561,15 @@ const Hero = () => {
                   <div className="block bg-[#00000041] md:w-[70%] py-7 mx-auto mt-3 rounded-xl absolute md:top-[53%] top-[35%] px-5 pb-8">
                     <div className="flex w-[100%] justify-start gap-x-3">
                       <div className="flex pb-3">
-                        <input type="checkbox" name="" className="mx-1" id="" />
+                        <input type="checkbox" name="" className="mx-1 bg-[#3a3939] " id="" />
                         <h1>Day</h1>
                       </div>
                       <div className="flex  pb-3">
-                        <input type="checkbox" name="" className="mx-1" id="" />
+                        <input type="checkbox" name="" className="mx-1 bg-[#3a3939] " id="" />
                         <h1>Week</h1>
                       </div>
                       <div className="flex  pb-3">
-                        <input type="checkbox" name="" className="mx-1" id="" />
+                        <input type="checkbox" name="" className="mx-1 bg-[#3a3939] " id="" />
                         <h1>Months</h1>
                       </div>
 
@@ -578,7 +579,7 @@ const Hero = () => {
 
                       <div select className="border-2 border-[#c7c6c6] py-3 px-5 rounded-lg">
                         <p className="text-[16px] text-[#dcdada] text-start pl-2 pb-1 font-mono font-bold">Locations</p>
-                        <select className="focus:outline-none text-md font-normal w-[100%] px-5 py-2 rounded-md mx-auto">
+                        <select className="focus:outline-none text-md bg-[#3a3939]  font-normal w-[100%] px-5 py-2 rounded-md mx-auto">
                           <option disabled selected>
                             Select Locations
                           </option>
@@ -592,7 +593,7 @@ const Hero = () => {
                       {/* ------------hotels name */}
                       <div select className="border-2 border-[#c7c6c6] py-3 px-5 rounded-lg">
                         <p className="text-[16px] text-[#dcdada] text-start pl-2 pb-1 font-mono font-bold">Hotels</p>
-                        <select className="focus:outline-none text-md font-normal w-[100%] px-5 py-2 rounded-md mx-auto">
+                        <select className="focus:outline-none text-md bg-[#3a3939]  font-normal w-[100%] px-5 py-2 rounded-md mx-auto">
                           <option disabled selected>
                             Select Hotels
                           </option>
