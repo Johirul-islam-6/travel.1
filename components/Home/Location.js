@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -38,11 +39,17 @@ const Location = () => {
           {/*----- section header -----*/}
           {/*----- Location Container -----*/}
           <div className="block md:flex lg:flex px-10 lg:px-0">
-            <div onClick={() => ClickLocation(id1)} className="w-full md:w-[131%] lg:max-w-[33.3%] group relative">
-              <img src="https://i.ibb.co/ByXW3K0/location10.png" />
+            <div className="w-full md:w-[131%] lg:max-w-[33.3%] group relative">
+              <Image
+                src="https://i.ibb.co/ByXW3K0/location10.png"
+                alt="TRAVEL.XONE LOGO"
+                width={600}
+                height={450}
+                loading="lazy"
+              />
               <div className={`${overlayClass}`}>
                 <Link
-                  href={`/destinations/643c2ace24a8114c69217526`}
+                  href={`/destinations/${id1}`}
                   className="cursor-pointer"
                 >
                   <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
@@ -54,8 +61,15 @@ const Location = () => {
 
             <div>
               <div className="flex">
-                <div onClick={() => ClickLocation(id2)} className="group relative">
-                  <img src="https://i.ibb.co/JnXHGqk/Ahasan-manjill.png" />
+                <div className="group relative">
+                  <Image
+                    src="https://i.ibb.co/JnXHGqk/Ahasan-manjill.png"
+                    alt="TRAVEL.XONE LOGO"
+                    width={600}
+                    height={450}
+                    loading="lazy"
+                  />
+
                   <Link
                     href={`/destinations/643c2b61f7c5a823c7ca6272`}
                     className="cursor-pointer"
@@ -67,8 +81,15 @@ const Location = () => {
                     </div>
                   </Link>
                 </div>
-                <div onClick={() => ClickLocation(id3)} className="group relative">
-                  <img src="https://i.ibb.co/yq1cb38/cox-bazer.png" />
+                <div className="group relative">
+                  <Image
+                    src="https://i.ibb.co/yq1cb38/cox-bazer.png"
+                    alt="TRAVEL.XONE LOGO"
+                    width={600}
+                    height={450}
+                    loading="lazy"
+                  />
+
                   <div className={`${overlayClass}`}>
                     <Link
                       href={`/destinations/643c2bce11de3a4be5df416f`}
@@ -82,8 +103,15 @@ const Location = () => {
                 </div>
               </div>
               <div className="flex">
-                <div onClick={() => ClickLocation(id4)} className="group relative">
-                  <img src="https://i.ibb.co/DQz7210/jaflong.png" />
+                <div className="group relative">
+                  <Image
+                    src="https://i.ibb.co/DQz7210/jaflong.png"
+                    alt="TRAVEL.XONE LOGO"
+                    width={600}
+                    height={450}
+                    loading="lazy"
+                  />
+
                   <div className={`${overlayClass}`}>
                     <Link
                       href={`/destinations/643c2c61f97a9e7ae141b4a1`}
@@ -95,8 +123,15 @@ const Location = () => {
                     </Link>
                   </div>
                 </div>
-                <div onClick={() => ClickLocation(id5)} className="group relative">
-                  <img src="https://i.ibb.co/zxmNYFc/Sundarban.png" />
+                <div className="group relative">
+                  <Image
+                    src="https://i.ibb.co/zxmNYFc/Sundarban.png"
+                    alt="TRAVEL.XONE LOGO"
+                    width={600}
+                    height={450}
+                    loading="lazy"
+                  />
+
                   <div className={`${overlayClass}`}>
                     <Link
                       href={`/destinations/643c3117e049fd5186b59ae1`}
@@ -122,35 +157,35 @@ const Location = () => {
 
 
 // -------------- Server site API -------------
-// export const getStaticProps = async (context) => {
-//   const { params } = context;
-//   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params?.postId}`);
-//   const data = await res.json();
+export const getStaticProps = async (context) => {
+  const { params } = context;
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params?.postId}`);
+  const data = await res.json();
 
-//   return {
-//     props: {
-//       post: data
-//     }
-//   }
-// }
+  return {
+    props: {
+      post: data
+    }
+  }
+}
 
-// export const getStaticPaths = async () => {
+export const getStaticPaths = async () => {
 
-//   const res = await fetch("https://travel-xone-server.vercel.app/api/v1/location/643c2ace24a8114c69217526");
-//   const data = await res.json();
-//   console.log("hello", data);
-//   const paths = data?.map(post => {
-//     return {
-//       params: {
-//         postId: `${post?.id}`
-//       }
-//     }
-//   })
-//   return {
-//     paths,
-//     fallback: false
-//   }
-// }
+  const res = await fetch("https://travel-xone-server.vercel.app/api/v1/location/643c2ace24a8114c69217526");
+  const data = await res.json();
+  console.log("hello", data);
+  const paths = data?.map(post => {
+    return {
+      params: {
+        postId: `${post?.id}`
+      }
+    }
+  })
+  return {
+    paths,
+    fallback: false
+  }
+}
 
 
 export default Location;

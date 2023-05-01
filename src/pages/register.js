@@ -2,6 +2,7 @@ import Link from "next/link";
 import { BsFacebook, BsPencilSquare } from "react-icons/bs";
 import { AiFillGoogleCircle, AiFillTwitterCircle } from "react-icons/ai";
 import classNames from "classnames";
+import Head from "next/head";
 
 const Registration = () => {
   const backgroundClass = classNames(
@@ -18,6 +19,9 @@ const Registration = () => {
   );
   return (
     <>
+    <Head>
+      <title>Register Page</title>
+    </Head>
       <div className={backgroundClass}>
         <div className="py-20">
           <div className={formClass}>
