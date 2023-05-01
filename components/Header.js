@@ -12,6 +12,8 @@ import {
 import { BiMenu, IconName } from "react-icons/bi";
 import TopHeader from "./TopHeader";
 import navbar from "../src/styles/home_style/hero.module.css";
+import Meta from "./Meta";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -36,7 +38,13 @@ const Header = () => {
               <div className="h-[100vh] p-0 space-y-2  md:w-60 lg:hidden block py-4">
                 <div className="flex justify-between w-[60%]  ">
                   <Link href="/" className="cursor-pointer bg-base-100 rounded">
-                    <img src="https://i.ibb.co/Z2SgSq2/travel-xone.png" />
+                    <Image
+                      src="https://i.ibb.co/Z2SgSq2/travel-xone.png"
+                      alt="TRAVEL.XONE LOGO"
+                      width={600}
+                      height={450}
+                      loading="lazy"
+                    />
                   </Link>
                 </div>
                 <div className="divide-gray-700 pt-6 relative z-50">
@@ -100,7 +108,13 @@ const Header = () => {
           {/* <!-- -----only small size navbar----- --> */}
           <div className="flex-1 flex justify-start relative lg:hidden navbar-center pl-2">
             <Link href="/" className="cursor-pointer md:w-[60%]">
-              <img src="https://i.ibb.co/Z2SgSq2/travel-xone.png" />
+              <Image
+                src="https://i.ibb.co/Z2SgSq2/travel-xone.png"
+                alt="TRAVEL.XONE LOGO"
+                width={600}
+                height={450}
+                loading="lazy"
+              />
             </Link>
           </div>
 
@@ -119,11 +133,14 @@ const Header = () => {
           <ul className="align-middle hidden lg:flex justify-center w-full px-20">
             <div className="navbar">
               <Link href="/" className="cursor-pointer ">
-                <img
-                  src="https://i.ibb.co/Z2SgSq2/travel-xone.png"
-                  alt="TRAVEL.XONE LOGO"
-                  className="w-[70%]"
-                />
+              <Image
+                      src="https://i.ibb.co/Z2SgSq2/travel-xone.png"
+                      alt="TRAVEL.XONE LOGO"
+                      width={600}
+                      height={450}
+                      loading="lazy"
+                      className="w-[70%]"
+                    />
               </Link>
             </div>
 

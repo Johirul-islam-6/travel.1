@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -38,8 +39,14 @@ const Location = () => {
           {/*----- section header -----*/}
           {/*----- Location Container -----*/}
           <div className="block md:flex lg:flex px-10 lg:px-0">
-            <div onClick={() => ClickLocation(id1)} className="w-full md:w-[131%] lg:max-w-[33.3%] group relative">
-              <img src="https://i.ibb.co/ByXW3K0/location10.png" />
+            <div className="w-full md:w-[131%] lg:max-w-[33.3%] group relative">
+              <Image
+                src="https://i.ibb.co/ByXW3K0/location10.png"
+                alt="TRAVEL.XONE LOGO"
+                width={600}
+                height={450}
+                loading="lazy"
+              />
               <div className={`${overlayClass}`}>
                 <Link
                   href={`/destinations/643c2ace24a8114c69217526`}
@@ -54,8 +61,15 @@ const Location = () => {
 
             <div>
               <div className="flex">
-                <div onClick={() => ClickLocation(id2)} className="group relative">
-                  <img src="https://i.ibb.co/JnXHGqk/Ahasan-manjill.png" />
+                <div className="group relative">
+                  <Image
+                    src="https://i.ibb.co/JnXHGqk/Ahasan-manjill.png"
+                    alt="TRAVEL.XONE LOGO"
+                    width={600}
+                    height={450}
+                    loading="lazy"
+                  />
+
                   <Link
                     href={`/destinations/643c2b61f7c5a823c7ca6272`}
                     className="cursor-pointer"
@@ -67,8 +81,15 @@ const Location = () => {
                     </div>
                   </Link>
                 </div>
-                <div onClick={() => ClickLocation(id3)} className="group relative">
-                  <img src="https://i.ibb.co/yq1cb38/cox-bazer.png" />
+                <div className="group relative">
+                  <Image
+                    src="https://i.ibb.co/yq1cb38/cox-bazer.png"
+                    alt="TRAVEL.XONE LOGO"
+                    width={600}
+                    height={450}
+                    loading="lazy"
+                  />
+
                   <div className={`${overlayClass}`}>
                     <Link
                       href={`/destinations/643c2bce11de3a4be5df416f`}
@@ -82,8 +103,15 @@ const Location = () => {
                 </div>
               </div>
               <div className="flex">
-                <div onClick={() => ClickLocation(id4)} className="group relative">
-                  <img src="https://i.ibb.co/DQz7210/jaflong.png" />
+                <div className="group relative">
+                  <Image
+                    src="https://i.ibb.co/DQz7210/jaflong.png"
+                    alt="TRAVEL.XONE LOGO"
+                    width={600}
+                    height={450}
+                    loading="lazy"
+                  />
+
                   <div className={`${overlayClass}`}>
                     <Link
                       href={`/destinations/643c2c61f97a9e7ae141b4a1`}
@@ -95,8 +123,15 @@ const Location = () => {
                     </Link>
                   </div>
                 </div>
-                <div onClick={() => ClickLocation(id5)} className="group relative">
-                  <img src="https://i.ibb.co/zxmNYFc/Sundarban.png" />
+                <div className="group relative">
+                  <Image
+                    src="https://i.ibb.co/zxmNYFc/Sundarban.png"
+                    alt="TRAVEL.XONE LOGO"
+                    width={600}
+                    height={450}
+                    loading="lazy"
+                  />
+
                   <div className={`${overlayClass}`}>
                     <Link
                       href={`/destinations/643c3117e049fd5186b59ae1`}

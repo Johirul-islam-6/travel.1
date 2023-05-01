@@ -46,13 +46,13 @@ const Plain = () => {
       {/* -----------header design end----------- */}
       <div className="bg-light-800">
         <div className="py-10">
-          <img className=" mx-auto" src={two}></img>
+          <img className=" mx-auto" src={two} lazyLoad={true}></img>
         </div>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lx:grid-cols-2">
           <div>
             <div className="carousel w-full">
               <div id="slide1" className="carousel-item relative w-full">
-                <img src={one} className="w-full" />
+                <img src={one} lazyLoad={true} className="w-full" />
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                   <a href="#slide4" className="btn btn-circle">
                     ❮
@@ -63,7 +63,7 @@ const Plain = () => {
                 </div>
               </div>
               <div id="slide2" className="carousel-item relative w-full">
-                <img src={two} className="w-full" />
+                <img src={two} lazyLoad={true} className="w-full" />
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                   <a href="#slide1" className="btn btn-circle">
                     ❮
@@ -74,7 +74,7 @@ const Plain = () => {
                 </div>
               </div>
               <div id="slide3" className="carousel-item relative w-full">
-                <img src={three} className="w-full" />
+                <img src={three} lazyLoad={true} className="w-full" />
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                   <a href="#slide2" className="btn btn-circle">
                     ❮

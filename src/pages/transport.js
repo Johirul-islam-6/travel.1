@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Carousel from "react-grid-carousel";
@@ -13,6 +14,9 @@ const Transport = () => {
   }, []);
   return (
     <section>
+    <Head>
+      <title>Transport Page</title>
+    </Head>
       {/* -----------header design Start----------- */}
       <div className="bg-[url('https://i.ibb.co/nkNGLdF/banner.png')] bg-no-repeat bg-cover bg-left-bottom pt-32 lg:pt-40 pb-4 ">
         <h1 className="text-2xl lg:text-3xl text-white font-bold  pl-10 lg:pl-20">
@@ -29,7 +33,7 @@ const Transport = () => {
             <Carousel.Item>
               <div className="card sm:w-40 md:w-80 xl:w-[90%] bg-base-100 shadow-xl">
                 <figure>
-                  <img src={t?.images[0]} alt="Shoes" />
+                  <img src={t?.images[0]} alt="Shoes" lazyLoad={true}/>
                 </figure>
                 <div className="card-body">
                   <h2 className="text-left text-xl text-primary-focus font-semibold">

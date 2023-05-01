@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaUserAlt } from "react-icons/fa";
 import classNames from "classnames";
+import Head from "next/head";
 
 const Login = () => {
   const backgroundClass = classNames(
@@ -14,6 +15,9 @@ const Login = () => {
   );
   return (
     <>
+    <Head>
+      <title>Login Page</title>
+    </Head>
       <div className={backgroundClass}>
         <div className="py-20">
           <div className={formClass}>
