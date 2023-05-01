@@ -16,11 +16,11 @@ instance.interceptors.response.use(
     return response;
   },
   (error) => {
-    if (errorArry.includes(error.response.status)) {
+    if (errorArry.includes(error.response?.status)) {
       console.log(error);
       return Promise.reject();
     }
-    return Promise.reject(error);
+    else{return Promise.reject(error);}
   }
 );
 

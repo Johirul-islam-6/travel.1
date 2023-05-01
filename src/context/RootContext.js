@@ -17,7 +17,6 @@ function Context(props) {
 
 useEffect(()=>{
         const unSubscribe = async()=>{
-                  console.log("fuck-up")
                   const url = '/auth/profile'
                   const profile =  await axios.get(url)
                   setUser(profile.data.data)
