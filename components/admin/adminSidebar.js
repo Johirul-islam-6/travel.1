@@ -393,7 +393,7 @@ const AdminSidebar = () => {
                 </a>
               </li>
               <li className="dropdown dropdown-hover">
-                <a href="/admin/posts" className={iconStyle}>
+                <a href="/admin/posts/allPosts" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
                       className="w-5 h-5"
@@ -455,10 +455,10 @@ const AdminSidebar = () => {
                     <a href="/admin/media/addNew" className={iconStyle}>Add New</a>
                     </li>
                   </ul>
-                  {/* -----------Dropdown menu start--------- */}
+                  {/* -----------Dropdown menu end--------- */}
               </li>
               <li className="dropdown dropdown-hover">
-                <a href="/admin/Pages" className={iconStyle}>
+                <a href="/admin/pages" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
                       className="w-5 h-5"
@@ -485,13 +485,13 @@ const AdminSidebar = () => {
                     className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 ml-4 text-sm"
                   >
                     <li>
-                    <a href="/admin/Pages/allPages" className={iconStyle}>All Pages</a>
+                    <a href="/admin/pages/allPages" className={iconStyle}>All Pages</a>
                     </li>
                     <li>
-                    <a href="/admin/Pages/addNew" className={iconStyle}>Add New</a>
+                    <a href="/admin/pages/addNew" className={iconStyle}>Add New</a>
                     </li>
                   </ul>
-                  {/* -----------Dropdown menu start--------- */}
+                  {/* -----------Dropdown menu end--------- */}
               </li>
               <li>
                 <a href="/admin/reviews" className={iconStyle}>
@@ -534,7 +534,7 @@ const AdminSidebar = () => {
                     <a href="/admin/users/profile" className={iconStyle}>Profile</a>
                     </li>
                   </ul>
-                  {/* -----------Dropdown menu start--------- */}
+                  {/* -----------Dropdown menu end--------- */}
               </li>
               <li className="dropdown dropdown-hover">
                 <a href="/admin/tools" className={iconStyle}>
@@ -576,7 +576,7 @@ const AdminSidebar = () => {
                     <a href="/admin/tools/siteHealth" className={iconStyle}>Site Health</a>
                     </li>
                   </ul>
-                  {/* -----------Dropdown menu start--------- */}
+                  {/* -----------Dropdown menu end--------- */}
               </li>
               <li className="px-5">
                 <div className="flex flex-row items-center h-8">
