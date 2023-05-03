@@ -150,7 +150,7 @@ const detailsHostel01 = ({ detailsHotel }) => {
                             {/* ----------------Tour Details----------------- */}
                             <div>
                                 <h1 className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-800 pb-2">
-                                    {singelsHotels?.tourType}
+                                {singelsHotels?.title}
                                 </h1>
                                 <h5 className="text-lg text-slate-500">
                                     {singelsHotels?.descriptions}
@@ -160,7 +160,7 @@ const detailsHostel01 = ({ detailsHotel }) => {
                             <div className="pt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                                 <div>
                                     <h1 className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-800 pb-2">
-                                        {singelsHotels?.title}
+                                    Highlights
                                     </h1>
                                     <h5 className="text-lg text-slate-500">
                                         <li>Accepts Credit Cards</li>

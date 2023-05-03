@@ -13,7 +13,7 @@ const AdminSidebar = () => {
   return (
     <>
       {/* code */}
-        <div className="fixed flex flex-col flex-auto flex-shrink-0 antialiased text-gray-800 top-0 left-0 w-[100%] lg:w-[20%]">
+        <div className="fixed flex flex-col flex-auto flex-shrink-0 antialiased text-gray-800 top-0 left-0 w-[100%] lg:w-[20%] z-50">
         {/* -----------------Site Logo------------------ */}
           <div className="flex items-center  lg:px-0 px-10 h-14 bg-white border-b shadow">
           <div className="flex lg:hidden border p-1 hover:cursor-pointer" onClick={() => setIsToggle(!isToggle)}>{isToggle ? <GiHamburgerMenu/> : <GiHamburgerMenu/>}</div>

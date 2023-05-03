@@ -2,10 +2,11 @@ import Head from "next/head";
 import AdminSidebar from "../../../../components/admin/adminSidebar";
 import { RiMessage2Fill } from "react-icons/ri";
 
-const allPosts = () => {
+const AllPosts = () => {
   const posts = [
     {
       id: "1",
+      image: "https://i.ibb.co/QmfMRWw/New-Project-44.png",
       title: "Archaeological Rest House",
       author: "Abul",
       Categories: "Rest House",
@@ -15,6 +16,7 @@ const allPosts = () => {
     },
     {
       id: "2",
+      image: "https://i.ibb.co/2Nftgtg/New-Project-49.png",
       title: "Red Chillies Restaurant a",
       author: "Babul",
       Categories: "Restaurant",
@@ -24,6 +26,7 @@ const allPosts = () => {
     },
     {
       id: "3",
+      image: "https://i.ibb.co/Nm4GrGK/New-Project-48.png",
       title: "Hotel Eden Park",
       author: "Kabul",
       Categories: "Restaurant",
@@ -35,7 +38,7 @@ const allPosts = () => {
   return (
     <>
       <Head>
-        <title>Admin Dashboard</title>
+        <title>All Posts</title>
       </Head>
       <div className="h-screen block lg:flex justify-between">
         <div className="w-[100%] lg:w-[20%] h-14 lg:h-screen flex justify-between">
@@ -53,6 +56,7 @@ const allPosts = () => {
                       <input type="checkbox" className="checkbox" />
                     </label>
                   </th>
+                  <th>Image</th>
                   <th>Title</th>
                   <th>Author</th>
                   <th>Categories</th>
@@ -60,7 +64,7 @@ const allPosts = () => {
                   <th>
                     <RiMessage2Fill />
                   </th>
-                  <th>Date</th>
+                  <th>Posting Date</th>
                 </tr>
               </thead>
               <tbody>
@@ -73,7 +77,22 @@ const allPosts = () => {
                           <input type="checkbox" className="checkbox" />
                         </label>
                       </th>
-                      <td>{post.title}</td>
+                      <td>
+                        <div className="flex items-center space-x-3">
+                          <div className="avatar">
+                            <div className="mask mask-squircle w-12 h-12">
+                              <img
+                                src={post.image}
+                                alt="Avatar Tailwind CSS Component"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        {post.title}
+                        <div className="text-sm text-gray-400"><span className="hover:text-blue-800 hover:cursor-pointer">Edit</span> | <span className="hover:text-blue-800 hover:cursor-pointer">Delete</span> |<span className="hover:text-blue-800 hover:cursor-pointer">View</span></div>
+                      </td>
                       <td>{post.author}</td>
                       <td>{post.Categories}</td>
                       <td>{post.tags}</td>
@@ -92,8 +111,8 @@ const allPosts = () => {
   );
 };
 
-export default allPosts;
+export default AllPosts;
 
-allPosts.getLayout = function PageLayout(page) {
+AllPosts.getLayout = function PageLayout(page) {
   return <>{page}</>;
 };
