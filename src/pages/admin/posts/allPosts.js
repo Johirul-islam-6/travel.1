@@ -9,8 +9,7 @@ const AllPosts = () => {
       image: "https://i.ibb.co/QmfMRWw/New-Project-44.png",
       title: "Archaeological Rest House",
       author: "Abul",
-      Categories: "Rest House",
-      tags: "tour",
+      tourType: "Rest House",
       commentNumber: "6",
       publishDate: "01-03-2023",
     },
@@ -19,8 +18,7 @@ const AllPosts = () => {
       image: "https://i.ibb.co/2Nftgtg/New-Project-49.png",
       title: "Red Chillies Restaurant a",
       author: "Babul",
-      Categories: "Restaurant",
-      tags: "tour",
+      tourType: "Restaurant",
       commentNumber: "3",
       publishDate: "15-03-2023",
     },
@@ -29,8 +27,7 @@ const AllPosts = () => {
       image: "https://i.ibb.co/Nm4GrGK/New-Project-48.png",
       title: "Hotel Eden Park",
       author: "Kabul",
-      Categories: "Restaurant",
-      tags: "tour",
+      tourType: "Restaurant",
       commentNumber: "1",
       publishDate: "20-03-2023",
     },
@@ -59,8 +56,7 @@ const AllPosts = () => {
                   <th>Image</th>
                   <th>Title</th>
                   <th>Author</th>
-                  <th>Categories</th>
-                  <th>Tags</th>
+                  <th>Tour Type</th>
                   <th>
                     <RiMessage2Fill />
                   </th>
@@ -94,8 +90,7 @@ const AllPosts = () => {
                         <div className="text-sm text-gray-400"><span className="hover:text-blue-800 hover:cursor-pointer">Edit</span> | <span className="hover:text-blue-800 hover:cursor-pointer">Delete</span> |<span className="hover:text-blue-800 hover:cursor-pointer">View</span></div>
                       </td>
                       <td>{post.author}</td>
-                      <td>{post.Categories}</td>
-                      <td>{post.tags}</td>
+                      <td>{post.tourType}</td>
                       <td>{post.commentNumber}</td>
                       <td>{post.publishDate}</td>
                     </tr>
