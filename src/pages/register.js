@@ -52,7 +52,7 @@ const Registration = () => {
                     placeholder="User Name"
                     className={ errors?.username ? "focus:border-red-600 ":"input input-ghost input-sm w-full max-w-sm my-2 placeholder:text-slate-300 "}
                   />
-                  
+                  {errors.username && <p className="text-red-600">{errors.username?.message}</p>}
                  
                   <input
                   {...register("username")}
