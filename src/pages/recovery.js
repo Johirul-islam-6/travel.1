@@ -3,15 +3,18 @@ import classNames from "classnames";
 import Head from "next/head";
 import { useContext } from "react";
 import { RootContext } from "@/context/RootContext";
+import toast from 'react-hot-toast';
+import { useForm } from "react-hook-form";
+
 
 const recovery = () => {
   const { register, handleSubmit } = useForm();
-  const {VERIFYEMAIL} = useContext(RootContext)
+  const {SENTEMAIL} = useContext(RootContext)
 
   const handleVerification = (data)=>{
-    console.log(data)
-    VERIFYEMAIL().then(res=>{
-
+    SENTEMAIL(data).then(res=>{
+      toast.success('email sent successfully')
+      console.log(res)
     })
     .catch(err => {console.log(err) ; toast.error(err.data?.message)} )
 
@@ -36,6 +39,7 @@ const recovery = () => {
                     Email :
                   </p>
                   <input
+                  {...register('email')}
                     className="w-full border-b-2 focus:outline-none font-light text-slate-300 text-[14px] bg-[#00000000] "
                     type="email"
                   />
