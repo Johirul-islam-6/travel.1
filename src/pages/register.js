@@ -16,6 +16,7 @@ const Registration = () => {
     console.log(data)
     REGISTER(data).then(res=>{
       toast.success('REGISTER success')
+      setErrors(null)
     })
     .catch(err => {
       console.log(err) ; 
@@ -32,6 +33,8 @@ const Registration = () => {
   const formClass = classNames("relative bg-[#000000b0] w-[80%] md:w-[50%] lg:w-[35%] text-white mx-auto mt-20 lg:mt-32 py-10 px-8 rounded shadow-2xl");
   const buttonAnimation = classNames("transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-[#627ff4]  duration-300");
   const registerButton = classNames("bg-[#627FF4] w-full py-1 my-3 rounded-lg hover:bg-slate-300 hover:text-[#627FF4] hover:font-bold");
+  const errorClassName = classNames("input input-error input-sm w-full max-w-sm my-2 focus:outline-none")
+  const sucessClassName = classNames("input input-ghost input-sm w-full max-w-sm my-2 placeholder:text-slate-300 ")
   return (
     <>
     <Head>
@@ -50,34 +53,42 @@ const Registration = () => {
                   {...register("username")}
                     type="text"
                     placeholder="User Name"
-                    className={ errors?.username ? "focus:border-red-600 ":"input input-ghost input-sm w-full max-w-sm my-2 placeholder:text-slate-300 "}
+                    className={ errors?.username ? errorClassName:sucessClassName}
                   />
-                  {errors.username && <p className="text-red-600">{errors.username?.message}</p>}
+                  {errors?.username && <p className="text-red-600 text-[14px] mt-[-6px] mb-[5px] text-right">{errors.username?.message}</p>}
                  
                   <input
-                  {...register("username")}
+                  {...register("phone")}
                     type="text"
                     placeholder="Phone No"
-                    className="input input-ghost input-sm w-full max-w-sm my-2 placeholder:text-slate-300"
+                    className={ errors?.phone ? errorClassName:sucessClassName}
                   />
+                  {errors?.phone && <p className="text-red-600 text-[14px] mt-[-6px] mb-[5px] text-right">{errors.phone?.message}</p>}
+
                   <input
                   {...register("country")}
                     type="text"
                     placeholder="Country"
-                    className="input input-ghost input-sm w-full max-w-sm my-2 placeholder:text-slate-300"
+                    className={ errors?.country ? errorClassName:sucessClassName}
                   />
+                  {errors?.country && <p className="text-red-600 text-[14px] mt-[-6px] mb-[5px] text-right">{errors.country?.message}</p>}
+
                   <input
                   {...register("email")}
                     type="email"
                     placeholder="Email"
-                    className="input input-ghost input-sm w-full max-w-sm my-2 placeholder:text-slate-300"
+                    className={ errors?.email ? errorClassName:sucessClassName}
                   />
+                  {errors?.email && <p className="text-red-600 text-[14px] mt-[-6px] mb-[5px] text-right">{errors.email?.message}</p>}
+
                   <input
                   {...register("password")}
                     type="password"
                     placeholder="Password"
-                    className="input input-ghost input-sm w-full max-w-sm my-2 placeholder:text-slate-300"
+                    className={ errors?.password ? errorClassName:sucessClassName}
                   />
+                  {errors?.password && <p className="text-red-600 text-[14px] mt-[-6px] mb-[5px] text-right">{errors.password?.message}</p>}
+
                 </div>
                 <button type="submit" className={`${registerButton}`}>
                   Register
