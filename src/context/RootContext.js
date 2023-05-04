@@ -10,9 +10,13 @@ function Context(props) {
  }
  const REGISTER = (newUser)=>{
    console.log('newUser =>', newUser)
-        const url = '/auth/login'
+        const url = '/auth/register'
         return  axios.post(url,newUser)
 
+ }
+ const  VERIFYEMAIL= ()=>{
+  const url = '/auth/forget-password'
+  return axios.get(url)
  }
 const LOGOUT = ()=>{
       const url = '/auth/logout'
@@ -33,7 +37,7 @@ useEffect(()=>{
       // return ()=>  unSubscribe()
 },[])
 
-  const  RootContextValue = {status,setStatus,LOGIN,LOGOUT,REGISTER,user,setUser}
+  const  RootContextValue = {status,setStatus,LOGIN,LOGOUT,VERIFYEMAIL,REGISTER,user,setUser}
 
   return (
   <RootContext.Provider value={RootContextValue}> 

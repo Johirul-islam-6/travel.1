@@ -4,19 +4,26 @@ import { AiFillGoogleCircle, AiFillTwitterCircle } from "react-icons/ai";
 import classNames from "classnames";
 import { useForm } from "react-hook-form";
 import Head from "next/head";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { RootContext } from "@/context/RootContext";
 import toast from 'react-hot-toast';
 
 const Registration = () => {
   const {REGISTER} = useContext(RootContext)
+  const [errors,setErrors]= useState(null)
   const { register, handleSubmit } = useForm();
   const handleRegister = (data)=>{
     console.log(data)
     REGISTER(data).then(res=>{
       toast.success('REGISTER success')
     })
-    .catch(err => {console.log(err) ; toast.error(err.data?.message)} )
+    .catch(err => {
+      console.log(err) ; 
+      toast.error(err.data?.message)
+      setErrors(err.data.errors)
+      
+    
+    } )
 
 
   }
@@ -43,7 +50,7 @@ const Registration = () => {
                   {...register("username")}
                     type="text"
                     placeholder="User Name"
-                    className="input input-ghost input-sm w-full max-w-sm my-2 placeholder:text-slate-300"
+                    className={ errors?.username? "input input-ghost input-sm w-full max-w-sm my-2 placeholder:text-slate-300":" "}
                   />
                  
                   <input
