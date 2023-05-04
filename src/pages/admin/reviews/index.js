@@ -2,6 +2,8 @@ import Head from "next/head";
 import AdminSidebar from "../../../../components/admin/adminSidebar";
 import { RiMessage2Fill } from "react-icons/ri";
 import Link from "next/link";
+import { AiFillPushpin } from "react-icons/ai";
+import { MdDateRange } from "react-icons/md";
 
 const Reviews = () => {
   const posts = [
@@ -43,49 +45,69 @@ const Reviews = () => {
           {/* -------------body content Start------------------ */}
           <div className="overflow-x-auto text-black">
             {/* ---------------Edit Comment---------------- */}
-            <div className="grid gap-5 grid-cols-1 lg:grid-cols-2">
-              <form class="w-full max-w-sm bg-slate-50 p-5">
-                <h1 className="text-center -mb-2">Author</h1>
-                <div className="divider"></div>
-                <div class="md:flex md:items-center mb-6">
-                  <div class="md:w-1/3">
-                    <label
-                      class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-                      for="inline-full-name"
-                    >
-                      Name
-                    </label>
-                  </div>
-                  <div class="md:w-2/3">
+            <form class="w-full">
+              <div className="grid gap-5 grid-cols-1 lg:grid-cols-2 pb-10">
+                {/* ---------Left Side Content---------- */}
+                <div className="bg-white p-10">
+                  <h1 className="-mb-2">Author</h1>
+                  <div className="divider"></div>
+                  <div className="form-control w-full">
+                    <label className="label">Name</label>
                     <input
-                      class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                      id="inline-full-name"
                       type="text"
-                      value="Jane Doe"
+                      value="Abul"
+                      className="input input-bordered w-full text-gray-500"
                     />
                   </div>
-                </div>
-                <div class="md:flex md:items-center mb-6">
-                  <div class="md:w-1/3">
-                    <label
-                      class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-                      for="inline-password"
-                    >
-                      Email
-                    </label>
-                  </div>
-                  <div class="md:w-2/3">
+                  <div className="form-control w-full">
+                    <label className="label">Email</label>
                     <input
-                      class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                      id="inline-password"
-                      type="password"
-                      placeholder="demo@gmail.com"
+                      type="email"
+                      value="abul@gmail.com"
+                      className="input input-bordered w-full text-gray-500"
                     />
                   </div>
+                  <div className="form-control">
+                    <label className="label">Edit Review</label>
+                    <textarea
+                      className="textarea textarea-bordered h-24 text-gray-500"
+                      value="In publishing and graphic design, Lorem ipsum is a placeholder text commonly"
+                    ></textarea>
+                  </div>
                 </div>
-              </form>
-              <div></div>
-            </div>
+                {/* ----------Right side content---------- */}
+                <div className="bg-white p-10">
+                  <h1 className="-mb-2">Save</h1>
+                  <div className="divider"></div>
+                  <div className="flex"><AiFillPushpin/><h1 className="ml-2">Status</h1></div>   
+                  <div className="pl-5">
+                    <div className="flex">
+                        <input
+                          type="radio"
+                          name="radio"
+                          className="checked:bg-blue-500"
+                          checked
+                        /> 
+                        <label className="label"><span className="label-text">Approved</span>
+                      </label>
+                    </div>
+                    <div className="flex">
+                        <input
+                          type="radio"
+                          name="radio"
+                          className="checked:bg-blue-500"
+                          
+                        /> 
+                        <label className="label"><span className="label-text">Pending</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div className="flex py-2"><MdDateRange/><p className="ml-2">Submitted on: 21 February 2023 at 06:12</p></div>
+                  <div className="flex py-2"><RiMessage2Fill/><p className="ml-2"> In response to: Hello world!</p></div>
+                </div>
+              </div>
+            </form>
+
             {/* -----------Show All comments----------- */}
             <div className="text-sm pb-2">
               <span className="text-blue-800 hover:cursor-pointer">
