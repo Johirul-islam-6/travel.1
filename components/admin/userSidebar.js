@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-const UserDashboard = () => {
+const UserSidebar = () => {
   const [isToggle, setIsToggle] = useState(false);
 
   const iconStyle = classNames(
@@ -13,7 +13,7 @@ const UserDashboard = () => {
   return (
     <>
       {/* code */}
-        <div className="fixed flex flex-col flex-auto flex-shrink-0 antialiased text-gray-800 top-0 left-0 w-[100%] lg:w-[20%]">
+      <div className="fixed flex flex-col flex-auto flex-shrink-0 antialiased text-gray-800 top-0 left-0 w-[100%] lg:w-[20%] z-50">
         {/* -----------------Site Logo------------------ */}
           <div className="flex items-center  lg:px-0 px-10 h-14 bg-white border-b shadow">
           <div className="flex lg:hidden border p-1 hover:cursor-pointer" onClick={() => setIsToggle(!isToggle)}>{isToggle ? <GiHamburgerMenu/> : <GiHamburgerMenu/>}</div>
@@ -61,7 +61,7 @@ const UserDashboard = () => {
                 </a>
               </li>
               <li className="dropdown dropdown-hover">
-                <a href="/admin/posts" className={iconStyle}>
+                <a href="/user/posts" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
                       className="w-5 h-5"
@@ -88,45 +88,19 @@ const UserDashboard = () => {
                     className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 ml-4 text-sm"
                   >
                     <li>
-                    <a href="/admin/posts/allPosts" className={iconStyle}>All Posts</a>
+                    <a href="/user/posts/allPosts" className={iconStyle}>All Posts</a>
                     </li>
                     <li>
-                    <a href="/admin/posts/addNew" className={iconStyle}>Add New</a>
+                    <a href="/user/posts/addNew" className={iconStyle}>Add New</a>
                     </li>
                     <li>
-                    <a href="/admin/posts/categories" className={iconStyle}>Categories</a>
-                    </li>
-                    <li>
-                    <a href="/admin/posts/tags" className={iconStyle}>Tags</a>
+                    <a href="/user/posts/tourType" className={iconStyle}>Tour Type</a>
                     </li>
                   </ul>
                   {/* -----------Dropdown menu start--------- */}
               </li>
               <li className="dropdown dropdown-hover">
-                <a href="/admin/media" className={iconStyle}>
-                  <span className="inline-flex justify-center items-center ml-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16"> <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/> <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/> </svg>
-                  </span>
-                  <span tabIndex={0} className="ml-2 text-sm tracking-wide truncate">
-                    Media
-                  </span>
-                </a>
-                {/* -----------Dropdown menu start--------- */}
-                <ul
-                    tabIndex={0}
-                    className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 ml-4 text-sm"
-                  >
-                    <li>
-                    <a href="/admin/media/library" className={iconStyle}>Library</a>
-                    </li>
-                    <li>
-                    <a href="/admin/media/addNew" className={iconStyle}>Add New</a>
-                    </li>
-                  </ul>
-                  {/* -----------Dropdown menu start--------- */}
-              </li>
-              <li className="dropdown dropdown-hover">
-                <a href="/admin/Pages" className={iconStyle}>
+                <a href="/user/Pages/allPages" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
                       className="w-5 h-5"
@@ -153,16 +127,16 @@ const UserDashboard = () => {
                     className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 ml-4 text-sm"
                   >
                     <li>
-                    <a href="/admin/Pages/allPages" className={iconStyle}>All Pages</a>
+                    <a href="/user/Pages/allPages" className={iconStyle}>All Pages</a>
                     </li>
                     <li>
-                    <a href="/admin/Pages/addNew" className={iconStyle}>Add New</a>
+                    <a href="/user/Pages/addNew" className={iconStyle}>Add New</a>
                     </li>
                   </ul>
                   {/* -----------Dropdown menu start--------- */}
               </li>
               <li>
-                <a href="/admin/reviews" className={iconStyle}>
+                <a href="/user/reviews" className={iconStyle}>
                 <span className="inline-flex justify-center items-center ml-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"> <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/> </svg>
                   </span>
@@ -179,7 +153,7 @@ const UserDashboard = () => {
                 </div>
               </li>
               <li className="dropdown dropdown-hover">
-                <a href="/admin/users" className={iconStyle}>
+                <a href="/user/users" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16"> <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/> </svg>
                   </span>
@@ -193,19 +167,19 @@ const UserDashboard = () => {
                     className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 ml-4 text-sm"
                   >
                     <li>
-                    <a href="/admin/users/allUsers" className={iconStyle}>All Users</a>
+                    <a href="/user/users/allUsers" className={iconStyle}>All Users</a>
                     </li>
                     <li>
-                    <a href="/admin/users/addNew" className={iconStyle}>Add New</a>
+                    <a href="/user/users/addNew" className={iconStyle}>Add New</a>
                     </li>
                     <li>
-                    <a href="/admin/users/profile" className={iconStyle}>Profile</a>
+                    <a href="/user/users/profile" className={iconStyle}>Profile</a>
                     </li>
                   </ul>
                   {/* -----------Dropdown menu start--------- */}
               </li>
               <li className="dropdown dropdown-hover">
-                <a href="/admin/tools" className={iconStyle}>
+                <a href="/user/tools" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
                       className="w-5 h-5"
@@ -232,16 +206,16 @@ const UserDashboard = () => {
                     className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 ml-4 text-sm"
                   >
                     <li>
-                    <a href="/admin/tools/availableTools" className={iconStyle}>Available Tools</a>
+                    <a href="/user/tools/availableTools" className={iconStyle}>Available Tools</a>
                     </li>
                     <li>
-                    <a href="/admin/tools/import" className={iconStyle}>Import</a>
+                    <a href="/user/tools/import" className={iconStyle}>Import</a>
                     </li>
                     <li>
-                    <a href="/admin/tools/export" className={iconStyle}>Export</a>
+                    <a href="/user/tools/export" className={iconStyle}>Export</a>
                     </li>
                     <li>
-                    <a href="/admin/tools/siteHealth" className={iconStyle}>Site Health</a>
+                    <a href="/user/tools/siteHealth" className={iconStyle}>Site Health</a>
                     </li>
                   </ul>
                   {/* -----------Dropdown menu start--------- */}
@@ -254,7 +228,7 @@ const UserDashboard = () => {
                 </div>
               </li>
               <li>
-                <a href="/admin/profile" className={iconStyle}>
+                <a href="/user/profile" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
                       className="w-5 h-5"
@@ -277,7 +251,7 @@ const UserDashboard = () => {
                 </a>
               </li>
               <li className="dropdown dropdown-hover">
-                <a href="admin/settings" className={iconStyle}>
+                <a href="user/settings" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
                       className="w-5 h-5"
@@ -310,25 +284,25 @@ const UserDashboard = () => {
                     className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 ml-4 text-sm"
                   >
                     <li>
-                    <a href="admin/settings/general" className={iconStyle}>General</a>
+                    <a href="user/settings/general" className={iconStyle}>General</a>
                     </li>
                     <li>
-                    <a href="admin/settings/writing" className={iconStyle}>Writing</a>
+                    <a href="user/settings/writing" className={iconStyle}>Writing</a>
                     </li>
                     <li>
-                    <a href="admin/settings/reading" className={iconStyle}>Reading</a>
+                    <a href="user/settings/reading" className={iconStyle}>Reading</a>
                     </li>
                     <li>
-                    <a href="admin/settings/discussions" className={iconStyle}>Discussions</a>
+                    <a href="user/settings/discussions" className={iconStyle}>Discussions</a>
                     </li>
                     <li>
-                    <a href="admin/settings/media" className={iconStyle}>Media</a>
+                    <a href="user/settings/media" className={iconStyle}>Media</a>
                     </li>
                     <li>
-                    <a href="admin/settings/permalinks" className={iconStyle}>Permalinks</a>
+                    <a href="user/settings/permalinks" className={iconStyle}>Permalinks</a>
                     </li>
                     <li>
-                    <a href="admin/settings/privacy" className={iconStyle}>Privacy</a>
+                    <a href="user/settings/privacy" className={iconStyle}>Privacy</a>
                     </li>
                   </ul>
                   {/* -----------Dropdown menu start--------- */}
@@ -370,7 +344,7 @@ const UserDashboard = () => {
                 </div>
               </li>
               <li>
-                <a href="/admin" className={iconStyle}>
+                <a href="/dashboard/user" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
                       className="w-5 h-5"
@@ -393,7 +367,7 @@ const UserDashboard = () => {
                 </a>
               </li>
               <li className="dropdown dropdown-hover">
-                <a href="/admin/posts" className={iconStyle}>
+                <a href="/user/posts/allPosts" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
                       className="w-5 h-5"
@@ -420,45 +394,19 @@ const UserDashboard = () => {
                     className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 ml-4 text-sm"
                   >
                     <li>
-                    <a href="/admin/posts/allPosts" className={iconStyle}>All Posts</a>
+                    <a href="/user/posts/allPosts" className={iconStyle}>All Posts</a>
                     </li>
                     <li>
-                    <a href="/admin/posts/addNew" className={iconStyle}>Add New</a>
+                    <a href="/user/posts/addNew" className={iconStyle}>Add New</a>
                     </li>
                     <li>
-                    <a href="/admin/posts/categories" className={iconStyle}>Categories</a>
-                    </li>
-                    <li>
-                    <a href="/admin/posts/tags" className={iconStyle}>Tags</a>
+                    <a href="/user/posts/tourType" className={iconStyle}>Tour Type</a>
                     </li>
                   </ul>
                   {/* -----------Dropdown menu start--------- */}
               </li>
               <li className="dropdown dropdown-hover">
-                <a href="/admin/media" className={iconStyle}>
-                  <span className="inline-flex justify-center items-center ml-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16"> <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/> <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/> </svg>
-                  </span>
-                  <span tabIndex={0} className="ml-2 text-sm tracking-wide truncate">
-                    Media
-                  </span>
-                </a>
-                {/* -----------Dropdown menu start--------- */}
-                <ul
-                    tabIndex={0}
-                    className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 ml-4 text-sm"
-                  >
-                    <li>
-                    <a href="/admin/media/library" className={iconStyle}>Library</a>
-                    </li>
-                    <li>
-                    <a href="/admin/media/addNew" className={iconStyle}>Add New</a>
-                    </li>
-                  </ul>
-                  {/* -----------Dropdown menu start--------- */}
-              </li>
-              <li className="dropdown dropdown-hover">
-                <a href="/admin/Pages" className={iconStyle}>
+                <a href="/user/pages/allPages" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
                       className="w-5 h-5"
@@ -485,16 +433,16 @@ const UserDashboard = () => {
                     className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 ml-4 text-sm"
                   >
                     <li>
-                    <a href="/admin/Pages/allPages" className={iconStyle}>All Pages</a>
+                    <a href="/user/pages/allPages" className={iconStyle}>All Pages</a>
                     </li>
                     <li>
-                    <a href="/admin/Pages/addNew" className={iconStyle}>Add New</a>
+                    <a href="/user/pages/addNew" className={iconStyle}>Add New</a>
                     </li>
                   </ul>
-                  {/* -----------Dropdown menu start--------- */}
+                  {/* -----------Dropdown menu end--------- */}
               </li>
               <li>
-                <a href="/admin/reviews" className={iconStyle}>
+                <a href="/user/reviews" className={iconStyle}>
                 <span className="inline-flex justify-center items-center ml-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"> <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/> </svg>
                   </span>
@@ -511,7 +459,7 @@ const UserDashboard = () => {
                 </div>
               </li>
               <li className="dropdown dropdown-hover">
-                <a href="/admin/users" className={iconStyle}>
+                <a href="/user/users" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16"> <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/> </svg>
                   </span>
@@ -525,19 +473,19 @@ const UserDashboard = () => {
                     className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 ml-4 text-sm"
                   >
                     <li>
-                    <a href="/admin/users/allUsers" className={iconStyle}>All Users</a>
+                    <a href="/user/users/allUsers" className={iconStyle}>All Users</a>
                     </li>
                     <li>
-                    <a href="/admin/users/addNew" className={iconStyle}>Add New</a>
+                    <a href="/user/users/addNew" className={iconStyle}>Add New</a>
                     </li>
                     <li>
-                    <a href="/admin/users/profile" className={iconStyle}>Profile</a>
+                    <a href="/user/users/profile" className={iconStyle}>Profile</a>
                     </li>
                   </ul>
-                  {/* -----------Dropdown menu start--------- */}
+                  {/* -----------Dropdown menu end--------- */}
               </li>
               <li className="dropdown dropdown-hover">
-                <a href="/admin/tools" className={iconStyle}>
+                <a href="/user/tools" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
                       className="w-5 h-5"
@@ -564,19 +512,19 @@ const UserDashboard = () => {
                     className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 ml-4 text-sm"
                   >
                     <li>
-                    <a href="/admin/tools/availableTools" className={iconStyle}>Available Tools</a>
+                    <a href="/user/tools/availableTools" className={iconStyle}>Available Tools</a>
                     </li>
                     <li>
-                    <a href="/admin/tools/import" className={iconStyle}>Import</a>
+                    <a href="/user/tools/import" className={iconStyle}>Import</a>
                     </li>
                     <li>
-                    <a href="/admin/tools/export" className={iconStyle}>Export</a>
+                    <a href="/user/tools/export" className={iconStyle}>Export</a>
                     </li>
                     <li>
-                    <a href="/admin/tools/siteHealth" className={iconStyle}>Site Health</a>
+                    <a href="/user/tools/siteHealth" className={iconStyle}>Site Health</a>
                     </li>
                   </ul>
-                  {/* -----------Dropdown menu start--------- */}
+                  {/* -----------Dropdown menu end--------- */}
               </li>
               <li className="px-5">
                 <div className="flex flex-row items-center h-8">
@@ -586,7 +534,7 @@ const UserDashboard = () => {
                 </div>
               </li>
               <li>
-                <a href="/admin/profile" className={iconStyle}>
+                <a href="/user/profile" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
                       className="w-5 h-5"
@@ -609,7 +557,7 @@ const UserDashboard = () => {
                 </a>
               </li>
               <li className="dropdown dropdown-hover">
-                <a href="admin/settings" className={iconStyle}>
+                <a href="user/settings" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
                       className="w-5 h-5"
@@ -642,25 +590,25 @@ const UserDashboard = () => {
                     className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 ml-4 text-sm"
                   >
                     <li>
-                    <a href="admin/settings/general" className={iconStyle}>General</a>
+                    <a href="user/settings/general" className={iconStyle}>General</a>
                     </li>
                     <li>
-                    <a href="admin/settings/writing" className={iconStyle}>Writing</a>
+                    <a href="user/settings/writing" className={iconStyle}>Writing</a>
                     </li>
                     <li>
-                    <a href="admin/settings/reading" className={iconStyle}>Reading</a>
+                    <a href="user/settings/reading" className={iconStyle}>Reading</a>
                     </li>
                     <li>
-                    <a href="admin/settings/discussions" className={iconStyle}>Discussions</a>
+                    <a href="user/settings/discussions" className={iconStyle}>Discussions</a>
                     </li>
                     <li>
-                    <a href="admin/settings/media" className={iconStyle}>Media</a>
+                    <a href="user/settings/media" className={iconStyle}>Media</a>
                     </li>
                     <li>
-                    <a href="admin/settings/permalinks" className={iconStyle}>Permalinks</a>
+                    <a href="user/settings/permalinks" className={iconStyle}>Permalinks</a>
                     </li>
                     <li>
-                    <a href="admin/settings/privacy" className={iconStyle}>Privacy</a>
+                    <a href="user/settings/privacy" className={iconStyle}>Privacy</a>
                     </li>
                   </ul>
                   {/* -----------Dropdown menu start--------- */}
@@ -696,4 +644,4 @@ const UserDashboard = () => {
   );
 };
 
-export default UserDashboard;
+export default UserSidebar;

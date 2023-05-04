@@ -13,7 +13,7 @@ const AdminSidebar = () => {
   return (
     <>
       {/* code */}
-        <div className="fixed flex flex-col flex-auto flex-shrink-0 antialiased text-gray-800 top-0 left-0 w-[100%] lg:w-[20%]">
+        <div className="fixed flex flex-col flex-auto flex-shrink-0 antialiased text-gray-800 top-0 left-0 w-[100%] lg:w-[20%] z-50">
         {/* -----------------Site Logo------------------ */}
           <div className="flex items-center  lg:px-0 px-10 h-14 bg-white border-b shadow">
           <div className="flex lg:hidden border p-1 hover:cursor-pointer" onClick={() => setIsToggle(!isToggle)}>{isToggle ? <GiHamburgerMenu/> : <GiHamburgerMenu/>}</div>
@@ -94,39 +94,13 @@ const AdminSidebar = () => {
                     <a href="/admin/posts/addNew" className={iconStyle}>Add New</a>
                     </li>
                     <li>
-                    <a href="/admin/posts/categories" className={iconStyle}>Categories</a>
-                    </li>
-                    <li>
-                    <a href="/admin/posts/tags" className={iconStyle}>Tags</a>
+                    <a href="/admin/posts/tourType" className={iconStyle}>Tour Type</a>
                     </li>
                   </ul>
                   {/* -----------Dropdown menu start--------- */}
               </li>
               <li className="dropdown dropdown-hover">
-                <a href="/admin/media" className={iconStyle}>
-                  <span className="inline-flex justify-center items-center ml-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16"> <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/> <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/> </svg>
-                  </span>
-                  <span tabIndex={0} className="ml-2 text-sm tracking-wide truncate">
-                    Media
-                  </span>
-                </a>
-                {/* -----------Dropdown menu start--------- */}
-                <ul
-                    tabIndex={0}
-                    className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 ml-4 text-sm"
-                  >
-                    <li>
-                    <a href="/admin/media/library" className={iconStyle}>Library</a>
-                    </li>
-                    <li>
-                    <a href="/admin/media/addNew" className={iconStyle}>Add New</a>
-                    </li>
-                  </ul>
-                  {/* -----------Dropdown menu start--------- */}
-              </li>
-              <li className="dropdown dropdown-hover">
-                <a href="/admin/Pages" className={iconStyle}>
+                <a href="/admin/Pages/allPages" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
                       className="w-5 h-5"
@@ -393,7 +367,7 @@ const AdminSidebar = () => {
                 </a>
               </li>
               <li className="dropdown dropdown-hover">
-                <a href="/admin/posts" className={iconStyle}>
+                <a href="/admin/posts/allPosts" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
                       className="w-5 h-5"
@@ -426,39 +400,13 @@ const AdminSidebar = () => {
                     <a href="/admin/posts/addNew" className={iconStyle}>Add New</a>
                     </li>
                     <li>
-                    <a href="/admin/posts/categories" className={iconStyle}>Categories</a>
-                    </li>
-                    <li>
-                    <a href="/admin/posts/tags" className={iconStyle}>Tags</a>
+                    <a href="/admin/posts/tourType" className={iconStyle}>Tour Type</a>
                     </li>
                   </ul>
                   {/* -----------Dropdown menu start--------- */}
               </li>
               <li className="dropdown dropdown-hover">
-                <a href="/admin/media" className={iconStyle}>
-                  <span className="inline-flex justify-center items-center ml-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16"> <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/> <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/> </svg>
-                  </span>
-                  <span tabIndex={0} className="ml-2 text-sm tracking-wide truncate">
-                    Media
-                  </span>
-                </a>
-                {/* -----------Dropdown menu start--------- */}
-                <ul
-                    tabIndex={0}
-                    className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 ml-4 text-sm"
-                  >
-                    <li>
-                    <a href="/admin/media/library" className={iconStyle}>Library</a>
-                    </li>
-                    <li>
-                    <a href="/admin/media/addNew" className={iconStyle}>Add New</a>
-                    </li>
-                  </ul>
-                  {/* -----------Dropdown menu start--------- */}
-              </li>
-              <li className="dropdown dropdown-hover">
-                <a href="/admin/Pages" className={iconStyle}>
+                <a href="/admin/pages/allPages" className={iconStyle}>
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
                       className="w-5 h-5"
@@ -485,13 +433,13 @@ const AdminSidebar = () => {
                     className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 ml-4 text-sm"
                   >
                     <li>
-                    <a href="/admin/Pages/allPages" className={iconStyle}>All Pages</a>
+                    <a href="/admin/pages/allPages" className={iconStyle}>All Pages</a>
                     </li>
                     <li>
-                    <a href="/admin/Pages/addNew" className={iconStyle}>Add New</a>
+                    <a href="/admin/pages/addNew" className={iconStyle}>Add New</a>
                     </li>
                   </ul>
-                  {/* -----------Dropdown menu start--------- */}
+                  {/* -----------Dropdown menu end--------- */}
               </li>
               <li>
                 <a href="/admin/reviews" className={iconStyle}>
@@ -534,7 +482,7 @@ const AdminSidebar = () => {
                     <a href="/admin/users/profile" className={iconStyle}>Profile</a>
                     </li>
                   </ul>
-                  {/* -----------Dropdown menu start--------- */}
+                  {/* -----------Dropdown menu end--------- */}
               </li>
               <li className="dropdown dropdown-hover">
                 <a href="/admin/tools" className={iconStyle}>
@@ -576,7 +524,7 @@ const AdminSidebar = () => {
                     <a href="/admin/tools/siteHealth" className={iconStyle}>Site Health</a>
                     </li>
                   </ul>
-                  {/* -----------Dropdown menu start--------- */}
+                  {/* -----------Dropdown menu end--------- */}
               </li>
               <li className="px-5">
                 <div className="flex flex-row items-center h-8">

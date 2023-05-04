@@ -39,7 +39,9 @@ const Location = () => {
           {/*----- section header -----*/}
           {/*----- Location Container -----*/}
           <div className="block md:flex lg:flex px-10 lg:px-0">
+          
             <div className="w-full md:w-[131%] lg:max-w-[33.3%] group relative">
+              
               <Image
                 src="https://i.ibb.co/ByXW3K0/location10.png"
                 alt="TRAVEL.XONE LOGO"
@@ -47,16 +49,13 @@ const Location = () => {
                 height={450}
                 loading="lazy"
               />
+              <a href={`/destinations/${id1}`}>
               <div className={`${overlayClass}`}>
-                <Link
-                  href={`/destinations/${id1}`}
-                  className="cursor-pointer"
-                >
-                  <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
+                  <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded hover:cursor-pointer">
                     North West Region
                   </h1>
-                </Link>
               </div>
+              </a>
             </div>
 
             <div>
