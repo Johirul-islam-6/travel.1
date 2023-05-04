@@ -14,10 +14,16 @@ function Context(props) {
         return  axios.post(url,newUser)
 
  }
- const  VERIFYEMAIL= ()=>{
-  const url = '/auth/forget-password'
+ const  SENTEMAIL= ({email})=>{
+  const url = `/auth/forget-password?email=${email}`
   return axios.get(url)
  }
+ const  VERIFTOKEN= (token)=>{
+   const url = `/auth/confirm/${token}`
+   console.log(url)
+  return axios.get(url)
+ }
+
 const LOGOUT = ()=>{
       const url = '/auth/logout'
       return axios.get(url)
@@ -37,7 +43,7 @@ useEffect(()=>{
       // return ()=>  unSubscribe()
 },[])
 
-  const  RootContextValue = {status,setStatus,LOGIN,LOGOUT,VERIFYEMAIL,REGISTER,user,setUser}
+  const  RootContextValue = {status,setStatus,LOGIN,LOGOUT,SENTEMAIL,VERIFTOKEN,REGISTER,user,setUser}
 
   return (
   <RootContext.Provider value={RootContextValue}> 
