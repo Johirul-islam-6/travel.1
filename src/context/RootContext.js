@@ -14,19 +14,26 @@ function Context(props) {
         return  axios.post(url,newUser)
 
  }
-
+const LOGOUT = ()=>{
+      const url = '/auth/logout'
+      return axios.get(url)
+}
 useEffect(()=>{
         const unSubscribe = async()=>{
+                try{
                   const url = '/auth/profile'
                   const profile =  await axios.get(url)
                   setUser(profile.data.data)
                   setStatus({...status,loading:false})
+                }
+                catch{setStatus({...status,loading:false})}
+                  
 
       }
       // return ()=>  unSubscribe()
 },[])
 
-  const  RootContextValue = {status,setStatus,LOGIN,REGISTER,user,setUser}
+  const  RootContextValue = {status,setStatus,LOGIN,LOGOUT,REGISTER,user,setUser}
 
   return (
   <RootContext.Provider value={RootContextValue}> 

@@ -2,21 +2,29 @@ import Link from "next/link";
 import { BsFacebook, BsPencilSquare } from "react-icons/bs";
 import { AiFillGoogleCircle, AiFillTwitterCircle } from "react-icons/ai";
 import classNames from "classnames";
+import { useForm } from "react-hook-form";
 import Head from "next/head";
+import { useContext } from "react";
+import { RootContext } from "@/context/RootContext";
+import toast from 'react-hot-toast';
 
 const Registration = () => {
-  const backgroundClass = classNames(
-    "bg-[url('https://i.ibb.co/cktYxxd/res1.png')] max-h-[120%] bg-no-repeat bg-center bg-cover bg-fixed"
-  );
-  const formClass = classNames(
-    "relative bg-[#000000b0] w-[80%] md:w-[50%] lg:w-[35%] text-white mx-auto mt-20 lg:mt-32 py-10 px-8 rounded shadow-2xl"
-  );
-  const buttonAnimation = classNames(
-    "transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-[#627ff4]  duration-300"
-  );
-  const registerButton = classNames(
-    "bg-[#627FF4] w-full py-1 my-3 rounded-lg hover:bg-slate-300 hover:text-[#627FF4] hover:font-bold"
-  );
+  const {REGISTER} = useContext(RootContext)
+  const { register, handleSubmit } = useForm();
+  const handleRegister = (data)=>{
+    console.log(data)
+    REGISTER(data).then(res=>{
+      toast.success('REGISTER success')
+    })
+    .catch(err => {console.log(err) ; toast.error(err.data?.message)} )
+
+
+  }
+  
+  const backgroundClass = classNames("bg-[url('https://i.ibb.co/cktYxxd/res1.png')] max-h-[120%] bg-no-repeat bg-center bg-cover bg-fixed");
+  const formClass = classNames("relative bg-[#000000b0] w-[80%] md:w-[50%] lg:w-[35%] text-white mx-auto mt-20 lg:mt-32 py-10 px-8 rounded shadow-2xl");
+  const buttonAnimation = classNames("transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-[#627ff4]  duration-300");
+  const registerButton = classNames("bg-[#627FF4] w-full py-1 my-3 rounded-lg hover:bg-slate-300 hover:text-[#627FF4] hover:font-bold");
   return (
     <>
     <Head>
@@ -29,34 +37,35 @@ const Registration = () => {
             <h1 className="text-center py-5 text-xl">Create an account </h1>
             <div className="text-left px-5">
               {/* -------Registration form-------- */}
-              <form className="text-left">
+              <form className="text-left" onSubmit={handleSubmit(handleRegister)}>
                 <div>
                   <input
+                  {...register("username")}
                     type="text"
                     placeholder="User Name"
                     className="input input-ghost input-sm w-full max-w-sm my-2 placeholder:text-slate-300"
                   />
+                 
                   <input
-                    type="text"
-                    placeholder="Full Name"
-                    className="input input-ghost input-sm w-full max-w-sm my-2 placeholder:text-slate-300"
-                  />
-                  <input
+                  {...register("username")}
                     type="text"
                     placeholder="Phone No"
                     className="input input-ghost input-sm w-full max-w-sm my-2 placeholder:text-slate-300"
                   />
                   <input
+                  {...register("country")}
                     type="text"
                     placeholder="Country"
                     className="input input-ghost input-sm w-full max-w-sm my-2 placeholder:text-slate-300"
                   />
                   <input
+                  {...register("email")}
                     type="email"
                     placeholder="Email"
                     className="input input-ghost input-sm w-full max-w-sm my-2 placeholder:text-slate-300"
                   />
                   <input
+                  {...register("password")}
                     type="password"
                     placeholder="Password"
                     className="input input-ghost input-sm w-full max-w-sm my-2 placeholder:text-slate-300"

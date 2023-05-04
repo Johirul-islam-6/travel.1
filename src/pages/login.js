@@ -11,7 +11,6 @@ const Login = () => {
   const {LOGIN,setUser,user} = useContext(RootContext)
 
   const handleLogin = (data)=>{
-    console.log(data)
       LOGIN(data)
       .then(res=>{
         setUser(res.data.user)
