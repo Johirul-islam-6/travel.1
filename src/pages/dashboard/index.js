@@ -1,4 +1,4 @@
-import UserDashboardLayout from "../../../../components/userDashboardLayout";
+import UserDashboardLayout from "../../../components/userDashboardLayout";
 
 const User = () => {
     return ( 
