@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 //
@@ -12,6 +13,9 @@ const Blogs = () => {
   }, []);
   return (
     <>
+      <Head>
+        <title>Blog Page</title>
+      </Head>
       <section>
         {/* -----------header design Start----------- */}
         <div className="bg-[url('https://i.ibb.co/nkNGLdF/banner.png')] bg-no-repeat bg-cover bg-left-bottom pt-32 lg:pt-40 pb-4 ">
@@ -31,6 +35,7 @@ const Blogs = () => {
                   <img
                     src={b?.img}
                     alt="Shoes"
+                    loading="lazy"
                     className="w-[500px] h-[200px] lg:h-[240px]"
                   />
                 </figure>

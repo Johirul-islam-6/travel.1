@@ -3,6 +3,7 @@ import styles from "../src/styles/#footer.module.css";
 import { BsFacebook } from "react-icons/bs";
 import { AiFillTwitterCircle, AiOutlineInstagram } from "react-icons/ai";
 import { FaPinterest } from "react-icons/fa";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -13,10 +14,34 @@ const Footer = () => {
           <div>
             <p className="text-left">Payment Methods</p>
             <div className="flex w-[100%] gap-2">
-              <img src="https://i.ibb.co/ZNdCyFB/Rectangle-66.png" />
-              <img src="https://i.ibb.co/s5V1kc4/Rectangle-67.png" />
-              <img src="https://i.ibb.co/1bd2yx2/Rectangle-65.png" />
-              <img src="https://i.ibb.co/3r7KmxF/Rectangle-68.png" />
+            <Image
+                src="https://i.ibb.co/ZNdCyFB/Rectangle-66.png"
+                alt="TRAVEL.XONE LOGO"
+                width={70}
+                height={30}
+                loading="lazy"
+              />
+            <Image
+                src="https://i.ibb.co/s5V1kc4/Rectangle-67.png"
+                alt="TRAVEL.XONE LOGO"
+                width={70}
+                height={30}
+                loading="lazy"
+              />
+            <Image
+                src="https://i.ibb.co/1bd2yx2/Rectangle-65.png"
+                alt="TRAVEL.XONE LOGO"
+                width={70}
+                height={30}
+                loading="lazy"
+              />
+            <Image
+                src="https://i.ibb.co/3r7KmxF/Rectangle-68.png"
+                alt="TRAVEL.XONE LOGO"
+                width={70}
+                height={30}
+                loading="lazy"
+              />
             </div>
           </div>
           <div className="pt-5 md:pt-5 lg:pt-0">
@@ -44,8 +69,12 @@ const Footer = () => {
         <div className="lg:flex justify-between px-10 lg:px-20 py-10 bg-black text-slate-500 text-left">
           <div className="text-left lg:text-center w-full md:w-[45%] lg:w-[20%]">
             <Link href="/" className="cursor-pointer ">
-              <img
+            <Image
                 src="https://i.ibb.co/nMFwjww/foorer-logo.png"
+                alt="TRAVEL.XONE LOGO"
+                width={600}
+                height={450}
+                loading="lazy"
                 className="w-[100%] mx-auto"
               />
             </Link>

@@ -30,7 +30,7 @@ const Blogdetails = () => {
       {/* -----------header design end----------- */}
       <div className="container mx-auto py-12">
         <div className="">
-          <img className={styles.BlogImg} src={single?.img}></img>
+          <img className={styles.BlogImg} src={single?.img} lazyLoad={true}></img>
           <h1 className="pt-5 pb-1 text-lg font-semibold">Description :</h1>
           <p className="text-justify text-sm">
             {single?.description?.slice(101, 5000)}
