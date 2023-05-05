@@ -12,8 +12,8 @@ const Login = () => {
   const { register, handleSubmit } = useForm();
   const {LOGIN,setUser,user} = useContext(RootContext)
   const [errors,setErrors]= useState(null)
-  const redirect = router.pathname===router.asPath?'/':router.asPath
-  console.log(router)
+  const redirect = router.pathname===router.asPath?'/dashboard':router.asPath
+  
   const handleLogin = (data)=>{
       LOGIN(data)
       .then(res=>{
