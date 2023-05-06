@@ -6,7 +6,7 @@ import { useState } from "react";
 const Hero = () => {
   const [singelServeics, setServices] = useState("Toure");
   const [showModal, setShowModal] = useState(false);
-  const [bookingData, setBooking] = useState()
+  const [bookingData, setBooking] = useState('')
   // input value resive state
   const [location, setLocation] = useState('')
   const [TO, setTO] = useState('')
